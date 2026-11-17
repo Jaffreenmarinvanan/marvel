@@ -6,8 +6,7 @@ import {
   Search, Film, Tv, LayoutGrid, List, ArrowUpDown,
   CheckCircle, Clock, X, Layers, Zap, SortAsc,
 } from 'lucide-react';
-import { movies } from '@/data/movies';
-import { MOVIE_MEDIA } from '@/data/mediaMap';
+import { useDynamicData } from '@/hooks/useDynamicData';
 import { useStore } from '@/store';
 import type { Movie } from '@/types';
 import { ChromaGrid } from '@/components/ChromaGrid/ChromaGrid';
@@ -16,10 +15,8 @@ import DecryptedText from '@/components/ReactBits/DecryptedText';
 import CountUp from '@/components/ReactBits/CountUp';
 
 // ---------------------------------------------------------------------------
-// Movie poster data & official logos from MCU archive
+// Helpers
 // ---------------------------------------------------------------------------
-const POSTER_MAP = MOVIE_MEDIA;
-
 const PHASE_COLORS: Record<number, string> = {
   0: '#f59e0b',
   1: '#c9a84c',
@@ -30,17 +27,16 @@ const PHASE_COLORS: Record<number, string> = {
   6: '#ec4899',
 };
 
-// ---------------------------------------------------------------------------
-// Helpers
-// ---------------------------------------------------------------------------
-function getPosterData(movie: Movie) {
+function getPosterData(movie: Movie, mediaMap?: Record<string, any>) {
   if (movie.posterUrl) return { image: movie.posterUrl, accent: movie.posterColor ?? '#c9a84c' };
-  return POSTER_MAP[movie.slug] ?? { image: '', accent: movie.posterColor ?? '#c9a84c' };
+  const entry = mediaMap?.[movie.slug];
+  if (entry) return { image: entry.image, accent: entry.accent || movie.posterColor || '#c9a84c' };
+  return { image: '', accent: movie.posterColor ?? '#c9a84c' };
 }
 
-function getChromaItems(movieList: Movie[]) {
+function getChromaItems(movieList: Movie[], mediaMap?: Record<string, any>) {
   return movieList.map((m) => {
-    const poster = getPosterData(m);
+    const poster = getPosterData(m, mediaMap);
     return {
       image: poster.image,
       title: m.title,
@@ -56,6 +52,7 @@ function getChromaItems(movieList: Movie[]) {
 // Main Page
 // ---------------------------------------------------------------------------
 export default function MoviesPage() {
+  const { movies, mediaMap } = useDynamicData();
   const [search, setSearch] = useState('');
   const [selectedPhase, setSelectedPhase] = useState<number | 'all'>('all');
   const [selectedType, setSelectedType] = useState<'all' | 'movie' | 'series'>('all');
@@ -85,7 +82,7 @@ export default function MoviesPage() {
       });
   }, [search, selectedPhase, selectedType, sortBy]);
 
-  const chromaItems = useMemo(() => getChromaItems(filteredMovies), [filteredMovies]);
+  const chromaItems = useMemo(() => getChromaItems(filteredMovies, mediaMap), [filteredMovies, mediaMap]);
 
   const hasActiveFilters =
     search !== '' || selectedPhase !== 'all' || selectedType !== 'all' || sortBy !== 'release';
@@ -330,7 +327,7 @@ export default function MoviesPage() {
               ) : (
                 filteredMovies.map((movie) => {
                   const watched = isWatched(movie.slug);
-                  const poster = getPosterData(movie);
+                  const poster = getPosterData(movie, mediaMap);
                   return (
                     <div key={movie.id} className="movie-card card-base card-hover">
                       <Link href={`/movies/${movie.slug}`} className="movie-poster-wrap">

@@ -5,7 +5,7 @@ import React, { useState, useMemo } from 'react';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import { useRouter } from 'next/navigation';
-import { weapons } from '@/data/weapons';
+import { useDynamicData } from '@/hooks/useDynamicData';
 import type { Weapon } from '@/types';
 import { Shield, Zap, Sparkles, ArrowRight, LayoutGrid, Search, Compass, Swords } from 'lucide-react';
 
@@ -18,7 +18,8 @@ const HAS_3D_WEAPON = ['mjolnir', 'stormbreaker', 'captain-america-shield'];
 
 export default function WeaponsArchivePage() {
   const router = useRouter();
-  const [selectedWeapon, setSelectedWeapon] = useState<Weapon>(weapons[0]); // defaults to Mjolnir
+  const { weapons } = useDynamicData();
+  const [selectedWeapon, setSelectedWeapon] = useState<Weapon>(() => weapons[0] || ({} as Weapon)); // defaults to Mjolnir
   const [viewMode, setViewMode] = useState<'hud' | 'panoramic'>('hud');
   const [search, setSearch] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string>('all');

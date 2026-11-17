@@ -3,15 +3,19 @@
 import { useState, useMemo } from 'react';
 import Link from 'next/link';
 import { Clock, Calendar, Swords, Shield, Sparkles, Search, ArrowRight, Filter } from 'lucide-react';
-import { timelineEvents, sortedTimeline } from '@/data/timeline';
+import { useDynamicData } from '@/hooks/useDynamicData';
 import type { TimelineEvent } from '@/types';
 
 export default function TimelinePage() {
+  const { timeline } = useDynamicData();
   const [selectedPhase, setSelectedPhase] = useState<number | 'all'>('all');
   const [selectedType, setSelectedType] = useState<string>('all');
   const [search, setSearch] = useState('');
 
-  const events = useMemo(() => sortedTimeline(), []);
+  const events = useMemo(
+    () => [...timeline].sort((a, b) => (a.year || 0) - (b.year || 0)),
+    [timeline]
+  );
 
   const filteredEvents = useMemo(() => {
     return events.filter((evt) => {

@@ -35,6 +35,7 @@ const navLinks = [
       { label: 'Easter Eggs', href: '/easter-eggs' },
       { label: 'Watch Tracker', href: '/watch-tracker' },
       { label: 'About', href: '/about' },
+      { label: 'Admin Command', href: '/admin' },
     ],
   },
 ];

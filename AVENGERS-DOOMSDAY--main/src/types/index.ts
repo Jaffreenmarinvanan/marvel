@@ -18,6 +18,8 @@ export interface Movie {
   synopsis: string;
   posterColor: string; // dominant color for placeholder
   posterUrl?: string; // custom uploaded or external poster image url
+  model3dUrl?: string; // 3D element model (.glb/.obj)
+  model3dType?: 'glb' | 'obj';
   budget?: string;
   boxOffice?: string;
   mainCharacters: string[]; // character slugs
@@ -76,6 +78,8 @@ export interface Character {
   quote?: string;
   actor?: string;
   imageUrl?: string; // custom uploaded or external image url
+  model3dUrl?: string; // 3D element model (.glb/.obj)
+  model3dType?: 'glb' | 'obj';
 }
 
 export interface InfinityStone {
@@ -112,6 +116,8 @@ export interface Weapon {
   creator?: string;
   accentColor: string;
   imageUrl?: string; // custom uploaded or external image url
+  model3dUrl?: string; // 3D element model (.glb/.obj)
+  model3dType?: 'glb' | 'obj';
 }
 
 export interface Technology {

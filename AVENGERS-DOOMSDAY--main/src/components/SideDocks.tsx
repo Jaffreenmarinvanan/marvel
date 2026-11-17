@@ -31,6 +31,7 @@ import {
   Eye,
   BookmarkCheck,
   Search,
+  Lock,
 } from 'lucide-react';
 
 /** Wrap icon in its section accent colour */
@@ -279,6 +280,18 @@ export default function SideDocks() {
       onClick: () => setSearchOpen(true),
       menu: [
         { label: 'Search All Archives', shortcut: '⌘K', onClick: () => setSearchOpen(true) },
+      ],
+    },
+    {
+      icon: <Ico color="#eab308"><Lock size={20} /></Ico>,
+      label: 'Admin Command',
+      active: active('/admin'),
+      onClick: () => nav('/admin'),
+      menu: [
+        { label: 'S.H.I.E.L.D. Command Center', onClick: () => nav('/admin') },
+        { label: 'Add / Edit Heroes & Villains', onClick: () => nav('/admin') },
+        { label: 'Add / Edit Movies & Series', onClick: () => nav('/admin') },
+        { label: 'Upload Media & 3D Objects', onClick: () => nav('/admin') },
       ],
     },
   ], [pathname]); // eslint-disable-line react-hooks/exhaustive-deps
