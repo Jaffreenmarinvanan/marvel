@@ -1,6 +1,992 @@
 {
-  "heroes": [],
-  "villains": [],
+  "heroes": [
+    {
+      "id": "c3",
+      "slug": "thor",
+      "title": "Thor",
+      "name": "Thor",
+      "realName": "Thor Odinson",
+      "type": "hero",
+      "status": "alive",
+      "species": "Asgardian",
+      "homeworld": "Asgard",
+      "phase": 5,
+      "year": 2026,
+      "director": "Various",
+      "actor": "Chris Hemsworth",
+      "runtime": 120,
+      "releaseOrder": 80,
+      "chronologicalOrder": 80,
+      "portraitColor": "#2563eb",
+      "posterColor": "#2563eb",
+      "accentColor": "#2563eb",
+      "imageUrl": "/uploads/thor_1794963401456.jpg",
+      "posterUrl": "/uploads/thor_1794963401456.jpg",
+      "image": "/uploads/thor_1794963401456.jpg",
+      "accent": "#2563eb",
+      "model3dType": "glb",
+      "biography": "Thor Odinson is the crown prince of Asgard and the Asgardian God of Thunder. Born to Odin and Frigga, Thor was arrogant and impulsive in his youth, leading to his banishment on Earth where he learned humility. He became a key member of the Avengers and fought to protect both Asgard and Earth through multiple cosmic threats. After Asgard was destroyed by Hela and later the Snap occurred, Thor fell into depression. He eventually recovered, contributed to the Time Heist in Endgame, and later joined the Guardians of the Galaxy.",
+      "description": "Thor Odinson is the crown prince of Asgard and the Asgardian God of Thunder. Born to Odin and Frigga, Thor was arrogant and impulsive in his youth, leading to his banishment on Earth where he learned humility. He became a key member of the Avengers and fought to protect both Asgard and Earth through multiple cosmic threats. After Asgard was destroyed by Hela and later the Snap occurred, Thor fell into depression. He eventually recovered, contributed to the Time Heist in Endgame, and later joined the Guardians of the Galaxy.",
+      "synopsis": "Thor Odinson is the crown prince of Asgard and the Asgardian God of Thunder. Born to Odin and Frigga, Thor was arrogant and impulsive in his youth, leading to his banishment on Earth where he learned humility. He became a key member of the Avengers and fought to protect both Asgard and Earth through multiple cosmic threats. After Asgard was destroyed by Hela and later the Snap occurred, Thor fell into depression. He eventually recovered, contributed to the Time Heist in Endgame, and later joined the Guardians of the Galaxy.",
+      "powers": [
+        "Superhuman strength",
+        "durability",
+        "and speed",
+        "Lightning manipulation",
+        "Weather control",
+        "Flight (with Mjolnir/Stormbreaker)",
+        "Godly stamina and healing"
+      ],
+      "affiliation": [
+        "Avengers",
+        "Asgard",
+        "Guardians of the Galaxy"
+      ],
+      "category": "weapon",
+      "origin": "Asgard — son of Odin and Frigga, Prince of Asgard",
+      "date": "2026",
+      "characters": [
+        "thor"
+      ],
+      "writers": [
+        "Marvel Studios"
+      ],
+      "cast": [
+        {
+          "actor": "Chris Hemsworth",
+          "character": "Thor"
+        }
+      ]
+    },
+    {
+      "id": "c1",
+      "slug": "iron-man",
+      "title": "Iron Man",
+      "name": "Iron Man",
+      "realName": "Anthony Edward \"Tony\" Stark",
+      "type": "hero",
+      "status": "deceased",
+      "species": "Human",
+      "homeworld": "Earth",
+      "phase": 5,
+      "year": 2026,
+      "director": "Various",
+      "actor": "Robert Downey Jr.",
+      "runtime": 120,
+      "releaseOrder": 80,
+      "chronologicalOrder": 80,
+      "portraitColor": "#c41e3a",
+      "posterColor": "#c41e3a",
+      "accentColor": "#c41e3a",
+      "imageUrl": "/uploads/iron_man_1794963378567.jpg",
+      "posterUrl": "/uploads/iron_man_1794963378567.jpg",
+      "image": "/uploads/iron_man_1794963378567.jpg",
+      "accent": "#c41e3a",
+      "model3dType": "glb",
+      "biography": "Tony Stark was a billionaire industrialist, inventor, and former weapons manufacturer who became the armored superhero Iron Man. Born into privilege as the son of Howard Stark, Tony was a genius from birth — graduating MIT at 17. After being captured by terrorists and forced to build a weapon, he instead built a suit of armor and escaped. He later refined the technology and publicly revealed himself as Iron Man. As a founding Avenger, Tony helped save the world numerous times. He ultimately sacrificed his life to undo the Snap, snapping his fingers with all six Infinity Stones and erasing Thanos and his army from existence.",
+      "description": "Tony Stark was a billionaire industrialist, inventor, and former weapons manufacturer who became the armored superhero Iron Man. Born into privilege as the son of Howard Stark, Tony was a genius from birth — graduating MIT at 17. After being captured by terrorists and forced to build a weapon, he instead built a suit of armor and escaped. He later refined the technology and publicly revealed himself as Iron Man. As a founding Avenger, Tony helped save the world numerous times. He ultimately sacrificed his life to undo the Snap, snapping his fingers with all six Infinity Stones and erasing Thanos and his army from existence.",
+      "synopsis": "Tony Stark was a billionaire industrialist, inventor, and former weapons manufacturer who became the armored superhero Iron Man. Born into privilege as the son of Howard Stark, Tony was a genius from birth — graduating MIT at 17. After being captured by terrorists and forced to build a weapon, he instead built a suit of armor and escaped. He later refined the technology and publicly revealed himself as Iron Man. As a founding Avenger, Tony helped save the world numerous times. He ultimately sacrificed his life to undo the Snap, snapping his fingers with all six Infinity Stones and erasing Thanos and his army from existence.",
+      "powers": [
+        "Genius-level intellect",
+        "Master engineer and inventor",
+        "Access to advanced armor systems"
+      ],
+      "affiliation": [
+        "Avengers",
+        "Stark Industries",
+        "S.H.I.E.L.D. (Consultant)"
+      ],
+      "category": "weapon",
+      "origin": "Afghanistan — built Mark I armor to escape captivity by the Ten Rings",
+      "date": "2026",
+      "characters": [
+        "iron-man"
+      ],
+      "writers": [
+        "Marvel Studios"
+      ],
+      "cast": [
+        {
+          "actor": "Robert Downey Jr.",
+          "character": "Iron Man"
+        }
+      ]
+    },
+    {
+      "id": "c7",
+      "slug": "black-panther",
+      "title": "Black Panther",
+      "name": "Black Panther",
+      "realName": "T'Challa",
+      "type": "hero",
+      "status": "deceased",
+      "species": "Human (Heart-Shaped Herb enhanced)",
+      "homeworld": "Earth",
+      "phase": 5,
+      "year": 2026,
+      "director": "Various",
+      "actor": "Chadwick Boseman",
+      "runtime": 120,
+      "releaseOrder": 80,
+      "chronologicalOrder": 80,
+      "portraitColor": "#7e22ce",
+      "posterColor": "#7e22ce",
+      "accentColor": "#7e22ce",
+      "imageUrl": "/uploads/black_pather_1794963351676.jpg",
+      "posterUrl": "/uploads/black_pather_1794963351676.jpg",
+      "image": "/uploads/black_pather_1794963351676.jpg",
+      "accent": "#7e22ce",
+      "model3dType": "glb",
+      "biography": "T'Challa was the king of Wakanda and the Black Panther — the nation's protector empowered by the Heart-Shaped Herb. After his father T'Chaka was killed in Vienna, T'Challa hunted Bucky Barnes believing him responsible. He later discovered the true threat was Baron Zemo. As king, T'Challa fought Killmonger's claim to the throne and ultimately chose to open Wakanda to the world. He fought in the Battle of Wakanda and the Battle of Earth. T'Challa died in 2022; Shuri took up the mantle of Black Panther.",
+      "description": "T'Challa was the king of Wakanda and the Black Panther — the nation's protector empowered by the Heart-Shaped Herb. After his father T'Chaka was killed in Vienna, T'Challa hunted Bucky Barnes believing him responsible. He later discovered the true threat was Baron Zemo. As king, T'Challa fought Killmonger's claim to the throne and ultimately chose to open Wakanda to the world. He fought in the Battle of Wakanda and the Battle of Earth. T'Challa died in 2022; Shuri took up the mantle of Black Panther.",
+      "synopsis": "T'Challa was the king of Wakanda and the Black Panther — the nation's protector empowered by the Heart-Shaped Herb. After his father T'Chaka was killed in Vienna, T'Challa hunted Bucky Barnes believing him responsible. He later discovered the true threat was Baron Zemo. As king, T'Challa fought Killmonger's claim to the throne and ultimately chose to open Wakanda to the world. He fought in the Battle of Wakanda and the Battle of Earth. T'Challa died in 2022; Shuri took up the mantle of Black Panther.",
+      "powers": [
+        "Enhanced strength",
+        "speed",
+        "and agility",
+        "Enhanced senses",
+        "Accelerated healing"
+      ],
+      "affiliation": [
+        "Avengers",
+        "Wakanda"
+      ],
+      "category": "weapon",
+      "origin": "Wakanda — royal line, Heart-Shaped Herb ritual",
+      "date": "2026",
+      "characters": [
+        "black-panther"
+      ],
+      "writers": [
+        "Marvel Studios"
+      ],
+      "cast": [
+        {
+          "actor": "Chadwick Boseman",
+          "character": "Black Panther"
+        }
+      ]
+    },
+    {
+      "id": "c5",
+      "slug": "hulk",
+      "title": "Hulk",
+      "name": "Hulk",
+      "realName": "Robert Bruce Banner",
+      "type": "hero",
+      "status": "alive",
+      "species": "Human (gamma-irradiated)",
+      "homeworld": "Earth",
+      "phase": 5,
+      "year": 2026,
+      "director": "Various",
+      "actor": "Mark Ruffalo",
+      "runtime": 120,
+      "releaseOrder": 80,
+      "chronologicalOrder": 80,
+      "portraitColor": "#16a34a",
+      "posterColor": "#16a34a",
+      "accentColor": "#16a34a",
+      "imageUrl": "/uploads/hulk_1794963050245.jpg",
+      "posterUrl": "/uploads/hulk_1794963050245.jpg",
+      "image": "/uploads/hulk_1794963050245.jpg",
+      "accent": "#16a34a",
+      "model3dType": "glb",
+      "biography": "Bruce Banner is a brilliant physicist who was exposed to a massive dose of gamma radiation during a failed attempt to recreate the Super-Soldier serum. This transformed him into the Hulk — a massive, powerful, green rage monster — whenever he becomes angry. After years of trying to control the Hulk, Bruce eventually merged his intelligence with the Hulk's body to become Professor Hulk. He performed the Blip Snap that restored all those erased by Thanos, at the cost of permanently injuring his arm.",
+      "description": "Bruce Banner is a brilliant physicist who was exposed to a massive dose of gamma radiation during a failed attempt to recreate the Super-Soldier serum. This transformed him into the Hulk — a massive, powerful, green rage monster — whenever he becomes angry. After years of trying to control the Hulk, Bruce eventually merged his intelligence with the Hulk's body to become Professor Hulk. He performed the Blip Snap that restored all those erased by Thanos, at the cost of permanently injuring his arm.",
+      "synopsis": "Bruce Banner is a brilliant physicist who was exposed to a massive dose of gamma radiation during a failed attempt to recreate the Super-Soldier serum. This transformed him into the Hulk — a massive, powerful, green rage monster — whenever he becomes angry. After years of trying to control the Hulk, Bruce eventually merged his intelligence with the Hulk's body to become Professor Hulk. He performed the Blip Snap that restored all those erased by Thanos, at the cost of permanently injuring his arm.",
+      "powers": [
+        "Unlimited strength (increases with anger)",
+        "Extreme durability",
+        "Regenerative healing",
+        "Gamma radiation resistance",
+        "Leaping"
+      ],
+      "affiliation": [
+        "Avengers",
+        "S.H.I.E.L.D."
+      ],
+      "category": "weapon",
+      "origin": "Culver University — gamma radiation experiment",
+      "date": "2026",
+      "characters": [
+        "hulk"
+      ],
+      "writers": [
+        "Marvel Studios"
+      ],
+      "cast": [
+        {
+          "actor": "Mark Ruffalo",
+          "character": "Hulk"
+        }
+      ]
+    },
+    {
+      "id": "c18",
+      "slug": "gamora",
+      "title": "Gamora",
+      "name": "Gamora",
+      "realName": "Gamora Zen Whoberi Ben Titan",
+      "type": "hero",
+      "status": "alive",
+      "species": "Zehoberei",
+      "homeworld": "Zen-Whoberi",
+      "phase": 5,
+      "year": 2026,
+      "director": "Various",
+      "actor": "Zoe Saldana",
+      "runtime": 120,
+      "releaseOrder": 80,
+      "chronologicalOrder": 80,
+      "portraitColor": "#16a34a",
+      "posterColor": "#16a34a",
+      "accentColor": "#16a34a",
+      "imageUrl": "/uploads/gamora_1794963027827.jpg",
+      "posterUrl": "/uploads/gamora_1794963027827.jpg",
+      "image": "/uploads/gamora_1794963027827.jpg",
+      "accent": "#16a34a",
+      "model3dType": "glb",
+      "biography": "Gamora is the adopted daughter of Thanos, trained from childhood to be the galaxy's deadliest assassin. After rebelling against her father, she joined the Guardians of the Galaxy. She was killed by Thanos on Vormir as a sacrifice for the Soul Stone. A 2014 version of Gamora survived and currently exists in the main timeline, unconnected to the Guardians.",
+      "description": "Gamora is the adopted daughter of Thanos, trained from childhood to be the galaxy's deadliest assassin. After rebelling against her father, she joined the Guardians of the Galaxy. She was killed by Thanos on Vormir as a sacrifice for the Soul Stone. A 2014 version of Gamora survived and currently exists in the main timeline, unconnected to the Guardians.",
+      "synopsis": "Gamora is the adopted daughter of Thanos, trained from childhood to be the galaxy's deadliest assassin. After rebelling against her father, she joined the Guardians of the Galaxy. She was killed by Thanos on Vormir as a sacrifice for the Soul Stone. A 2014 version of Gamora survived and currently exists in the main timeline, unconnected to the Guardians.",
+      "powers": [
+        "Enhanced strength and durability (Thanos's modifications)",
+        "Superhuman agility"
+      ],
+      "affiliation": [
+        "Guardians of the Galaxy",
+        "Thanos (formerly)"
+      ],
+      "category": "weapon",
+      "origin": "Zen-Whoberi — adopted by Thanos, trained as his assassin",
+      "date": "2026",
+      "characters": [
+        "gamora"
+      ],
+      "writers": [
+        "Marvel Studios"
+      ],
+      "cast": [
+        {
+          "actor": "Zoe Saldana",
+          "character": "Gamora"
+        }
+      ]
+    },
+    {
+      "id": "c10",
+      "slug": "scarlet-witch",
+      "title": "Scarlet Witch",
+      "name": "Scarlet Witch",
+      "realName": "Wanda Maximoff",
+      "type": "hero",
+      "status": "unknown",
+      "species": "Human (Chaos Magic)",
+      "homeworld": "Earth",
+      "phase": 5,
+      "year": 2026,
+      "director": "Various",
+      "actor": "Elizabeth Olsen",
+      "runtime": 120,
+      "releaseOrder": 80,
+      "chronologicalOrder": 80,
+      "portraitColor": "#dc2626",
+      "posterColor": "#dc2626",
+      "accentColor": "#dc2626",
+      "imageUrl": "/uploads/scarlet_witch_1794963009631.jpg",
+      "posterUrl": "/uploads/scarlet_witch_1794963009631.jpg",
+      "image": "/uploads/scarlet_witch_1794963009631.jpg",
+      "accent": "#dc2626",
+      "model3dType": "glb",
+      "biography": "Wanda Maximoff was a Sokovian girl who, along with her twin brother Pietro, volunteered for HYDRA experiments with Loki's Mind Stone scepter. She gained chaos magic abilities — telekinesis, energy manipulation, and mind control. She joined the Avengers after HYDRA's defeat. After Vision's death at the hands of Thanos, Wanda's grief caused her to create the Westview Hex. She later sought to use the Darkhold to find a universe where her children existed, going to extreme lengths to reach them.",
+      "description": "Wanda Maximoff was a Sokovian girl who, along with her twin brother Pietro, volunteered for HYDRA experiments with Loki's Mind Stone scepter. She gained chaos magic abilities — telekinesis, energy manipulation, and mind control. She joined the Avengers after HYDRA's defeat. After Vision's death at the hands of Thanos, Wanda's grief caused her to create the Westview Hex. She later sought to use the Darkhold to find a universe where her children existed, going to extreme lengths to reach them.",
+      "synopsis": "Wanda Maximoff was a Sokovian girl who, along with her twin brother Pietro, volunteered for HYDRA experiments with Loki's Mind Stone scepter. She gained chaos magic abilities — telekinesis, energy manipulation, and mind control. She joined the Avengers after HYDRA's defeat. After Vision's death at the hands of Thanos, Wanda's grief caused her to create the Westview Hex. She later sought to use the Darkhold to find a universe where her children existed, going to extreme lengths to reach them.",
+      "powers": [
+        "Chaos magic",
+        "Telekinesis",
+        "Mind manipulation",
+        "Energy blasts (hex bolts)",
+        "Reality warping",
+        "Probability manipulation",
+        "Flight"
+      ],
+      "affiliation": [
+        "Avengers",
+        "HYDRA (formerly)",
+        "Chaos Magic"
+      ],
+      "category": "weapon",
+      "origin": "Sokovia — HYDRA experiments with the Mind Stone",
+      "date": "2026",
+      "characters": [
+        "scarlet-witch"
+      ],
+      "writers": [
+        "Marvel Studios"
+      ],
+      "cast": [
+        {
+          "actor": "Elizabeth Olsen",
+          "character": "Scarlet Witch"
+        }
+      ]
+    },
+    {
+      "id": "c11",
+      "slug": "war-machine",
+      "title": "War Machine",
+      "name": "War Machine",
+      "realName": "James Rupert Rhodes",
+      "type": "hero",
+      "status": "alive",
+      "species": "Human",
+      "homeworld": "Earth",
+      "phase": 5,
+      "year": 2026,
+      "director": "Various",
+      "actor": "Don Cheadle",
+      "runtime": 120,
+      "releaseOrder": 80,
+      "chronologicalOrder": 80,
+      "portraitColor": "#6b7280",
+      "posterColor": "#6b7280",
+      "accentColor": "#6b7280",
+      "imageUrl": "/uploads/james__rhodey__rhodes___war_machine_1794962992918.jpg",
+      "posterUrl": "/uploads/james__rhodey__rhodes___war_machine_1794962992918.jpg",
+      "image": "/uploads/james__rhodey__rhodes___war_machine_1794962992918.jpg",
+      "accent": "#6b7280",
+      "model3dType": "glb",
+      "biography": "James Rhodes is a U.S. Air Force Colonel and Tony Stark's best friend. After piloting the War Machine armor during various conflicts, Rhodey became a valued Avenger. He was severely injured during Civil War when Vision accidentally shot him down. Despite partial paralysis, he recovered with the help of Stark technology.",
+      "description": "James Rhodes is a U.S. Air Force Colonel and Tony Stark's best friend. After piloting the War Machine armor during various conflicts, Rhodey became a valued Avenger. He was severely injured during Civil War when Vision accidentally shot him down. Despite partial paralysis, he recovered with the help of Stark technology.",
+      "synopsis": "James Rhodes is a U.S. Air Force Colonel and Tony Stark's best friend. After piloting the War Machine armor during various conflicts, Rhodey became a valued Avenger. He was severely injured during Civil War when Vision accidentally shot him down. Despite partial paralysis, he recovered with the help of Stark technology.",
+      "powers": [],
+      "affiliation": [
+        "Avengers",
+        "U.S. Air Force",
+        "Stark Industries"
+      ],
+      "category": "weapon",
+      "origin": "Earth — U.S. Air Force, became War Machine using Stark's armor",
+      "date": "2026",
+      "characters": [
+        "war-machine"
+      ],
+      "writers": [
+        "Marvel Studios"
+      ],
+      "cast": [
+        {
+          "actor": "Don Cheadle",
+          "character": "War Machine"
+        }
+      ]
+    },
+    {
+      "id": "c8",
+      "slug": "spider-man",
+      "title": "Spider-Man",
+      "name": "Spider-Man",
+      "realName": "Peter Benjamin Parker",
+      "type": "hero",
+      "status": "alive",
+      "species": "Human (spider-enhanced)",
+      "homeworld": "Earth",
+      "phase": 5,
+      "year": 2026,
+      "director": "Various",
+      "actor": "Tom Holland",
+      "runtime": 120,
+      "releaseOrder": 80,
+      "chronologicalOrder": 80,
+      "portraitColor": "#c41e3a",
+      "posterColor": "#c41e3a",
+      "accentColor": "#c41e3a",
+      "imageUrl": "/uploads/spider_man_1794962974613.jpg",
+      "posterUrl": "/uploads/spider_man_1794962974613.jpg",
+      "image": "/uploads/spider_man_1794962974613.jpg",
+      "accent": "#c41e3a",
+      "model3dType": "glb",
+      "biography": "Peter Parker is a teenage genius from Queens, New York who gained spider-like powers after being bitten by a radioactive spider. He was recruited by Tony Stark to help during the Airport Battle in Civil War. After Iron Man's death in Endgame, Peter struggled with being Spider-Man and his secret identity. When the world learned his identity, he asked Doctor Strange to cast a memory spell — which went wrong and opened the Multiverse.",
+      "description": "Peter Parker is a teenage genius from Queens, New York who gained spider-like powers after being bitten by a radioactive spider. He was recruited by Tony Stark to help during the Airport Battle in Civil War. After Iron Man's death in Endgame, Peter struggled with being Spider-Man and his secret identity. When the world learned his identity, he asked Doctor Strange to cast a memory spell — which went wrong and opened the Multiverse.",
+      "synopsis": "Peter Parker is a teenage genius from Queens, New York who gained spider-like powers after being bitten by a radioactive spider. He was recruited by Tony Stark to help during the Airport Battle in Civil War. After Iron Man's death in Endgame, Peter struggled with being Spider-Man and his secret identity. When the world learned his identity, he asked Doctor Strange to cast a memory spell — which went wrong and opened the Multiverse.",
+      "powers": [
+        "Wall-crawling",
+        "Spider-sense (danger precognition)",
+        "Superhuman strength",
+        "agility",
+        "speed",
+        "Accelerated healing"
+      ],
+      "affiliation": [
+        "Avengers",
+        "Stark Industries (intern)"
+      ],
+      "category": "weapon",
+      "origin": "Queens, New York — bitten by a radioactive spider at Oscorp",
+      "date": "2026",
+      "characters": [
+        "spider-man"
+      ],
+      "writers": [
+        "Marvel Studios"
+      ],
+      "cast": [
+        {
+          "actor": "Tom Holland",
+          "character": "Spider-Man"
+        }
+      ]
+    },
+    {
+      "id": "c4",
+      "slug": "black-widow",
+      "title": "Black Widow",
+      "name": "Black Widow",
+      "realName": "Natasha Romanoff",
+      "type": "hero",
+      "status": "deceased",
+      "species": "Human (enhanced)",
+      "homeworld": "Earth",
+      "phase": 5,
+      "year": 2026,
+      "director": "Various",
+      "actor": "Scarlett Johansson",
+      "runtime": 120,
+      "releaseOrder": 80,
+      "chronologicalOrder": 80,
+      "portraitColor": "#1a1a2e",
+      "posterColor": "#1a1a2e",
+      "accentColor": "#1a1a2e",
+      "imageUrl": "/uploads/black_widow_1794962169578.jpg",
+      "posterUrl": "/uploads/black_widow_1794962169578.jpg",
+      "image": "/uploads/black_widow_1794962169578.jpg",
+      "accent": "#1a1a2e",
+      "model3dType": "glb",
+      "biography": "Natasha Romanoff was a former KGB agent and Russian spy trained in the secretive Red Room program since childhood, where she was put through extreme training and indoctrination. She was eventually recruited by Clint Barton (Hawkeye) for S.H.I.E.L.D. instead of being eliminated. One of the most skilled hand-to-hand combatants alive, Natasha became a founding Avenger and helped defeat Thanos. She sacrificed herself on Vormir to obtain the Soul Stone, giving Clint Barton a chance at life.",
+      "description": "Natasha Romanoff was a former KGB agent and Russian spy trained in the secretive Red Room program since childhood, where she was put through extreme training and indoctrination. She was eventually recruited by Clint Barton (Hawkeye) for S.H.I.E.L.D. instead of being eliminated. One of the most skilled hand-to-hand combatants alive, Natasha became a founding Avenger and helped defeat Thanos. She sacrificed herself on Vormir to obtain the Soul Stone, giving Clint Barton a chance at life.",
+      "synopsis": "Natasha Romanoff was a former KGB agent and Russian spy trained in the secretive Red Room program since childhood, where she was put through extreme training and indoctrination. She was eventually recruited by Clint Barton (Hawkeye) for S.H.I.E.L.D. instead of being eliminated. One of the most skilled hand-to-hand combatants alive, Natasha became a founding Avenger and helped defeat Thanos. She sacrificed herself on Vormir to obtain the Soul Stone, giving Clint Barton a chance at life.",
+      "powers": [
+        "Slowed aging (Red Room bio-enhancement)",
+        "Peak human physique"
+      ],
+      "affiliation": [
+        "Avengers",
+        "S.H.I.E.L.D.",
+        "Red Room (formerly)"
+      ],
+      "category": "weapon",
+      "origin": "Soviet Union — Red Room Black Widow program",
+      "date": "2026",
+      "characters": [
+        "black-widow"
+      ],
+      "writers": [
+        "Marvel Studios"
+      ],
+      "cast": [
+        {
+          "actor": "Scarlett Johansson",
+          "character": "Black Widow"
+        }
+      ]
+    },
+    {
+      "id": "c20",
+      "slug": "ant-man",
+      "title": "Ant-Man",
+      "name": "Ant-Man",
+      "realName": "Scott Edward Harris Lang",
+      "type": "hero",
+      "status": "alive",
+      "species": "Human",
+      "homeworld": "Earth",
+      "phase": 5,
+      "year": 2026,
+      "director": "Various",
+      "actor": "Paul Rudd",
+      "runtime": 120,
+      "releaseOrder": 80,
+      "chronologicalOrder": 80,
+      "portraitColor": "#dc2626",
+      "posterColor": "#dc2626",
+      "accentColor": "#dc2626",
+      "imageUrl": "/uploads/ant_man_1794961990025.jpg",
+      "posterUrl": "/uploads/ant_man_1794961990025.jpg",
+      "image": "/uploads/ant_man_1794961990025.jpg",
+      "accent": "#dc2626",
+      "model3dType": "glb",
+      "biography": "Scott Lang is a former electrical engineer and ex-convict who became the second Ant-Man under the mentorship of Hank Pym. Using Pym Particle technology to shrink to insect size while retaining full strength, Scott became an unlikely hero. He was key to the Time Heist in Endgame, providing the crucial Quantum Realm time-travel solution.",
+      "description": "Scott Lang is a former electrical engineer and ex-convict who became the second Ant-Man under the mentorship of Hank Pym. Using Pym Particle technology to shrink to insect size while retaining full strength, Scott became an unlikely hero. He was key to the Time Heist in Endgame, providing the crucial Quantum Realm time-travel solution.",
+      "synopsis": "Scott Lang is a former electrical engineer and ex-convict who became the second Ant-Man under the mentorship of Hank Pym. Using Pym Particle technology to shrink to insect size while retaining full strength, Scott became an unlikely hero. He was key to the Time Heist in Endgame, providing the crucial Quantum Realm time-travel solution.",
+      "powers": [
+        "Size manipulation (via Pym Particles)",
+        "Can grow to giant size",
+        "Communication with ants"
+      ],
+      "affiliation": [
+        "Avengers"
+      ],
+      "category": "weapon",
+      "origin": "San Francisco — recruited by Hank Pym, former thief",
+      "date": "2026",
+      "characters": [
+        "ant-man"
+      ],
+      "writers": [
+        "Marvel Studios"
+      ],
+      "cast": [
+        {
+          "actor": "Paul Rudd",
+          "character": "Ant-Man"
+        }
+      ]
+    },
+    {
+      "id": "c19",
+      "slug": "captain-marvel",
+      "title": "Captain Marvel",
+      "name": "Captain Marvel",
+      "realName": "Carol Susan Jane Danvers",
+      "type": "hero",
+      "status": "alive",
+      "species": "Human (Kree-empowered)",
+      "homeworld": "Earth",
+      "phase": 5,
+      "year": 2026,
+      "director": "Various",
+      "actor": "Brie Larson",
+      "runtime": 120,
+      "releaseOrder": 80,
+      "chronologicalOrder": 80,
+      "portraitColor": "#f59e0b",
+      "posterColor": "#f59e0b",
+      "accentColor": "#f59e0b",
+      "imageUrl": "/uploads/captain_marvel_1794961925556.jpg",
+      "posterUrl": "/uploads/captain_marvel_1794961925556.jpg",
+      "image": "/uploads/captain_marvel_1794961925556.jpg",
+      "accent": "#f59e0b",
+      "model3dType": "glb",
+      "biography": "Carol Danvers was an Air Force pilot who was exposed to the energy of the Tesseract-powered light-speed engine during a crash. Kree blood transfused to save her gave her extraordinary cosmic powers. After recovering her memories and rejecting the Kree, she became a cosmic protector. She helped destroy the Sanctuary II during Endgame.",
+      "description": "Carol Danvers was an Air Force pilot who was exposed to the energy of the Tesseract-powered light-speed engine during a crash. Kree blood transfused to save her gave her extraordinary cosmic powers. After recovering her memories and rejecting the Kree, she became a cosmic protector. She helped destroy the Sanctuary II during Endgame.",
+      "synopsis": "Carol Danvers was an Air Force pilot who was exposed to the energy of the Tesseract-powered light-speed engine during a crash. Kree blood transfused to save her gave her extraordinary cosmic powers. After recovering her memories and rejecting the Kree, she became a cosmic protector. She helped destroy the Sanctuary II during Endgame.",
+      "powers": [
+        "Energy absorption and projection",
+        "Superhuman strength",
+        "speed",
+        "and durability",
+        "Flight (space-worthy)",
+        "Binary form (near-limitless power)"
+      ],
+      "affiliation": [
+        "Avengers",
+        "Kree (formerly)",
+        "Starforce (formerly)"
+      ],
+      "category": "weapon",
+      "origin": "Louisiana, Earth — crash with light-speed engine, Kree blood transfusion",
+      "date": "2026",
+      "characters": [
+        "captain-marvel"
+      ],
+      "writers": [
+        "Marvel Studios"
+      ],
+      "cast": [
+        {
+          "actor": "Brie Larson",
+          "character": "Captain Marvel"
+        }
+      ]
+    },
+    {
+      "id": "c16",
+      "slug": "vision",
+      "title": "Vision",
+      "name": "Vision",
+      "realName": "Vision",
+      "type": "hero",
+      "status": "deceased",
+      "species": "Synthezoid (A.I.)",
+      "homeworld": "Earth",
+      "phase": 5,
+      "year": 2026,
+      "director": "Various",
+      "actor": "Paul Bettany",
+      "runtime": 120,
+      "releaseOrder": 80,
+      "chronologicalOrder": 80,
+      "portraitColor": "#dc2626",
+      "posterColor": "#dc2626",
+      "accentColor": "#dc2626",
+      "imageUrl": "/uploads/vision_1794961898255.jpg",
+      "posterUrl": "/uploads/vision_1794961898255.jpg",
+      "image": "/uploads/vision_1794961898255.jpg",
+      "accent": "#dc2626",
+      "model3dType": "glb",
+      "biography": "Vision is a synthetic being created by Ultron using vibranium and the Mind Stone, later brought to life by J.A.R.V.I.S.'s intelligence and a lightning strike from Thor. He is one of the most powerful Avengers, with the ability to phase through objects, fly, and fire energy from the Mind Stone. He developed romantic feelings for Wanda Maximoff. Vision was killed twice during Infinity War — first by Wanda destroying the Mind Stone, then by Thanos reversing time. A recreated White Vision now exists.",
+      "description": "Vision is a synthetic being created by Ultron using vibranium and the Mind Stone, later brought to life by J.A.R.V.I.S.'s intelligence and a lightning strike from Thor. He is one of the most powerful Avengers, with the ability to phase through objects, fly, and fire energy from the Mind Stone. He developed romantic feelings for Wanda Maximoff. Vision was killed twice during Infinity War — first by Wanda destroying the Mind Stone, then by Thanos reversing time. A recreated White Vision now exists.",
+      "synopsis": "Vision is a synthetic being created by Ultron using vibranium and the Mind Stone, later brought to life by J.A.R.V.I.S.'s intelligence and a lightning strike from Thor. He is one of the most powerful Avengers, with the ability to phase through objects, fly, and fire energy from the Mind Stone. He developed romantic feelings for Wanda Maximoff. Vision was killed twice during Infinity War — first by Wanda destroying the Mind Stone, then by Thanos reversing time. A recreated White Vision now exists.",
+      "powers": [
+        "Density manipulation (phasing",
+        "mass)",
+        "Energy blasts from Mind Stone",
+        "Flight",
+        "Superhuman strength",
+        "Technopathy"
+      ],
+      "affiliation": [
+        "Avengers"
+      ],
+      "category": "weapon",
+      "origin": "Created by Ultron with vibranium body, Mind Stone, and J.A.R.V.I.S.",
+      "date": "2026",
+      "characters": [
+        "vision"
+      ],
+      "writers": [
+        "Marvel Studios"
+      ],
+      "cast": [
+        {
+          "actor": "Paul Bettany",
+          "character": "Vision"
+        }
+      ]
+    },
+    {
+      "id": "c17",
+      "slug": "star-lord",
+      "title": "Star-Lord",
+      "name": "Star-Lord",
+      "realName": "Peter Jason Quill",
+      "type": "hero",
+      "status": "alive",
+      "species": "Human / Celestial",
+      "homeworld": "Earth (born) / Space",
+      "phase": 5,
+      "year": 2026,
+      "director": "Various",
+      "actor": "Chris Pratt",
+      "runtime": 120,
+      "releaseOrder": 80,
+      "chronologicalOrder": 80,
+      "portraitColor": "#ea580c",
+      "posterColor": "#ea580c",
+      "accentColor": "#ea580c",
+      "imageUrl": "/uploads/peter_with_walkman_1794961877188.jpg",
+      "posterUrl": "/uploads/peter_with_walkman_1794961877188.jpg",
+      "image": "/uploads/peter_with_walkman_1794961877188.jpg",
+      "accent": "#ea580c",
+      "model3dType": "glb",
+      "biography": "Peter Quill is the half-human, half-Celestial leader of the Guardians of the Galaxy. Abducted by the Ravagers after his mother's death, Peter grew up in space, becoming an outlaw. His Celestial heritage gives him the ability to wield the Power Stone without being destroyed. He formed the Guardians to stop Ronan from destroying Xandar, and became an unlikely hero.",
+      "description": "Peter Quill is the half-human, half-Celestial leader of the Guardians of the Galaxy. Abducted by the Ravagers after his mother's death, Peter grew up in space, becoming an outlaw. His Celestial heritage gives him the ability to wield the Power Stone without being destroyed. He formed the Guardians to stop Ronan from destroying Xandar, and became an unlikely hero.",
+      "synopsis": "Peter Quill is the half-human, half-Celestial leader of the Guardians of the Galaxy. Abducted by the Ravagers after his mother's death, Peter grew up in space, becoming an outlaw. His Celestial heritage gives him the ability to wield the Power Stone without being destroyed. He formed the Guardians to stop Ronan from destroying Xandar, and became an unlikely hero.",
+      "powers": [
+        "Celestial heritage (unlocked in Vol. 2)",
+        "Ability to hold Infinity Stones"
+      ],
+      "affiliation": [
+        "Guardians of the Galaxy"
+      ],
+      "category": "weapon",
+      "origin": "Earth — abducted by Ravagers, half-Celestial son of Ego",
+      "date": "2026",
+      "characters": [
+        "star-lord"
+      ],
+      "writers": [
+        "Marvel Studios"
+      ],
+      "cast": [
+        {
+          "actor": "Chris Pratt",
+          "character": "Star-Lord"
+        }
+      ]
+    },
+    {
+      "id": "c6",
+      "slug": "hawkeye",
+      "title": "Hawkeye",
+      "name": "Hawkeye",
+      "realName": "Clinton Francis Barton",
+      "type": "hero",
+      "status": "alive",
+      "species": "Human",
+      "homeworld": "Earth",
+      "phase": 5,
+      "year": 2026,
+      "director": "Various",
+      "actor": "Jeremy Renner",
+      "runtime": 120,
+      "releaseOrder": 80,
+      "chronologicalOrder": 80,
+      "portraitColor": "#7c3aed",
+      "posterColor": "#7c3aed",
+      "accentColor": "#7c3aed",
+      "imageUrl": "/uploads/hawkeye_1794961848203.jpg",
+      "posterUrl": "/uploads/hawkeye_1794961848203.jpg",
+      "image": "/uploads/hawkeye_1794961848203.jpg",
+      "accent": "#7c3aed",
+      "model3dType": "glb",
+      "biography": "Clint Barton is a master archer who serves as a founding Avenger despite having no superpowers — relying entirely on his extraordinary skill, tactical intelligence, and years of combat experience. After losing his family to the Snap, he became the vigilante Ronin before participating in the Time Heist. He sacrificed himself for the Soul Stone but Natasha took his place.",
+      "description": "Clint Barton is a master archer who serves as a founding Avenger despite having no superpowers — relying entirely on his extraordinary skill, tactical intelligence, and years of combat experience. After losing his family to the Snap, he became the vigilante Ronin before participating in the Time Heist. He sacrificed himself for the Soul Stone but Natasha took his place.",
+      "synopsis": "Clint Barton is a master archer who serves as a founding Avenger despite having no superpowers — relying entirely on his extraordinary skill, tactical intelligence, and years of combat experience. After losing his family to the Snap, he became the vigilante Ronin before participating in the Time Heist. He sacrificed himself for the Soul Stone but Natasha took his place.",
+      "powers": [],
+      "affiliation": [
+        "Avengers",
+        "S.H.I.E.L.D."
+      ],
+      "category": "weapon",
+      "origin": "Missouri — circus performer, then S.H.I.E.L.D. recruit",
+      "date": "2026",
+      "characters": [
+        "hawkeye"
+      ],
+      "writers": [
+        "Marvel Studios"
+      ],
+      "cast": [
+        {
+          "actor": "Jeremy Renner",
+          "character": "Hawkeye"
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "slug": "captain-america",
+      "title": "Captain America",
+      "name": "Captain America",
+      "realName": "Steven Grant Rogers",
+      "type": "hero",
+      "status": "alive",
+      "species": "Human (Super-Soldier)",
+      "homeworld": "Earth",
+      "phase": 5,
+      "year": 2026,
+      "director": "Various",
+      "actor": "Chris Evans",
+      "runtime": 120,
+      "releaseOrder": 80,
+      "chronologicalOrder": 80,
+      "portraitColor": "#1d4ed8",
+      "posterColor": "#1d4ed8",
+      "accentColor": "#1d4ed8",
+      "imageUrl": "/uploads/captain_america_1794961822812.jpg",
+      "posterUrl": "/uploads/captain_america_1794961822812.jpg",
+      "image": "/uploads/captain_america_1794961822812.jpg",
+      "accent": "#1d4ed8",
+      "model3dType": "glb",
+      "biography": "Steve Rogers was a frail young man from Brooklyn who desperately wanted to serve his country in World War II. Rejected multiple times due to his health, he was finally chosen for the Super-Soldier program. Transformed by Dr. Erskine's serum, he became Captain America. After defeating the Red Skull and HYDRA, Steve sacrificed himself by crashing a plane into the Arctic, remaining frozen for 70 years. Revived in the 21st century, he became a founding Avenger. After the events of Endgame, Steve traveled back in time and chose to remain in the past, living out his life.",
+      "description": "Steve Rogers was a frail young man from Brooklyn who desperately wanted to serve his country in World War II. Rejected multiple times due to his health, he was finally chosen for the Super-Soldier program. Transformed by Dr. Erskine's serum, he became Captain America. After defeating the Red Skull and HYDRA, Steve sacrificed himself by crashing a plane into the Arctic, remaining frozen for 70 years. Revived in the 21st century, he became a founding Avenger. After the events of Endgame, Steve traveled back in time and chose to remain in the past, living out his life.",
+      "synopsis": "Steve Rogers was a frail young man from Brooklyn who desperately wanted to serve his country in World War II. Rejected multiple times due to his health, he was finally chosen for the Super-Soldier program. Transformed by Dr. Erskine's serum, he became Captain America. After defeating the Red Skull and HYDRA, Steve sacrificed himself by crashing a plane into the Arctic, remaining frozen for 70 years. Revived in the 21st century, he became a founding Avenger. After the events of Endgame, Steve traveled back in time and chose to remain in the past, living out his life.",
+      "powers": [
+        "Peak human strength",
+        "speed",
+        "agility",
+        "and endurance",
+        "Accelerated healing",
+        "Enhanced immunity to disease",
+        "Slowed aging"
+      ],
+      "affiliation": [
+        "Avengers",
+        "U.S. Army",
+        "S.H.I.E.L.D.",
+        "Nomad"
+      ],
+      "category": "weapon",
+      "origin": "Brooklyn, New York — Super-Soldier program during WWII",
+      "date": "2026",
+      "characters": [
+        "captain-america"
+      ],
+      "writers": [
+        "Marvel Studios"
+      ],
+      "cast": [
+        {
+          "actor": "Chris Evans",
+          "character": "Captain America"
+        }
+      ]
+    },
+    {
+      "id": "c14",
+      "slug": "loki",
+      "title": "Loki",
+      "name": "Loki",
+      "realName": "Loki Laufeyson",
+      "type": "anti-hero",
+      "status": "alive",
+      "species": "Frost Giant / Asgardian (adopted)",
+      "homeworld": "Jotunheim (born) / Asgard (raised)",
+      "phase": 5,
+      "year": 2026,
+      "director": "Various",
+      "actor": "Tom Hiddleston",
+      "runtime": 120,
+      "releaseOrder": 80,
+      "chronologicalOrder": 80,
+      "portraitColor": "#16a34a",
+      "posterColor": "#16a34a",
+      "accentColor": "#16a34a",
+      "imageUrl": "/uploads/loki_1794960415449.jpg",
+      "posterUrl": "/uploads/loki_1794960415449.jpg",
+      "image": "/uploads/loki_1794960415449.jpg",
+      "accent": "#16a34a",
+      "model3dType": "glb",
+      "biography": "Loki Laufeyson is the adopted son of Odin and the God of Mischief. Born a Frost Giant and secretly adopted by Odin, Loki's discovery of his true nature led him to a path of scheming and villainy. He attempted to conquer Earth using the Tesseract, was defeated, and imprisoned. After several apparent deaths, Loki grew more nuanced. The TVA variant of Loki ultimately became the God of Stories — literally holding together the branches of the multiverse at the end of time.",
+      "description": "Loki Laufeyson is the adopted son of Odin and the God of Mischief. Born a Frost Giant and secretly adopted by Odin, Loki's discovery of his true nature led him to a path of scheming and villainy. He attempted to conquer Earth using the Tesseract, was defeated, and imprisoned. After several apparent deaths, Loki grew more nuanced. The TVA variant of Loki ultimately became the God of Stories — literally holding together the branches of the multiverse at the end of time.",
+      "synopsis": "Loki Laufeyson is the adopted son of Odin and the God of Mischief. Born a Frost Giant and secretly adopted by Odin, Loki's discovery of his true nature led him to a path of scheming and villainy. He attempted to conquer Earth using the Tesseract, was defeated, and imprisoned. After several apparent deaths, Loki grew more nuanced. The TVA variant of Loki ultimately became the God of Stories — literally holding together the branches of the multiverse at the end of time.",
+      "powers": [
+        "Sorcery and illusion magic",
+        "Shapeshifting",
+        "Superhuman strength and durability",
+        "Astral projection",
+        "Telekinesis"
+      ],
+      "affiliation": [
+        "Asgard",
+        "TVA (reformed)",
+        "Thanos (briefly)"
+      ],
+      "category": "weapon",
+      "origin": "Jotunheim — adopted by Odin after the Asgardian-Frost Giant War",
+      "date": "2026",
+      "characters": [
+        "loki"
+      ],
+      "writers": [
+        "Marvel Studios"
+      ],
+      "cast": [
+        {
+          "actor": "Tom Hiddleston",
+          "character": "Loki"
+        }
+      ]
+    },
+    {
+      "id": "c9",
+      "slug": "doctor-strange",
+      "title": "Doctor Strange",
+      "name": "Doctor Strange",
+      "realName": "Stephen Vincent Strange",
+      "type": "hero",
+      "status": "alive",
+      "species": "Human (magical)",
+      "homeworld": "Earth",
+      "phase": 5,
+      "year": 2026,
+      "director": "Various",
+      "actor": "Benedict Cumberbatch",
+      "runtime": 120,
+      "releaseOrder": 80,
+      "chronologicalOrder": 80,
+      "portraitColor": "#f59e0b",
+      "posterColor": "#f59e0b",
+      "accentColor": "#f59e0b",
+      "imageUrl": "/uploads/doctor_strange_1794960253673.jpg",
+      "posterUrl": "/uploads/doctor_strange_1794960253673.jpg",
+      "image": "/uploads/doctor_strange_1794960253673.jpg",
+      "accent": "#f59e0b",
+      "model3dType": "glb",
+      "biography": "Dr. Stephen Strange was a world-renowned neurosurgeon before a car accident shattered his hands, ending his career. Seeking healing, he found Kamar-Taj and the Ancient One, discovering the world of magic. He became the Sorcerer Supreme and guardian of the Time Stone. He used the Time Stone to view 14 million possible futures during Infinity War, discovering the Avengers' one path to victory — which required Tony Stark's sacrifice.",
+      "description": "Dr. Stephen Strange was a world-renowned neurosurgeon before a car accident shattered his hands, ending his career. Seeking healing, he found Kamar-Taj and the Ancient One, discovering the world of magic. He became the Sorcerer Supreme and guardian of the Time Stone. He used the Time Stone to view 14 million possible futures during Infinity War, discovering the Avengers' one path to victory — which required Tony Stark's sacrifice.",
+      "synopsis": "Dr. Stephen Strange was a world-renowned neurosurgeon before a car accident shattered his hands, ending his career. Seeking healing, he found Kamar-Taj and the Ancient One, discovering the world of magic. He became the Sorcerer Supreme and guardian of the Time Stone. He used the Time Stone to view 14 million possible futures during Infinity War, discovering the Avengers' one path to victory — which required Tony Stark's sacrifice.",
+      "powers": [
+        "Sorcery and spell-casting",
+        "Dimensional manipulation",
+        "Astral projection",
+        "Time manipulation (with Time Stone)",
+        "Portal creation",
+        "Shields and constructs"
+      ],
+      "affiliation": [
+        "Avengers",
+        "Masters of the Mystic Arts",
+        "Illuminati (alternate)"
+      ],
+      "category": "weapon",
+      "origin": "New York City — Master of the Mystic Arts, trained at Kamar-Taj",
+      "date": "2026",
+      "characters": [
+        "doctor-strange"
+      ],
+      "writers": [
+        "Marvel Studios"
+      ],
+      "cast": [
+        {
+          "actor": "Benedict Cumberbatch",
+          "character": "Doctor Strange"
+        }
+      ]
+    }
+  ],
+  "villains": [
+    {
+      "id": "c15",
+      "slug": "thanos",
+      "title": "Thanos",
+      "name": "Thanos",
+      "realName": "Thanos",
+      "type": "villain",
+      "status": "deceased",
+      "species": "Eternal Deviant",
+      "homeworld": "Titan",
+      "phase": 5,
+      "year": 2026,
+      "director": "Various",
+      "actor": "Josh Brolin",
+      "runtime": 120,
+      "releaseOrder": 80,
+      "chronologicalOrder": 80,
+      "portraitColor": "#7e22ce",
+      "posterColor": "#7e22ce",
+      "accentColor": "#7e22ce",
+      "imageUrl": "/uploads/thonas_1794961054103.jpg",
+      "posterUrl": "/uploads/thonas_1794961054103.jpg",
+      "image": "/uploads/thonas_1794961054103.jpg",
+      "accent": "#7e22ce",
+      "model3dType": "glb",
+      "biography": "Thanos is the most powerful being in the universe and the primary antagonist of the Infinity Saga. Born on Titan, he watched his planet die due to resource depletion and believed that the only way to save the universe was to eliminate half of all life. He spent centuries gathering the Infinity Stones, culminating in the Snap. Thanos was killed by Thor shortly after the Snap, then the 2014 version was destroyed by Tony Stark's Gauntlet Snap in Endgame.",
+      "description": "Thanos is the most powerful being in the universe and the primary antagonist of the Infinity Saga. Born on Titan, he watched his planet die due to resource depletion and believed that the only way to save the universe was to eliminate half of all life. He spent centuries gathering the Infinity Stones, culminating in the Snap. Thanos was killed by Thor shortly after the Snap, then the 2014 version was destroyed by Tony Stark's Gauntlet Snap in Endgame.",
+      "synopsis": "Thanos is the most powerful being in the universe and the primary antagonist of the Infinity Saga. Born on Titan, he watched his planet die due to resource depletion and believed that the only way to save the universe was to eliminate half of all life. He spent centuries gathering the Infinity Stones, culminating in the Snap. Thanos was killed by Thor shortly after the Snap, then the 2014 version was destroyed by Tony Stark's Gauntlet Snap in Endgame.",
+      "powers": [
+        "Superhuman strength",
+        "durability",
+        "and intelligence",
+        "Infinity Stones mastery",
+        "Energy manipulation",
+        "Telepathy",
+        "Reality manipulation"
+      ],
+      "affiliation": [
+        "Black Order",
+        "Infinity Gauntlet"
+      ],
+      "category": "weapon",
+      "origin": "Titan — Eternal Deviant driven by nihilistic philosophy of universal balance",
+      "date": "2026",
+      "characters": [
+        "thanos"
+      ],
+      "writers": [
+        "Marvel Studios"
+      ],
+      "cast": [
+        {
+          "actor": "Josh Brolin",
+          "character": "Thanos"
+        }
+      ]
+    }
+  ],
   "movies": [],
   "weapons": [],
   "timeline": [],

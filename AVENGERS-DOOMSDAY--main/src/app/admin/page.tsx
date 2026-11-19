@@ -486,7 +486,7 @@ export default function AdminDashboardPage() {
             display: flex;
             align-items: center;
             justify-content: center;
-            background: radial-gradient(circle at center, #0f172a 0%, #030712 100%);
+            background: #000000;
             padding: 1.5rem;
             color: #f8fafc;
             font-family: var(--font-body, system-ui, sans-serif);
@@ -494,7 +494,7 @@ export default function AdminDashboardPage() {
           .auth-card {
             width: 100%;
             max-width: 440px;
-            background: rgba(15, 23, 42, 0.75);
+            background: rgba(5, 5, 5, 0.95);
             border: 1px solid rgba(201, 168, 76, 0.3);
             border-radius: 16px;
             padding: 2.5rem 2rem;
@@ -1124,7 +1124,7 @@ export default function AdminDashboardPage() {
       <style jsx>{`
         .admin-root {
           min-height: 100vh;
-          background: #050811;
+          background: #000000;
           color: #f1f5f9;
           font-family: var(--font-body, system-ui, sans-serif);
           padding-bottom: 5rem;
@@ -1314,7 +1314,7 @@ export default function AdminDashboardPage() {
           gap: 1rem;
           margin-bottom: 1.5rem;
           padding: 0.75rem 1rem;
-          background: rgba(15, 23, 42, 0.6);
+          background: rgba(0, 0, 0, 0.85);
           border: 1px solid rgba(255, 255, 255, 0.08);
           border-radius: 10px;
         }
@@ -1429,7 +1429,7 @@ export default function AdminDashboardPage() {
           display: flex;
           gap: 1rem;
           padding: 1rem;
-          background: rgba(15, 23, 42, 0.5);
+          background: rgba(0, 0, 0, 0.85);
           border: 1px solid rgba(255, 255, 255, 0.08);
           border-radius: 12px;
           transition: border-color 0.15s;
@@ -1445,7 +1445,7 @@ export default function AdminDashboardPage() {
           flex-shrink: 0;
           border: 1px solid;
           position: relative;
-          background: #020617;
+          background: #000000;
         }
         .card-thumb-img {
           width: 100%;
@@ -1581,7 +1581,7 @@ export default function AdminDashboardPage() {
         .uploader-drop-card {
           text-align: center;
           padding: 3rem 2rem;
-          background: rgba(15, 23, 42, 0.5);
+          background: rgba(0, 0, 0, 0.85);
           border: 2px dashed rgba(201, 168, 76, 0.4);
           border-radius: 16px;
         }
@@ -1626,7 +1626,7 @@ export default function AdminDashboardPage() {
           font-size: 0.85rem;
         }
         .uploaded-list-card {
-          background: rgba(15, 23, 42, 0.5);
+          background: rgba(0, 0, 0, 0.85);
           border: 1px solid rgba(255, 255, 255, 0.08);
           border-radius: 12px;
           padding: 1.5rem;

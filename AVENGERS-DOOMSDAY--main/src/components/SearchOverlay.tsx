@@ -180,15 +180,15 @@ export default function SearchOverlay() {
         .search-backdrop {
           position: absolute;
           inset: 0;
-          background: rgba(11, 13, 20, 0.85);
-          backdrop-filter: blur(4px);
+          background: rgba(0, 0, 0, 0.92);
+          backdrop-filter: blur(8px);
         }
         .search-panel {
           position: relative;
           width: 100%;
           max-width: 680px;
           max-height: calc(100dvh - clamp(24px, 10vh, 96px) - 16px);
-          background: var(--midnight-2);
+          background: #050505;
           border: 1px solid var(--border-2);
           z-index: 1;
           display: flex;

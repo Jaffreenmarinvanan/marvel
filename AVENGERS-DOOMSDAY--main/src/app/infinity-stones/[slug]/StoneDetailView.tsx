@@ -390,7 +390,7 @@ export default function StoneDetailView({ stone }: { stone: InfinityStone }) {
       <style jsx>{`
         .stone-dossier-root {
           min-height: 100vh;
-          background: #06080d;
+          background: #000000;
           color: #e2e8f0;
           font-family: 'Rajdhani', -apple-system, BlinkMacSystemFont, sans-serif;
           position: relative;

@@ -87,7 +87,7 @@ export default function FloatingDock() {
           align-items: center;
           gap: 0.5rem;
           padding: 0.5rem 1rem;
-          background: rgba(15, 17, 26, 0.88);
+          background: rgba(0, 0, 0, 0.95);
           border: 1px solid rgba(201, 168, 76, 0.4);
           border-radius: 9999px;
           color: var(--text-primary);
@@ -95,14 +95,14 @@ export default function FloatingDock() {
           font-size: 0.75rem;
           font-weight: 700;
           letter-spacing: 0.1em;
-          box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6), 0 0 12px rgba(201, 168, 76, 0.2);
+          box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8), 0 0 12px rgba(201, 168, 76, 0.2);
           backdrop-filter: blur(16px);
           cursor: pointer;
           transition: all 0.25s ease;
         }
 
         .dock-launch-pill:hover {
-          background: rgba(22, 25, 38, 0.95);
+          background: #0a0a0a;
           border-color: var(--gold);
           transform: translateY(-2px);
           box-shadow: 0 14px 28px rgba(0, 0, 0, 0.7), 0 0 18px rgba(201, 168, 76, 0.35);

@@ -749,7 +749,7 @@ export default function HomePage() {
           display: flex;
           align-items: center;
           padding: 22px 24px;
-          background: rgba(10, 12, 20, 0.85);
+          background: rgba(0, 0, 0, 0.92);
           border: 1px solid rgba(255, 255, 255, 0.1);
           text-decoration: none;
           color: #e8e0d0;
@@ -867,7 +867,7 @@ export default function HomePage() {
           align-items: center;
           gap: 14px;
           padding: 26px 20px;
-          background: rgba(10, 12, 20, 0.9);
+          background: rgba(0, 0, 0, 0.95);
           border: 1px solid rgba(255, 255, 255, 0.08);
           text-decoration: none;
           cursor: pointer;

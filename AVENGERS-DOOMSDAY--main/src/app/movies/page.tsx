@@ -333,7 +333,7 @@ export default function MoviesPage() {
                       <Link href={`/movies/${movie.slug}`} className="movie-poster-wrap">
                         <div
                           className="movie-poster"
-                          style={{ background: `linear-gradient(135deg, ${poster.accent} 0%, #050608 100%)` }}
+                          style={{ background: `linear-gradient(135deg, ${poster.accent} 0%, #000000 100%)` }}
                         >
                           {poster.image ? (
                             <img
@@ -467,11 +467,11 @@ export default function MoviesPage() {
       <style jsx>{`
         .movies-page-container {
           min-height: 100vh;
-          background: var(--midnight-1);
+          background: #000000;
         }
 
         .movies-header {
-          background: var(--midnight-2);
+          background: #000000;
           border-bottom: 1px solid var(--border);
           padding: 2rem 0;
         }

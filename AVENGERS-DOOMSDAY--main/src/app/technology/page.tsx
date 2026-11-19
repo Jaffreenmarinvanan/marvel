@@ -661,7 +661,7 @@ export default function TechnologyArchivePage() {
           right: var(--dock-gutter);
           bottom: 0;
           left: var(--dock-gutter);
-          background: #06090e;
+          background: #000000;
           color: #e2e8f0;
           font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
           overflow: hidden;

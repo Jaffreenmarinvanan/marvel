@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Navigation from "@/components/Navigation";
 import SearchOverlay from "@/components/SearchOverlay";
 import SideDocks from "@/components/SideDocks";
 import LoadingScreenWrapper from "@/components/LoadingScreenWrapper";
@@ -33,13 +32,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" data-theme="dark" className="dark" suppressHydrationWarning>
-      <body className="dark bg-[#0b0d14] text-[#e8e0d0]">
+      <body className="dark bg-black text-[#e8e0d0]">
         <LoadingScreenWrapper />
-        <Navigation />
         <SearchOverlay />
-        {/* Two fixed vertical side docks — always visible on desktop */}
+        {/* Side docks handle site navigation (top nav removed) */}
         <SideDocks />
-        {/* Main content — padded so it clears side docks on ≥900px screens */}
         <main className="site-main">
           <PageTransition>{children}</PageTransition>
         </main>

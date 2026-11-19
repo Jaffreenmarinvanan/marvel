@@ -366,12 +366,18 @@ export default function SideDocks() {
         </div>
       </div>
 
-      {/* ── COMPACT NAVIGATION: hide docks when the mobile menu takes over ─ */}
+      {/* Top nav removed — keep side docks available on every breakpoint */}
       <style>{`
         @media (max-width: 1100px) {
           [aria-label="Primary Navigation"],
           [aria-label="Discover Navigation"] {
-            display: none !important;
+            width: 58px !important;
+          }
+        }
+        @media (max-width: 640px) {
+          [aria-label="Primary Navigation"],
+          [aria-label="Discover Navigation"] {
+            width: 52px !important;
           }
         }
       `}</style>

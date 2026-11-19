@@ -278,7 +278,7 @@ export default function VillainsArchivePage() {
                       <Link href={`/villains/${char.slug}`} className="movie-poster-wrap">
                         <div
                           className="movie-poster"
-                          style={{ background: `linear-gradient(135deg, ${accent} 0%, #050608 100%)` }}
+                          style={{ background: `linear-gradient(135deg, ${accent} 0%, #000000 100%)` }}
                         >
                           {img ? (
                             <img

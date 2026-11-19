@@ -339,7 +339,7 @@ export default function InfinityStonesPage() {
           right: var(--dock-gutter);
           bottom: 0;
           left: var(--dock-gutter);
-          background: #06090e;
+          background: #000000;
           display: flex;
           flex-direction: column;
           color: #f1f5f9;
