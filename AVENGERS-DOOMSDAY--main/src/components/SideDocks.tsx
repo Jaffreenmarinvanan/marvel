@@ -274,14 +274,14 @@ export default function SideDocks() {
       ],
     },
     { separator: true },
-    {
+    /*{
       icon: <Ico color="#c9a84c"><Search size={20} /></Ico>,
       label: 'Search Archives',
       onClick: () => setSearchOpen(true),
       menu: [
         { label: 'Search All Archives', shortcut: '⌘K', onClick: () => setSearchOpen(true) },
       ],
-    },
+    }*/,
     {
       icon: <Ico color="#eab308"><Lock size={20} /></Ico>,
       label: 'Admin Command',

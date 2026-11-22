@@ -46,10 +46,11 @@ export interface CastMember {
 }
 
 export interface PostCreditScene {
-  type: 'mid' | 'post';
+  type?: 'mid' | 'post' | string;
+  time?: string;
   description: string;
-  characters: string[];
-  significance: string;
+  characters?: string[];
+  significance?: string;
 }
 
 export interface Character {

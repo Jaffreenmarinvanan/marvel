@@ -106,6 +106,48 @@ a.chroma-card:focus-visible {
   background: var(--chroma-well);
 }
 
+.chroma-fallback-art {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: radial-gradient(circle at 50% 35%, rgba(201, 168, 76, 0.12) 0%, rgba(5, 5, 5, 0.96) 80%), #000000;
+  z-index: 0;
+  pointer-events: none;
+  padding: 1rem;
+}
+
+.chroma-fallback-badge {
+  font-family: Impact, 'Arial Black', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 0.25em;
+  padding: 3px 9px;
+  background: #e23636;
+  color: #ffffff;
+  border-radius: 2px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 14px rgba(226, 54, 54, 0.45);
+}
+
+.chroma-fallback-title {
+  font-family: var(--font-heading, sans-serif);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #f4f4f5;
+  text-align: center;
+  line-height: 1.25;
+  opacity: 0.85;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 .chroma-media img {
   position: absolute;
   inset: 0;
