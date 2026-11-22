@@ -4,37 +4,35 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 
-/* ───────────────────────────────────────────── DATA ── */
-const NAV_SECTIONS = [
-  { id: 'heroes',           label: 'HEROES ENCYCLOPEDIA',    href: '/heroes',           color: '#3b82f6', icon: '⚡' },
-  { id: 'villains',         label: 'ANTAGONISTS & VILLAINS', href: '/villains',          color: '#e31b23', icon: '☠' },
-  { id: 'infinity-stones',  label: 'INFINITY STONES',        href: '/infinity-stones',  color: '#c9a84c', icon: '◈' },
-  { id: 'weapons',          label: 'WEAPONS & ARTIFACTS',    href: '/weapons',           color: '#a855f7', icon: '⚔' },
-  { id: 'superpowers',      label: 'SUPERPOWERS & ABILITIES',href: '/powers',            color: '#22c55e', icon: '✦' },
-  { id: 'teams',            label: 'TEAMS & ORGANIZATIONS',  href: '/teams',             color: '#f97316', icon: '◉' },
-  { id: 'technology',       label: 'TECHNOLOGY & GADGETS',   href: '/technology',        color: '#06b6d4', icon: '◈' },
+/* ─────────────────────────── DATA ── */
+const STONES = [
+  { id: 'space-stone',   name: 'SPACE',   img: '/images/stones/space.png',   color: '#3b82f6', glow: '#1d4ed8', textColor: '#60a5fa' },
+  { id: 'mind-stone',    name: 'MIND',    img: '/images/stones/mind.png',    color: '#eab308', glow: '#78350f', textColor: '#fbbf24' },
+  { id: 'reality-stone', name: 'REALITY', img: '/images/stones/reality.png', color: '#e31b23', glow: '#7a0a0e', textColor: '#f87171' },
+  { id: 'power-stone',   name: 'POWER',   img: '/images/stones/power.png',   color: '#a855f7', glow: '#581c87', textColor: '#c084fc' },
+  { id: 'time-stone',    name: 'TIME',    img: '/images/stones/time.png',    color: '#22c55e', glow: '#14532d', textColor: '#4ade80' },
+  { id: 'soul-stone',    name: 'SOUL',    img: '/images/stones/soul.png',    color: '#f97316', glow: '#7c2d12', textColor: '#fb923c' },
 ];
 
-const STONES = [
-  { id: 'space-stone',    name: 'SPACE',    img: '/images/stones/space.png',    color: '#3b82f6', glow: '#1d4ed8' },
-  { id: 'mind-stone',     name: 'MIND',     img: '/images/stones/mind.png',     color: '#eab308', glow: '#78350f' },
-  { id: 'reality-stone',  name: 'REALITY',  img: '/images/stones/reality.png',  color: '#e31b23', glow: '#7a0a0e' },
-  { id: 'power-stone',    name: 'POWER',    img: '/images/stones/power.png',    color: '#a855f7', glow: '#581c87' },
-  { id: 'time-stone',     name: 'TIME',     img: '/images/stones/time.png',     color: '#22c55e', glow: '#14532d' },
-  { id: 'soul-stone',     name: 'SOUL',     img: '/images/stones/soul.png',     color: '#f97316', glow: '#7c2d12' },
+const EXPLORE_TILES = [
+  { href: '/heroes',         label: 'Heroes',          sub: 'The Mightiest Protectors',     color: '#3b82f6', icon: '⚡' },
+  { href: '/villains',       label: 'Villains',         sub: 'Threats to the Universe',       color: '#e31b23', icon: '☠' },
+  { href: '/movies',         label: 'Films & Series',   sub: '128 MCU Entries',               color: '#c9a84c', icon: '◈' },
+  { href: '/weapons',        label: 'Weapons',          sub: 'Legendary Artifacts',           color: '#a855f7', icon: '⚔' },
+  { href: '/infinity-stones',label: 'Infinity Stones',  sub: 'Six Singularities',             color: '#22c55e', icon: '✦' },
+  { href: '/timeline',       label: 'Timeline',         sub: 'Events Across Time',            color: '#f97316', icon: '◉' },
 ];
 
 const STATS = [
-  { label: 'HEROES',       value: 60,  suffix: '+' },
-  { label: 'VILLAINS',     value: 40,  suffix: '+' },
-  { label: 'FILMS',        value: 33,  suffix: '' },
-  { label: 'ARTIFACTS',    value: 150, suffix: '+' },
+  { label: 'HEROES',   value: 60,  suffix: '+' },
+  { label: 'VILLAINS', value: 45,  suffix: '+' },
+  { label: 'FILMS',    value: 128, suffix: '' },
+  { label: 'ARTIFACTS',value: 150, suffix: '+' },
 ];
 
-/* ───────────────────────────────────────── PARTICLES ── */
+/* ─────────────────────────── STARFIELD ── */
 function StarField() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
@@ -42,356 +40,256 @@ function StarField() {
     if (!ctx) return;
 
     let raf = 0;
-    let width = 0;
-    let height = 0;
-    let pixelRatio = 1;
-    let shouldAnimate = false;
-    const stars: { x: number; y: number; r: number; speed: number; opacity: number; pulse: number }[] = [];
-    const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
+    let w = 0, h = 0;
+    let stars: { x: number; y: number; r: number; speed: number; opacity: number; pulse: number }[] = [];
+    const motionOk = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-    function draw() {
-      ctx.clearRect(0, 0, width, height);
+    const init = () => {
+      w = window.innerWidth; h = window.innerHeight;
+      const pr = Math.min(devicePixelRatio || 1, 1.5);
+      canvas.width = Math.round(w * pr); canvas.height = Math.round(h * pr);
+      ctx.setTransform(pr, 0, 0, pr, 0, 0);
+      stars = Array.from({ length: 220 }, () => ({
+        x: Math.random() * w, y: Math.random() * h,
+        r: Math.random() * 1.1 + 0.2,
+        speed: Math.random() * 0.18 + 0.04,
+        opacity: Math.random() * 0.55 + 0.1,
+        pulse: Math.random() * Math.PI * 2,
+      }));
+    };
+
+    const draw = () => {
+      ctx.clearRect(0, 0, w, h);
       for (const s of stars) {
-        if (shouldAnimate) s.pulse += 0.02;
-        const alpha = s.opacity * (0.6 + 0.4 * Math.sin(s.pulse));
-        ctx.beginPath();
-        ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(201,168,76,${alpha})`;
-        ctx.fill();
-        if (shouldAnimate) {
-          s.y -= s.speed;
-          if (s.y < 0) {
-            s.y = height;
-            s.x = Math.random() * width;
-          }
-        }
+        s.pulse += 0.012;
+        const a = s.opacity * (0.6 + 0.4 * Math.sin(s.pulse));
+        ctx.beginPath(); ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(201,168,76,${a})`; ctx.fill();
+        if (motionOk) { s.y -= s.speed; if (s.y < 0) { s.y = h; s.x = Math.random() * w; } }
       }
-      if (shouldAnimate) raf = requestAnimationFrame(draw);
-    }
-
-    const resize = () => {
-      cancelAnimationFrame(raf);
-      width = window.innerWidth;
-      height = window.innerHeight;
-      pixelRatio = Math.min(window.devicePixelRatio || 1, 1.5);
-      canvas.width = Math.round(width * pixelRatio);
-      canvas.height = Math.round(height * pixelRatio);
-      ctx.setTransform(pixelRatio, 0, 0, pixelRatio, 0, 0);
-
-      // Keep the mobile backdrop static and lighter; animate only on desktop.
-      shouldAnimate = width > 768 && !motionPreference.matches;
-      stars.length = 0;
-      const starCount = width <= 768 ? 70 : 180;
-      for (let i = 0; i < starCount; i++) {
-        stars.push({
-          x: Math.random() * width,
-          y: Math.random() * height,
-          r: Math.random() * 1.5 + 0.3,
-          speed: Math.random() * 0.3 + 0.05,
-          opacity: Math.random() * 0.7 + 0.3,
-          pulse: Math.random() * Math.PI * 2,
-        });
-      }
-      draw();
+      raf = requestAnimationFrame(draw);
     };
 
-    resize();
-    window.addEventListener('resize', resize, { passive: true });
-    motionPreference.addEventListener('change', resize);
-    return () => {
-      cancelAnimationFrame(raf);
-      window.removeEventListener('resize', resize);
-      motionPreference.removeEventListener('change', resize);
-    };
+    init(); draw();
+    const onResize = () => { cancelAnimationFrame(raf); init(); draw(); };
+    window.addEventListener('resize', onResize, { passive: true });
+    return () => { cancelAnimationFrame(raf); window.removeEventListener('resize', onResize); };
   }, []);
 
   return (
-    <canvas
-      ref={canvasRef}
-      style={{
-        position: 'fixed',
-        inset: 0,
-        width: '100%',
-        height: '100%',
-        pointerEvents: 'none',
-        zIndex: 0,
-        opacity: 0.5,
-      }}
-    />
+    <canvas ref={canvasRef} style={{
+      position: 'fixed', inset: 0, width: '100%', height: '100%',
+      pointerEvents: 'none', zIndex: 0, opacity: 0.6,
+    }} />
   );
 }
 
-/* ──────────────────────────────────────── STAT COUNTER ── */
+/* ─────────────────────────── STAT COUNTER ── */
 function StatCounter({ value, suffix, label }: { value: number; suffix: string; label: string }) {
   const [count, setCount] = useState(0);
   const ref = useRef<HTMLDivElement>(null);
-
   useEffect(() => {
     let frame = 0;
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (!entry.isIntersecting) return;
-        observer.disconnect();
-
-        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-          setCount(value);
-          return;
-        }
-
-        const startedAt = performance.now();
-        const duration = 680;
-        const update = (now: number) => {
-          const progress = Math.min((now - startedAt) / duration, 1);
-          setCount(Math.floor(value * progress));
-          if (progress < 1) frame = requestAnimationFrame(update);
-        };
-        frame = requestAnimationFrame(update);
-      },
-      { threshold: 0.4 }
-    );
-    if (ref.current) observer.observe(ref.current);
-    return () => {
-      observer.disconnect();
-      cancelAnimationFrame(frame);
-    };
+    const obs = new IntersectionObserver(([e]) => {
+      if (!e.isIntersecting) return;
+      obs.disconnect();
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) { setCount(value); return; }
+      const t0 = performance.now(), dur = 900;
+      const run = (now: number) => {
+        const p = Math.min((now - t0) / dur, 1);
+        setCount(Math.floor(value * (1 - Math.pow(1 - p, 3))));
+        if (p < 1) frame = requestAnimationFrame(run);
+      };
+      frame = requestAnimationFrame(run);
+    }, { threshold: 0.4 });
+    if (ref.current) obs.observe(ref.current);
+    return () => { obs.disconnect(); cancelAnimationFrame(frame); };
   }, [value]);
 
   return (
-    <div ref={ref} className="stat-box-3d">
+    <div ref={ref} className="stat-item">
       <span className="stat-num">{count}{suffix}</span>
       <span className="stat-lbl">{label}</span>
     </div>
   );
 }
 
-/* ──────────────────────────────────── 3D SECTION CARD ── */
-function SectionCard({ label, href, color, icon, index }: typeof NAV_SECTIONS[0] & { index: number }) {
-
+/* ─────────────────────────── EXPLORE TILE ── */
+function ExploreTile({ href, label, sub, color, icon, i }: typeof EXPLORE_TILES[0] & { i: number }) {
   return (
-    <Link
-      href={href}
-      className="section-card-3d"
-      style={
-        {
-          '--card-color': color,
-          '--delay': `${index * 0.08}s`,
-        } as React.CSSProperties
-      }
-    >
-      <div className="card-top-line" style={{ background: color }} />
-      <div className="card-3d-content">
-        <div className="card-icon-3d">{icon}</div>
-        <div className="card-label-3d">{label}</div>
-        <div className="card-arrow-3d">→</div>
-      </div>
-
-      <div className="card-specular-glow" aria-hidden="true" />
+    <Link href={href} className="explore-tile" style={{ '--c': color, '--delay': `${i * 0.07}s` } as React.CSSProperties}>
+      <div className="explore-tile-top" style={{ background: color }} />
+      <div className="explore-tile-icon" style={{ color }}>{icon}</div>
+      <div className="explore-tile-label">{label}</div>
+      <div className="explore-tile-sub">{sub}</div>
+      <div className="explore-tile-arrow" style={{ color }}>→</div>
     </Link>
   );
 }
 
-/* ────────────────────────────────────────────── PAGE ── */
+/* ─────────────────────────── PAGE ── */
 export default function HomePage() {
   const [mounted, setMounted] = useState(false);
-  const radialRef = useRef<HTMLDivElement>(null);
-  const titleBlockRef = useRef<HTMLDivElement>(null);
+  const heroRef = useRef<HTMLDivElement>(null);
+  const glowRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     setMounted(true);
-    const canParallax = window.matchMedia(
-      '(min-width: 769px) and (hover: hover) and (prefers-reduced-motion: no-preference)'
-    );
+    const canParallax = window.matchMedia('(min-width:769px) and (hover:hover) and (prefers-reduced-motion:no-preference)');
     if (!canParallax.matches) return;
-
-    let frame = 0;
-    const onMouse = (event: MouseEvent) => {
-      if (!canParallax.matches) return;
-      const x = (event.clientX / window.innerWidth - 0.5) * 28;
-      const y = (event.clientY / window.innerHeight - 0.5) * 18;
-      cancelAnimationFrame(frame);
-      frame = requestAnimationFrame(() => {
-        if (radialRef.current) {
-          radialRef.current.style.transform = `translate3d(${x * 0.3}px, ${y * 0.3}px, 0)`;
-        }
-        if (titleBlockRef.current) {
-          titleBlockRef.current.style.transform =
-            `perspective(1000px) rotateX(${y * -0.15}deg) rotateY(${x * 0.15}deg) translate3d(${x * 0.35}px, ${y * 0.35}px, 0)`;
-        }
+    let raf = 0;
+    const onMouse = (e: MouseEvent) => {
+      cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(() => {
+        const x = (e.clientX / innerWidth - 0.5) * 24;
+        const y = (e.clientY / innerHeight - 0.5) * 16;
+        if (glowRef.current) glowRef.current.style.transform = `translate3d(${x * 0.4}px, ${y * 0.4}px, 0)`;
+        if (heroRef.current) heroRef.current.style.transform =
+          `perspective(1200px) rotateX(${y * -0.12}deg) rotateY(${x * 0.12}deg) translate3d(${x * 0.3}px, ${y * 0.3}px, 0)`;
       });
     };
     window.addEventListener('mousemove', onMouse, { passive: true });
-    return () => {
-      window.removeEventListener('mousemove', onMouse);
-      cancelAnimationFrame(frame);
-    };
+    return () => { window.removeEventListener('mousemove', onMouse); cancelAnimationFrame(raf); };
   }, []);
 
-  const scrollToModules = () => {
-    const el = document.getElementById('modules-section');
-    if (el) {
-      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-      el.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth' });
-    }
-  };
-
   return (
-    <div className="home-root">
-      {/* 3D Stars background */}
+    <div className="hp-root">
       {mounted && <StarField />}
 
-      {/* ══════════ HERO SECTION WITH 3D WEBGL CORE ══════════ */}
-      <section className="hero-section">
-        {/* Radial background ambience */}
-        <div ref={radialRef} className="hero-radial-bg" />
-
-        {/* Top HUD Line */}
-        <div className="hud-top-bar">
-          <span className="hud-tag">◈ MARVEL CINEMATIC UNIVERSE</span>
-          <span className="hud-status">
-            STATUS: <span style={{ color: '#22c55e' }}>ONLINE // ARCHIVES ACTIVE</span>
-          </span>
-          <span className="hud-tag">AVENGERS PROTOCOL ACTIVE ◈</span>
+      {/* ══════════ HERO ══════════ */}
+      <section className="hp-hero">
+        {/* Ambient glow blobs */}
+        <div ref={glowRef} className="hp-glow-layer">
+          <div className="glow-blob gb1" />
+          <div className="glow-blob gb2" />
+          <div className="glow-blob gb3" />
         </div>
 
-        {/* Hero Title Block in 3D perspective */}
-        <div ref={titleBlockRef} className="hero-title-block">
-          <div className="hero-eyebrow">THE ULTIMATE MCU DATABASE</div>
-          <h1 className="hero-title">
-            <span className="hero-title-marvel">MARVEL</span>
-            <br />
-            <span className="hero-title-archives">ARCHIVES</span>
+        {/* Top HUD bar */}
+        <div className="hp-hud-bar">
+          <span className="hp-hud-left">◈ MARVEL CINEMATIC UNIVERSE — CLASSIFIED ARCHIVE</span>
+          <span className="hp-hud-right">STATUS: <span className="hud-online">ONLINE</span></span>
+        </div>
+
+        {/* Central title */}
+        <div ref={heroRef} className="hp-hero-center">
+          <div className="hp-eyebrow">S.H.I.E.L.D. DATABASE · CLEARANCE LEVEL OMEGA</div>
+
+          <h1 className="hp-title">
+            <span className="hp-title-marvel">MARVEL</span>
+            <span className="hp-title-archives">ARCHIVES</span>
           </h1>
-          <p className="hero-tagline">
+
+          <p className="hp-tagline">
             Every Story. Every Hero. Every Detail.<br />
-            <span style={{ color: 'rgba(201,168,76,0.7)', fontSize: '0.85em', letterSpacing: '0.15em' }}>
-              — Classified Access Granted —
-            </span>
+            <span className="hp-tagline-sub">— Classified Access Granted —</span>
           </p>
 
-          <div className="hero-buttons">
-            <Link href="/heroes" className="btn-primary-3d">
+          <div className="hp-hero-cta">
+            <Link href="/movies" className="hp-btn-primary">
               <span>ENTER ARCHIVES</span>
-              <span className="btn-arrow">→</span>
+              <span className="hp-btn-arrow">→</span>
             </Link>
-            <Link href="/infinity-stones" className="btn-secondary-3d">
-              <span>◈ INFINITY STONES</span>
-            </Link>
-            <button
-              type="button"
-              onClick={() => {
-                if (typeof window !== 'undefined') {
-                  window.dispatchEvent(new CustomEvent('replay-marvel-intro'));
-                }
-              }}
-              className="btn-replay-3d"
-            >
-              <span>▶ REPLAY INTRO</span>
-            </button>
+            <Link href="/heroes" className="hp-btn-outline">HEROES</Link>
+            <Link href="/infinity-stones" className="hp-btn-outline">STONES</Link>
           </div>
         </div>
 
-        {/* Smooth Scroll Cue */}
-        <button
-          type="button"
-          onClick={scrollToModules}
-          className="scroll-indicator-btn"
-          title="Scroll down to database modules"
-        >
-          <div className="scroll-line-3d" />
-          <span>SCROLL TO EXPLORE</span>
-        </button>
+        {/* Scroll cue */}
+        <div className="hp-scroll-cue">
+          <div className="hp-scroll-line" />
+          <span>SCROLL</span>
+        </div>
       </section>
 
       {/* ══════════ STATS BAR ══════════ */}
-      <section className="stats-section">
-        <div className="stats-divider-line" />
-        <div className="stats-row">
-          {STATS.map((s) => (
-            <StatCounter key={s.label} value={s.value} suffix={s.suffix} label={s.label} />
-          ))}
+      <section className="hp-stats">
+        <div className="hp-divider" />
+        <div className="hp-stats-row">
+          {STATS.map(s => <StatCounter key={s.label} {...s} />)}
         </div>
-        <div className="stats-divider-line" />
+        <div className="hp-divider" />
       </section>
 
-      {/* ══════════ DATABASE MODULES GRID ══════════ */}
-      <section id="modules-section" className="sections-grid-wrapper">
-        <div className="section-header">
-          <div className="section-line" />
-          <h2 className="section-heading">DATABASE MODULES</h2>
-          <div className="section-line" />
-        </div>
-        <div className="sections-grid-3d">
-          {NAV_SECTIONS.map((s, i) => (
-            <SectionCard key={s.id} {...s} index={i} />
-          ))}
-        </div>
-      </section>
-
-      {/* ══════════ INFINITY STONES SHOWCASE ══════════ */}
-      <section className="stones-showcase">
-        <div className="section-header">
-          <div className="section-line" />
-          <h2 className="section-heading">THE INFINITY STONES</h2>
-          <div className="section-line" />
+      {/* ══════════ INFINITY STONES ══════════ */}
+      <section className="hp-stones">
+        <div className="stones-bg-radial" />
+        <div className="stones-header">
+          <div className="stones-line" />
+          <h2 className="stones-title">THE INFINITY STONES</h2>
+          <div className="stones-line" />
         </div>
         <p className="stones-subtext">
           Six singularities — each containing the primordial essence of the cosmos
         </p>
-        <div className="stones-cards-row">
-          {STONES.map((stone, i) => (
+        <div className="stones-row">
+          {STONES.map((s, i) => (
             <Link
-              key={stone.id}
-              href={`/infinity-stones/${stone.id}`}
-              className="stone-card-3d"
-              style={
-                {
-                  '--stone-color': stone.color,
-                  '--delay': `${i * 0.1}s`,
-                } as React.CSSProperties
-              }
+              key={s.id}
+              href={`/infinity-stones/${s.id}`}
+              className="stone-item"
+              style={{ '--sc': s.color, '--sg': s.glow, '--st': s.textColor, '--sd': `${i * 0.08}s` } as React.CSSProperties}
             >
-              <div className="stone-card-gem-3d">
+              <div className="stone-gem-wrap">
+                <div className="stone-glow-ring" />
                 <img
-                  src={stone.img}
-                  alt={`${stone.name} Stone`}
-                  className="stone-img-realistic"
-                  style={{
-                    filter: `drop-shadow(0 0 16px ${stone.color}) drop-shadow(0 0 28px ${stone.glow})`,
-                  }}
+                  src={s.img}
+                  alt={`${s.name} Stone`}
+                  className="stone-gem-img"
                 />
               </div>
-              <div className="stone-card-name-3d">{stone.name}</div>
-              <div className="stone-card-label-3d">STONE</div>
+              <div className="stone-name" style={{ color: s.textColor }}>{s.name}</div>
+              <div className="stone-label">STONE</div>
             </Link>
           ))}
         </div>
       </section>
 
-      {/* ══════════ FOOTER CALL TO ACTION ══════════ */}
-      <section className="cta-section">
-        <div className="cta-bg-line" />
-        <h2 className="cta-title">BEGIN YOUR MISSION</h2>
-        <p className="cta-sub">
-          Access classified intelligence on every operative, threat, and artifact in the MCU
-        </p>
-        <div className="cta-buttons">
-          <Link href="/heroes" className="btn-primary-3d">HEROES DATABASE</Link>
-          <Link href="/villains" className="btn-outline-3d">VILLAIN REGISTRY</Link>
-          <Link href="/infinity-stones" className="btn-outline-3d">STONE ARCHIVE</Link>
+      {/* ══════════ EXPLORE GRID ══════════ */}
+      <section className="hp-explore">
+        <div className="explore-header">
+          <div className="explore-line" />
+          <h2 className="explore-heading">EXPLORE THE UNIVERSE</h2>
+          <div className="explore-line" />
         </div>
-        <div className="cta-shield">
-          <div className="shield-rings">
-            <div className="shield-ring r1" />
-            <div className="shield-ring r2" />
-            <div className="shield-ring r3" />
-          </div>
-          <span className="shield-text">S.H.I.E.L.D.</span>
+        <div className="explore-grid">
+          {EXPLORE_TILES.map((t, i) => <ExploreTile key={t.href} {...t} i={i} />)}
+        </div>
+      </section>
+
+      {/* ══════════ FEATURED BANNER ══════════ */}
+      <section className="hp-banner">
+        <div className="banner-inner">
+          <div className="banner-corner bl" /><div className="banner-corner br" />
+          <div className="banner-corner tl" /><div className="banner-corner tr" />
+          <div className="banner-eyebrow">AVENGERS PROTOCOL · PHASE 6</div>
+          <h2 className="banner-title">AVENGERS: DOOMSDAY</h2>
+          <p className="banner-sub">
+            The convergence is coming. Every Avenger. Every variant.<br/>Every sacrifice — documented in full.
+          </p>
+          <Link href="/movies/avengers-doomsday" className="banner-cta">
+            ACCESS DOSSIER →
+          </Link>
+        </div>
+      </section>
+
+      {/* ══════════ CTA ══════════ */}
+      <section className="hp-cta">
+        <div className="cta-rings">
+          <div className="cta-ring r1" /><div className="cta-ring r2" /><div className="cta-ring r3" />
+        </div>
+        <h2 className="cta-title">BEGIN YOUR MISSION</h2>
+        <p className="cta-sub">Access classified intelligence on every operative, threat, and artifact in the MCU</p>
+        <div className="cta-buttons">
+          <Link href="/heroes" className="hp-btn-primary">HEROES DATABASE</Link>
+          <Link href="/villains" className="hp-btn-outline">VILLAIN REGISTRY</Link>
+          <Link href="/movies" className="hp-btn-outline">FULL ARCHIVE</Link>
         </div>
       </section>
 
       <style jsx>{`
-        /* ───── ROOT ───── */
-        .home-root {
+        /* ── ROOT ── */
+        .hp-root {
           min-height: 100vh;
           background: #000;
           color: #e8e0d0;
@@ -399,231 +297,141 @@ export default function HomePage() {
           position: relative;
         }
 
-        /* ───── HERO SECTION ───── */
-        .hero-section {
+        /* ── HERO ── */
+        .hp-hero {
           position: relative;
           min-height: 100vh;
-          min-height: 100svh;
           display: flex;
           align-items: center;
           justify-content: center;
           overflow: hidden;
         }
 
-        .hero-radial-bg {
+        .hp-glow-layer {
           position: absolute;
-          inset: -40%;
-          background: radial-gradient(ellipse 60% 50% at 50% 50%, rgba(227, 27, 35, 0.15) 0%, transparent 65%),
-                      radial-gradient(ellipse 40% 30% at 20% 60%, rgba(201, 168, 76, 0.09) 0%, transparent 60%),
-                      radial-gradient(ellipse 50% 40% at 80% 30%, rgba(59, 130, 246, 0.08) 0%, transparent 60%);
+          inset: -50%;
           pointer-events: none;
           z-index: 1;
           transition: transform 0.2s ease-out;
         }
-
-        /* Top HUD Bar */
-        .hud-top-bar {
+        .glow-blob {
           position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          height: 38px;
+          border-radius: 50%;
+          filter: blur(100px);
+        }
+        .gb1 {
+          width: 70vw; height: 70vw;
+          top: 10%; left: 50%;
+          transform: translateX(-50%);
+          background: radial-gradient(ellipse, rgba(227,27,35,0.18) 0%, transparent 70%);
+        }
+        .gb2 {
+          width: 50vw; height: 50vw;
+          top: 30%; left: 15%;
+          background: radial-gradient(ellipse, rgba(201,168,76,0.1) 0%, transparent 70%);
+        }
+        .gb3 {
+          width: 50vw; height: 50vw;
+          top: 20%; right: 10%;
+          background: radial-gradient(ellipse, rgba(59,130,246,0.09) 0%, transparent 70%);
+        }
+
+        /* HUD bar */
+        .hp-hud-bar {
+          position: absolute;
+          top: 0; left: 0; right: 0;
+          height: 40px;
           display: flex;
           align-items: center;
           justify-content: space-between;
           padding: 0 28px;
-          background: rgba(0, 0, 0, 0.75);
-          border-bottom: 1px solid rgba(201, 168, 76, 0.3);
+          background: rgba(0,0,0,0.75);
+          border-bottom: 1px solid rgba(201,168,76,0.3);
           font-family: 'Courier New', monospace;
           font-size: 10px;
           letter-spacing: 0.14em;
-          color: rgba(201, 168, 76, 0.75);
+          color: rgba(201,168,76,0.65);
           z-index: 10;
-          backdrop-filter: blur(8px);
+          backdrop-filter: blur(10px);
         }
+        .hp-hud-right { font-weight: 700; }
+        .hud-online { color: #22c55e; }
 
-        .hud-status {
-          font-weight: 700;
-          color: rgba(201, 168, 76, 0.9);
-        }
-
-        /* Hero Title Block in 3D */
-        .hero-title-block {
+        /* Hero center */
+        .hp-hero-center {
           position: relative;
           z-index: 5;
           text-align: center;
           display: flex;
           flex-direction: column;
           align-items: center;
-          gap: 20px;
-          margin-top: 36px;
-          max-width: 100%;
+          gap: 24px;
+          margin-top: 40px;
           transform-style: preserve-3d;
           transition: transform 0.18s ease-out;
         }
 
-        .hero-eyebrow {
+        .hp-eyebrow {
           font-family: 'Courier New', monospace;
-          font-size: 11px;
-          letter-spacing: 0.4em;
-          color: rgba(201, 168, 76, 0.85);
+          font-size: 10px;
+          letter-spacing: 0.45em;
+          color: rgba(201,168,76,0.8);
           text-transform: uppercase;
         }
 
-        .hero-title {
-          font-family: 'Impact', 'Arial Black', sans-serif;
-          line-height: 0.9;
+        .hp-title {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
           margin: 0;
-          transform: translateZ(30px);
+          line-height: 0.88;
         }
-
-        .hero-title-marvel {
-          font-size: clamp(80px, 15vw, 160px);
+        .hp-title-marvel {
+          font-family: Impact, 'Arial Black', sans-serif;
+          font-size: clamp(90px, 16vw, 180px);
           color: #e31b23;
-          text-shadow: 0 0 50px rgba(227, 27, 35, 0.85),
-                       0 0 100px rgba(227, 27, 35, 0.45),
-                       6px 6px 0 #7a0a0e,
-                       -2px -2px 0 #ff4a52;
-          display: block;
+          letter-spacing: -0.01em;
+          text-shadow:
+            0 0 60px rgba(227,27,35,0.9),
+            0 0 120px rgba(227,27,35,0.5),
+            6px 6px 0 #7a0a0e,
+            -2px -2px 0 #ff6068;
         }
-
-        .hero-title-archives {
-          font-size: clamp(28px, 5vw, 60px);
+        .hp-title-archives {
+          font-family: Impact, 'Arial Black', sans-serif;
+          font-size: clamp(28px, 5.5vw, 70px);
           color: #c9a84c;
-          letter-spacing: clamp(0.12em, 3.5vw, 0.5em);
-          text-shadow: 0 0 30px rgba(201, 168, 76, 0.75),
-                       0 0 60px rgba(201, 168, 76, 0.35);
-          display: block;
+          letter-spacing: clamp(0.15em, 4vw, 0.6em);
+          text-shadow:
+            0 0 35px rgba(201,168,76,0.85),
+            0 0 70px rgba(201,168,76,0.4);
           margin-top: 8px;
         }
 
-        .hero-tagline {
+        .hp-tagline {
           font-family: 'Courier New', monospace;
-          font-size: 14px;
-          color: rgba(232, 224, 208, 0.75);
-          letter-spacing: 0.08em;
-          text-align: center;
+          font-size: clamp(12px, 1.6vw, 16px);
+          color: rgba(232,224,208,0.75);
+          letter-spacing: 0.12em;
           line-height: 1.8;
           margin: 0;
-          transform: translateZ(20px);
+        }
+        .hp-tagline-sub {
+          color: rgba(201,168,76,0.65);
+          font-size: 0.85em;
+          letter-spacing: 0.18em;
         }
 
-        /* 3D Action Buttons */
-        .hero-buttons {
+        .hp-hero-cta {
           display: flex;
-          gap: 16px;
-          margin-top: 8px;
+          gap: 14px;
           flex-wrap: wrap;
           justify-content: center;
-          transform: translateZ(25px);
+          margin-top: 8px;
         }
 
-        .btn-primary-3d {
-          display: inline-flex;
-          align-items: center;
-          gap: 10px;
-          padding: 14px 34px;
-          background: linear-gradient(135deg, #c41e3a, #e31b23);
-          color: #fff;
-          font-family: 'Courier New', monospace;
-          font-size: 13px;
-          font-weight: 700;
-          letter-spacing: 0.15em;
-          text-transform: uppercase;
-          text-decoration: none;
-          clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 12px 100%, 0 calc(100% - 12px));
-          transition: transform 0.24s var(--ease-out), box-shadow 0.24s ease, background 0.24s ease;
-          box-shadow: 0 6px 20px rgba(227, 27, 35, 0.5), inset 0 0 12px rgba(255, 255, 255, 0.25);
-        }
-        .btn-primary-3d:hover {
-          background: linear-gradient(135deg, #e31b23, #ff4444);
-          box-shadow: 0 10px 35px rgba(227, 27, 35, 0.8), inset 0 0 18px rgba(255, 255, 255, 0.4);
-          transform: translateY(-2px);
-        }
-
-        .btn-arrow {
-          transition: transform 0.2s ease;
-        }
-        .btn-primary-3d:hover .btn-arrow {
-          transform: translateX(4px);
-        }
-
-        .btn-secondary-3d {
-          display: inline-flex;
-          align-items: center;
-          gap: 8px;
-          padding: 14px 30px;
-          background: rgba(201, 168, 76, 0.08);
-          color: #c9a84c;
-          font-family: 'Courier New', monospace;
-          font-size: 13px;
-          font-weight: 700;
-          letter-spacing: 0.12em;
-          text-transform: uppercase;
-          text-decoration: none;
-          border: 1px solid rgba(201, 168, 76, 0.6);
-          clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 12px 100%, 0 calc(100% - 12px));
-          transition: transform 0.24s var(--ease-out), box-shadow 0.24s ease, background 0.24s ease, color 0.24s ease;
-        }
-        .btn-secondary-3d:hover {
-          background: rgba(201, 168, 76, 0.2);
-          border-color: #c9a84c;
-          box-shadow: 0 0 25px rgba(201, 168, 76, 0.45);
-          color: #fff;
-          transform: translateY(-2px);
-        }
-
-        .btn-replay-3d {
-          display: inline-flex;
-          align-items: center;
-          gap: 8px;
-          padding: 14px 28px;
-          background: rgba(196, 30, 58, 0.12);
-          color: #ff4a52;
-          font-family: 'Courier New', monospace;
-          font-size: 13px;
-          font-weight: 700;
-          letter-spacing: 0.14em;
-          text-transform: uppercase;
-          text-decoration: none;
-          border: 1px solid rgba(196, 30, 58, 0.5);
-          clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 12px 100%, 0 calc(100% - 12px));
-          transition: transform 0.24s var(--ease-out), box-shadow 0.24s ease, background 0.24s ease, color 0.24s ease;
-          cursor: pointer;
-        }
-        .btn-replay-3d:hover {
-          background: rgba(196, 30, 58, 0.3);
-          border-color: #ff4a52;
-          box-shadow: 0 0 25px rgba(227, 27, 35, 0.5);
-          color: #fff;
-          transform: translateY(-2px);
-        }
-
-        .btn-outline-3d {
-          display: inline-flex;
-          align-items: center;
-          padding: 14px 28px;
-          background: transparent;
-          color: rgba(232, 224, 208, 0.7);
-          font-family: 'Courier New', monospace;
-          font-size: 13px;
-          font-weight: 700;
-          letter-spacing: 0.12em;
-          text-transform: uppercase;
-          text-decoration: none;
-          border: 1px solid rgba(232, 224, 208, 0.25);
-          transition: transform 0.24s var(--ease-out), box-shadow 0.24s ease, background 0.24s ease, color 0.24s ease;
-        }
-        .btn-outline-3d:hover {
-          border-color: rgba(232, 224, 208, 0.7);
-          color: #fff;
-          background: rgba(255, 255, 255, 0.08);
-          box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
-          transform: translateY(-2px);
-        }
-
-        /* Smooth Scroll Cue Button */
-        .scroll-indicator-btn {
+        /* Scroll cue */
+        .hp-scroll-cue {
           position: absolute;
           bottom: 28px;
           left: 50%;
@@ -632,420 +440,505 @@ export default function HomePage() {
           flex-direction: column;
           align-items: center;
           gap: 8px;
-          background: transparent;
-          border: none;
-          cursor: pointer;
           font-family: 'Courier New', monospace;
           font-size: 9px;
-          letter-spacing: 0.3em;
-          color: rgba(201, 168, 76, 0.65);
+          letter-spacing: 0.35em;
+          color: rgba(201,168,76,0.5);
           z-index: 5;
-          transition: opacity 0.3s, color 0.2s;
+          animation: fade-in-up 1.5s 1.5s ease-out backwards;
         }
-        .scroll-indicator-btn:hover {
+        .hp-scroll-line {
+          width: 1px;
+          height: 50px;
+          background: linear-gradient(to bottom, rgba(201,168,76,0.8), transparent);
+          animation: scroll-pulse 2s ease-in-out infinite;
+        }
+        @keyframes scroll-pulse {
+          0%, 100% { opacity: 0.4; transform: scaleY(1); }
+          50% { opacity: 1; transform: scaleY(0.6); }
+        }
+        @keyframes fade-in-up {
+          from { opacity: 0; transform: translateX(-50%) translateY(16px); }
+          to { opacity: 1; transform: translateX(-50%) translateY(0); }
+        }
+
+        /* ── BUTTONS ── */
+        .hp-btn-primary {
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+          padding: 15px 32px;
+          background: #e31b23;
+          color: #fff;
+          font-family: 'Courier New', monospace;
+          font-size: 12px;
+          font-weight: 700;
+          letter-spacing: 0.15em;
+          text-transform: uppercase;
+          text-decoration: none;
+          clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 12px 100%, 0 calc(100% - 12px));
+          transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+          box-shadow: 0 0 25px rgba(227,27,35,0.5);
+        }
+        .hp-btn-primary:hover {
+          background: #ff2d35;
+          box-shadow: 0 0 40px rgba(227,27,35,0.75);
+          transform: translateY(-2px);
+        }
+        .hp-btn-arrow { font-size: 16px; }
+
+        .hp-btn-outline {
+          display: inline-flex;
+          align-items: center;
+          padding: 14px 26px;
+          background: transparent;
+          color: rgba(232,224,208,0.7);
+          font-family: 'Courier New', monospace;
+          font-size: 12px;
+          font-weight: 700;
+          letter-spacing: 0.14em;
+          text-transform: uppercase;
+          text-decoration: none;
+          border: 1px solid rgba(232,224,208,0.2);
+          transition: all 0.2s ease;
+        }
+        .hp-btn-outline:hover {
+          border-color: rgba(201,168,76,0.7);
           color: #c9a84c;
+          box-shadow: 0 0 20px rgba(201,168,76,0.25);
+          transform: translateY(-2px);
         }
 
-        .scroll-line-3d {
-          width: 2px;
-          height: 38px;
-          background: linear-gradient(to bottom, #c9a84c, transparent);
-          animation: scroll-line-anim 1.6s ease-in-out infinite;
-        }
-        @keyframes scroll-line-anim {
-          0%, 100% { transform: scaleY(1); opacity: 0.5; }
-          50% { transform: scaleY(0.6); opacity: 1; }
-        }
-
-        /* ───── STATS SECTION ───── */
-        .stats-section {
+        /* ── STATS ── */
+        .hp-stats {
           position: relative;
           z-index: 2;
-          padding: 32px 24px;
-          background: rgba(0, 0, 0, 0.65);
-          backdrop-filter: blur(8px);
+          padding: 36px 24px;
+          background: rgba(0,0,0,0.7);
+          backdrop-filter: blur(12px);
         }
-        .stats-divider-line {
+        .hp-divider {
           height: 1px;
-          background: linear-gradient(to right, transparent, rgba(201, 168, 76, 0.45), rgba(227, 27, 35, 0.45), transparent);
-          margin: 8px 0;
+          background: linear-gradient(to right, transparent, rgba(201,168,76,0.5), rgba(227,27,35,0.4), transparent);
+          margin: 10px 0;
         }
-        .stats-row {
+        .hp-stats-row {
           display: flex;
           justify-content: center;
-          gap: 60px;
+          gap: clamp(32px, 6vw, 80px);
           flex-wrap: wrap;
-          padding: 20px 0;
+          padding: 24px 0;
         }
-
-        .stat-box-3d {
+        .stat-item {
           display: flex;
           flex-direction: column;
           align-items: center;
           gap: 6px;
-          transition: transform 0.24s ease;
         }
-        .stat-box-3d:hover {
-          transform: translateY(-3px);
-        }
-
         .stat-num {
-          font-family: 'Impact', 'Arial Black', sans-serif;
-          font-size: clamp(40px, 6vw, 72px);
+          font-family: Impact, 'Arial Black', sans-serif;
+          font-size: clamp(44px, 7vw, 80px);
           color: #e31b23;
-          text-shadow: 0 0 35px rgba(227, 27, 35, 0.6);
+          text-shadow: 0 0 40px rgba(227,27,35,0.65);
           line-height: 1;
         }
         .stat-lbl {
           font-family: 'Courier New', monospace;
           font-size: 10px;
-          letter-spacing: 0.25em;
-          color: rgba(201, 168, 76, 0.75);
+          letter-spacing: 0.28em;
+          color: rgba(201,168,76,0.75);
           text-transform: uppercase;
         }
 
-        /* ───── 3D SECTION CARDS GRID ───── */
-        .sections-grid-wrapper {
+        /* ══════════════════════════════════════
+           INFINITY STONES — premium, no box
+           ══════════════════════════════════════ */
+        .hp-stones {
           position: relative;
           z-index: 2;
-          padding: 70px 24px;
-          width: 100%;
-          max-width: 1248px;
+          padding: 90px 24px 100px;
+          text-align: center;
+          overflow: hidden;
+        }
+
+        /* deep dark background with stone-colour ambience */
+        .stones-bg-radial {
+          position: absolute;
+          inset: 0;
+          background:
+            radial-gradient(ellipse 80% 60% at 50% 50%, rgba(10,5,30,0.95) 0%, #000 100%);
+          pointer-events: none;
+        }
+
+        .stones-header {
+          position: relative;
+          display: flex;
+          align-items: center;
+          gap: 24px;
+          margin-bottom: 20px;
+          max-width: 900px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .stones-line {
+          flex: 1;
+          height: 1px;
+          background: linear-gradient(to right, transparent, rgba(201,168,76,0.5));
+        }
+        .stones-line:last-child {
+          background: linear-gradient(to left, transparent, rgba(201,168,76,0.5));
+        }
+        .stones-title {
+          font-family: 'Courier New', monospace;
+          font-size: clamp(12px, 1.5vw, 16px);
+          letter-spacing: clamp(0.3em, 2vw, 0.65em);
+          color: rgba(201,168,76,0.9);
+          text-transform: uppercase;
+          margin: 0;
+          white-space: nowrap;
+        }
+
+        .stones-subtext {
+          position: relative;
+          font-family: 'Courier New', monospace;
+          font-size: clamp(11px, 1.3vw, 14px);
+          letter-spacing: 0.08em;
+          color: rgba(201,168,76,0.65);
+          margin: 0 0 60px;
+        }
+
+        /* Row of stones — no box */
+        .stones-row {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          gap: clamp(24px, 4vw, 56px);
+          flex-wrap: wrap;
+        }
+
+        /* Each stone — just floating, NO box/border/card */
+        .stone-item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 16px;
+          text-decoration: none;
+          cursor: pointer;
+          animation: stone-in 0.6s ease-out backwards;
+          animation-delay: var(--sd);
+          transition: transform 0.3s ease;
+        }
+        .stone-item:hover {
+          transform: translateY(-10px);
+        }
+        @keyframes stone-in {
+          from { opacity: 0; transform: translateY(30px) scale(0.85); }
+          to { opacity: 1; transform: translateY(0) scale(1); }
+        }
+
+        .stone-gem-wrap {
+          position: relative;
+          width: 160px;
+          height: 160px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        /* Soft ambient glow ring behind stone — NO hard border */
+        .stone-glow-ring {
+          position: absolute;
+          inset: -22px;
+          border-radius: 50%;
+          background: radial-gradient(ellipse at 50% 60%, var(--sc) 0%, transparent 70%);
+          opacity: 0.4;
+          filter: blur(18px);
+          transition: opacity 0.3s ease, filter 0.3s ease;
+        }
+        .stone-item:hover .stone-glow-ring {
+          opacity: 0.75;
+          filter: blur(14px);
+        }
+
+        .stone-gem-img {
+          position: relative;
+          z-index: 2;
+          width: 138px;
+          height: 138px;
+          object-fit: contain;
+          filter:
+            drop-shadow(0 0 24px var(--sc))
+            drop-shadow(0 0 50px var(--sg))
+            drop-shadow(0 0 10px rgba(255,255,255,0.2));
+          transition: filter 0.3s ease, transform 0.3s ease;
+        }
+        .stone-item:hover .stone-gem-img {
+          filter:
+            drop-shadow(0 0 30px var(--sc))
+            drop-shadow(0 0 55px var(--sg))
+            drop-shadow(0 0 15px rgba(255,255,255,0.25));
+          transform: scale(1.08);
+        }
+
+        .stone-name {
+          font-family: 'Courier New', monospace;
+          font-size: clamp(10px, 1.2vw, 13px);
+          font-weight: 700;
+          letter-spacing: 0.22em;
+          text-transform: uppercase;
+        }
+        .stone-label {
+          font-family: 'Courier New', monospace;
+          font-size: 9px;
+          letter-spacing: 0.28em;
+          color: rgba(232,224,208,0.4);
+          text-transform: uppercase;
+          margin-top: -8px;
+        }
+
+        /* ── EXPLORE GRID ── */
+        .hp-explore {
+          position: relative;
+          z-index: 2;
+          padding: 80px 24px;
+          max-width: 1300px;
           margin: 0 auto;
         }
-        .section-header {
+        .explore-header {
           display: flex;
           align-items: center;
           gap: 20px;
-          margin-bottom: 40px;
+          margin-bottom: 44px;
         }
-        .section-line {
-          flex: 1;
-          height: 1px;
-          background: linear-gradient(to right, transparent, rgba(201, 168, 76, 0.45));
+        .explore-line {
+          flex: 1; height: 1px;
+          background: linear-gradient(to right, transparent, rgba(201,168,76,0.4));
         }
-        .section-line:last-child {
-          background: linear-gradient(to left, transparent, rgba(201, 168, 76, 0.45));
+        .explore-line:last-child {
+          background: linear-gradient(to left, transparent, rgba(201,168,76,0.4));
         }
-        .section-heading {
+        .explore-heading {
           font-family: 'Courier New', monospace;
           font-size: 13px;
           letter-spacing: 0.4em;
-          color: rgba(201, 168, 76, 0.85);
+          color: rgba(201,168,76,0.85);
           text-transform: uppercase;
           white-space: nowrap;
           margin: 0;
         }
-
-        .sections-grid-3d {
+        .explore-grid {
           display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
-          gap: 18px;
-          perspective: 1000px;
+          grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+          gap: 16px;
         }
-
-        .section-card-3d {
+        .explore-tile {
           position: relative;
           display: flex;
-          align-items: center;
-          padding: 22px 24px;
-          background: rgba(0, 0, 0, 0.92);
-          border: 1px solid rgba(255, 255, 255, 0.1);
+          flex-direction: column;
+          gap: 8px;
+          padding: 28px 26px;
+          background: rgba(5,5,5,0.9);
+          border: 1px solid rgba(255,255,255,0.07);
           text-decoration: none;
           color: #e8e0d0;
           overflow: hidden;
           cursor: pointer;
-          transform-style: preserve-3d;
-          transition: transform 0.24s var(--ease-out), border-color 0.24s ease, box-shadow 0.24s ease;
-          animation: card-in 0.5s ease-out backwards;
+          transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+          animation: tile-in 0.5s ease-out backwards;
           animation-delay: var(--delay);
-          backdrop-filter: blur(8px);
+          backdrop-filter: blur(10px);
         }
-
-        @keyframes card-in {
-          from { opacity: 0; transform: translateY(24px); }
+        .explore-tile:hover {
+          transform: translateY(-5px);
+          border-color: var(--c);
+          box-shadow: 0 15px 40px rgba(0,0,0,0.7), 0 0 25px var(--c);
+        }
+        @keyframes tile-in {
+          from { opacity: 0; transform: translateY(28px); }
           to { opacity: 1; transform: translateY(0); }
         }
-
-        .section-card-3d:hover {
-          transform: translateY(-4px);
-          border-color: var(--card-color, rgba(255, 255, 255, 0.3));
-          box-shadow: 0 12px 28px rgba(0, 0, 0, 0.65), 0 0 18px var(--card-color);
-        }
-
-        .section-card-3d:focus-visible {
-          border-color: var(--card-color, rgba(255, 255, 255, 0.3));
-        }
-
-        .card-top-line {
+        .explore-tile-top {
           position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
+          top: 0; left: 0; right: 0;
           height: 2px;
         }
-
-        .card-3d-content {
-          display: flex;
-          align-items: center;
-          gap: 16px;
-          width: 100%;
-          transform: translateZ(20px);
-          transform-style: preserve-3d;
+        .explore-tile-icon {
+          font-size: 26px;
+          margin-bottom: 4px;
+          filter: drop-shadow(0 0 8px var(--c));
         }
-
-        .card-icon-3d {
-          font-size: 24px;
-          color: var(--card-color, #fff);
-          flex-shrink: 0;
-          filter: drop-shadow(0 0 8px var(--card-color, #fff));
-          transform: translateZ(10px);
+        .explore-tile-label {
+          font-family: Impact, 'Arial Black', sans-serif;
+          font-size: 20px;
+          letter-spacing: 0.04em;
+          color: #fff;
         }
-
-        .card-label-3d {
-          flex: 1;
+        .explore-tile-sub {
           font-family: 'Courier New', monospace;
-          font-size: 12px;
-          font-weight: 700;
-          letter-spacing: 0.12em;
+          font-size: 10px;
+          letter-spacing: 0.15em;
+          color: rgba(232,224,208,0.5);
           text-transform: uppercase;
-          color: rgba(232, 224, 208, 0.95);
         }
-
-        .card-arrow-3d {
-          font-size: 18px;
-          color: var(--card-color, rgba(255, 255, 255, 0.4));
-          transition: transform 0.2s ease;
-        }
-        .section-card-3d:hover .card-arrow-3d {
-          transform: translateX(5px) translateZ(10px);
-        }
-
-        .card-specular-glow {
+        .explore-tile-arrow {
           position: absolute;
-          inset: 0;
+          bottom: 22px; right: 22px;
+          font-size: 20px;
           opacity: 0;
-          background: linear-gradient(120deg, transparent 20%, rgba(255, 255, 255, 0.08), transparent 80%);
-          pointer-events: none;
-          transition: opacity 0.22s ease;
+          transition: opacity 0.2s ease, transform 0.2s ease;
         }
-
-        .section-card-3d:hover .card-specular-glow,
-        .section-card-3d:focus-visible .card-specular-glow {
+        .explore-tile:hover .explore-tile-arrow {
           opacity: 1;
+          transform: translateX(4px);
         }
 
-        /* ───── INFINITY STONES SHOWCASE IN 3D ───── */
-        .stones-showcase {
+        /* ── FEATURED BANNER ── */
+        .hp-banner {
           position: relative;
           z-index: 2;
-          padding: 70px 24px;
-          background: rgba(0, 0, 0, 0.55);
-          text-align: center;
-          backdrop-filter: blur(8px);
+          margin: 0 24px 80px;
+          max-width: 1300px;
+          margin-left: auto;
+          margin-right: auto;
+          padding: 0 24px 80px;
         }
-
-        .stones-subtext {
-          font-family: 'Courier New', monospace;
-          font-size: 12px;
-          letter-spacing: 0.1em;
-          color: rgba(201, 168, 76, 0.7);
-          margin: 0 0 40px;
-        }
-
-        .stones-cards-row {
-          display: flex;
-          justify-content: center;
-          gap: 20px;
-          flex-wrap: wrap;
-          perspective: 900px;
-        }
-
-        .stone-card-3d {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          gap: 14px;
-          padding: 26px 20px;
-          background: rgba(0, 0, 0, 0.95);
-          border: 1px solid rgba(255, 255, 255, 0.08);
-          text-decoration: none;
-          cursor: pointer;
-          transition: transform 0.24s var(--ease-out), border-color 0.24s ease, box-shadow 0.24s ease;
-          animation: card-in 0.5s ease-out backwards;
-          animation-delay: var(--delay);
-          flex: 1 1 125px;
-          min-width: 0;
-          max-width: 180px;
-          transform-style: preserve-3d;
-        }
-        .stone-card-3d:hover {
-          border-color: var(--stone-color);
-          box-shadow: 0 16px 40px rgba(0, 0, 0, 0.8), 0 0 30px var(--stone-color);
-          transform: translateY(-4px);
-        }
-
-        .stone-card-gem-3d {
-          width: 80px;
-          height: 80px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          transition: transform 0.24s var(--ease-out);
-          transform: translateZ(15px);
-        }
-        .stone-card-3d:hover .stone-card-gem-3d {
-          transform: translateY(-2px);
-        }
-
-        .stone-img-realistic {
-          width: 72px;
-          height: 72px;
-          object-fit: contain;
-          transition: transform 0.24s var(--ease-out);
-        }
-
-        .stone-card-3d:hover .stone-img-realistic {
-          transform: translateY(-3px);
-        }
-
-        .stone-card-name-3d {
-          font-family: 'Courier New', monospace;
-          font-size: 11px;
-          font-weight: 700;
-          letter-spacing: 0.2em;
-          color: var(--stone-color);
-          text-transform: uppercase;
-          transform: translateZ(10px);
-        }
-
-        .stone-card-label-3d {
-          font-family: 'Courier New', monospace;
-          font-size: 9px;
-          letter-spacing: 0.25em;
-          color: rgba(232, 224, 208, 0.5);
-        }
-
-        /* ───── CTA SECTION ───── */
-        .cta-section {
+        .banner-inner {
           position: relative;
-          z-index: 2;
-          padding: 80px 24px 100px;
+          padding: 60px 48px;
+          background:
+            linear-gradient(135deg, rgba(227,27,35,0.08) 0%, rgba(0,0,0,0.98) 60%),
+            rgba(5,5,5,0.95);
+          border: 1px solid rgba(227,27,35,0.3);
           text-align: center;
-          background: linear-gradient(to bottom, transparent, rgba(227, 27, 35, 0.06), transparent);
           overflow: hidden;
         }
-
-        .cta-bg-line {
+        .banner-inner::before {
+          content: '';
           position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          width: 600px;
-          height: 600px;
-          border-radius: 50%;
-          border: 1px solid rgba(201, 168, 76, 0.1);
+          inset: 0;
+          background: radial-gradient(ellipse 70% 60% at 50% 50%, rgba(227,27,35,0.08) 0%, transparent 70%);
           pointer-events: none;
         }
-
-        .cta-title {
-          font-family: 'Impact', 'Arial Black', sans-serif;
-          font-size: clamp(40px, 7vw, 80px);
+        /* Corner brackets */
+        .banner-corner {
+          position: absolute;
+          width: 20px; height: 20px;
+          border-color: rgba(227,27,35,0.6);
+          border-style: solid;
+          border-width: 0;
+        }
+        .banner-corner.tl { top: 10px; left: 10px; border-top-width: 2px; border-left-width: 2px; }
+        .banner-corner.tr { top: 10px; right: 10px; border-top-width: 2px; border-right-width: 2px; }
+        .banner-corner.bl { bottom: 10px; left: 10px; border-bottom-width: 2px; border-left-width: 2px; }
+        .banner-corner.br { bottom: 10px; right: 10px; border-bottom-width: 2px; border-right-width: 2px; }
+        .banner-eyebrow {
+          font-family: 'Courier New', monospace;
+          font-size: 10px;
+          letter-spacing: 0.4em;
+          color: rgba(227,27,35,0.75);
+          text-transform: uppercase;
+          margin-bottom: 12px;
+        }
+        .banner-title {
+          font-family: Impact, 'Arial Black', sans-serif;
+          font-size: clamp(36px, 6vw, 72px);
           color: #fff;
-          text-shadow: 0 0 45px rgba(227, 27, 35, 0.6);
+          text-shadow: 0 0 50px rgba(227,27,35,0.75);
           margin: 0 0 16px;
+          letter-spacing: 0.03em;
+        }
+        .banner-sub {
+          font-family: 'Courier New', monospace;
+          font-size: 12px;
+          letter-spacing: 0.08em;
+          color: rgba(232,224,208,0.6);
+          line-height: 1.8;
+          margin: 0 0 32px;
+        }
+        .banner-cta {
+          display: inline-flex;
+          padding: 14px 30px;
+          background: rgba(227,27,35,0.15);
+          border: 1px solid rgba(227,27,35,0.5);
+          color: #ff6068;
+          font-family: 'Courier New', monospace;
+          font-size: 12px;
+          font-weight: 700;
+          letter-spacing: 0.18em;
+          text-transform: uppercase;
+          text-decoration: none;
+          transition: all 0.2s ease;
+        }
+        .banner-cta:hover {
+          background: rgba(227,27,35,0.3);
+          border-color: #e31b23;
+          color: #fff;
+          box-shadow: 0 0 25px rgba(227,27,35,0.4);
         }
 
+        /* ── CTA SECTION ── */
+        .hp-cta {
+          position: relative;
+          z-index: 2;
+          padding: 90px 24px 110px;
+          text-align: center;
+          overflow: hidden;
+        }
+        .cta-rings {
+          position: absolute;
+          inset: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          pointer-events: none;
+        }
+        .cta-ring {
+          position: absolute;
+          border-radius: 50%;
+          border: 1px solid rgba(201,168,76,0.08);
+          animation: ring-pulse 3s ease-in-out infinite;
+        }
+        .r1 { width: 400px; height: 400px; animation-delay: 0s; }
+        .r2 { width: 650px; height: 650px; animation-delay: 0.6s; }
+        .r3 { width: 900px; height: 900px; animation-delay: 1.2s; }
+        @keyframes ring-pulse {
+          0%, 100% { opacity: 0.4; }
+          50% { opacity: 0.1; }
+        }
+        .cta-title {
+          font-family: Impact, 'Arial Black', sans-serif;
+          font-size: clamp(40px, 7vw, 88px);
+          color: #fff;
+          text-shadow: 0 0 50px rgba(227,27,35,0.55);
+          margin: 0 0 18px;
+          position: relative;
+        }
         .cta-sub {
           font-family: 'Courier New', monospace;
           font-size: 12px;
           letter-spacing: 0.08em;
-          color: rgba(232, 224, 208, 0.6);
+          color: rgba(232,224,208,0.6);
           margin: 0 0 36px;
-          max-width: 520px;
+          max-width: 540px;
           margin-left: auto;
           margin-right: auto;
+          line-height: 1.8;
+          position: relative;
         }
-
         .cta-buttons {
           display: flex;
           justify-content: center;
           gap: 16px;
           flex-wrap: wrap;
-          margin-bottom: 48px;
-        }
-
-        .cta-shield {
           position: relative;
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          width: 100px;
-          height: 100px;
         }
 
-        .shield-rings {
-          position: absolute;
-          inset: 0;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-
-        .shield-ring {
-          position: absolute;
-          border-radius: 50%;
-          border: 1px solid rgba(201, 168, 76, 0.35);
-          animation: shield-pulse 2s ease-in-out infinite;
-        }
-        .r1 { width: 50px; height: 50px; animation-delay: 0s; }
-        .r2 { width: 75px; height: 75px; animation-delay: 0.3s; }
-        .r3 { width: 100px; height: 100px; animation-delay: 0.6s; }
-
-        @keyframes shield-pulse {
-          0%, 100% { opacity: 0.3; transform: scale(1); }
-          50% { opacity: 0.75; transform: scale(1.05); }
-        }
-
-        .shield-text {
-          font-family: 'Courier New', monospace;
-          font-size: 8px;
-          letter-spacing: 0.3em;
-          color: rgba(201, 168, 76, 0.6);
-          position: relative;
-          z-index: 1;
-        }
-
-        /* ───── RESPONSIVE ───── */
-        @media (max-width: 900px) {
-          .hero-section { justify-content: center; }
-          .hero-title-block { margin: 50px 0 0; }
-        }
-        @media (max-width: 768px) {
-          /* No pointer parallax or looping decorative motion on touch screens. */
-          .hero-radial-bg,
-          .hero-title-block {
-            transform: none !important;
-            transition: none;
-          }
-          .hero-buttons { transform: none; }
-          .scroll-line-3d { animation: none; }
-          .section-card-3d,
-          .stone-card-3d { animation: none; opacity: 1; }
-          .stone-img-realistic,
-          .shield-ring { animation: none; }
-        }
+        /* ── RESPONSIVE ── */
         @media (max-width: 600px) {
-          .stats-row { gap: 24px 32px; }
-          .sections-grid-3d { grid-template-columns: 1fr; }
-          .section-header { gap: 8px; margin-bottom: 28px; }
-          .section-heading {
-            max-width: 100%;
-            white-space: normal;
-            text-align: center;
-            font-size: 10px;
-            letter-spacing: 0.12em;
-          }
+          .stone-gem-wrap { width: 100px; height: 100px; }
+          .stone-gem-img { width: 86px; height: 86px; }
+          .stones-row { gap: 16px; }
+          .banner-inner { padding: 40px 24px; }
         }
       `}</style>
     </div>
