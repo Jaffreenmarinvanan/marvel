@@ -53,9 +53,9 @@ export default function VillainsArchivePage() {
   const [viewMode, setViewMode] = useState<'chroma' | 'grid' | 'table'>('chroma');
 
   const speciesList = useMemo(() => {
-    const all = villains.map((v) => v.species);
+    const all = villains.map((v) => v.species).filter((s): s is string => Boolean(s));
     return ['all', ...Array.from(new Set(all)).slice(0, 7)];
-  }, []);
+  }, [villains]);
 
   const filteredVillains = useMemo(() => {
     return villains.filter((v) => {
@@ -64,12 +64,12 @@ export default function VillainsArchivePage() {
         v.name.toLowerCase().includes(q) ||
         (v.realName && v.realName.toLowerCase().includes(q)) ||
         (v.actor && v.actor.toLowerCase().includes(q)) ||
-        v.powers.some((p) => p.toLowerCase().includes(q));
+        (v.powers && v.powers.some((p) => p.toLowerCase().includes(q)));
       const matchesSpec = selectedSpecies === 'all' || v.species === selectedSpecies;
       const matchesStatus = selectedStatus === 'all' || v.status === selectedStatus;
       return matchesSearch && matchesSpec && matchesStatus;
     });
-  }, [search, selectedSpecies, selectedStatus]);
+  }, [villains, search, selectedSpecies, selectedStatus]);
 
   const chromaItems = useMemo(() => getChromaItems(filteredVillains), [filteredVillains]);
 
@@ -321,7 +321,7 @@ export default function VillainsArchivePage() {
                         <div className="card-order-track">
                           <span>{char.homeworld}</span>
                           <span>•</span>
-                          <span>{char.affiliation[0] || 'Independent'}</span>
+                          <span>{char.affiliation?.[0] || 'Independent'}</span>
                         </div>
                         <h3 className="card-title">
                           <Link href={`/villains/${char.slug}`}>{char.name}</Link>

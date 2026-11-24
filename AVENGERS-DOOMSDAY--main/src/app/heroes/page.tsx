@@ -59,9 +59,9 @@ export default function HeroesEncyclopediaPage() {
   const [viewMode, setViewMode] = useState<'chroma' | 'grid' | 'table'>('chroma');
 
   const affiliations = useMemo(() => {
-    const all = heroes.flatMap((h) => h.affiliation);
+    const all = heroes.flatMap((h) => h.affiliation || []).filter((a): a is string => Boolean(a));
     return ['all', ...Array.from(new Set(all)).slice(0, 7)];
-  }, []);
+  }, [heroes]);
 
   const statuses = ['all', 'alive', 'deceased', 'unknown'];
 
@@ -72,14 +72,14 @@ export default function HeroesEncyclopediaPage() {
         h.name.toLowerCase().includes(q) ||
         (h.realName && h.realName.toLowerCase().includes(q)) ||
         (h.actor && h.actor.toLowerCase().includes(q)) ||
-        h.powers.some((p) => p.toLowerCase().includes(q));
+        (h.powers && h.powers.some((p) => p.toLowerCase().includes(q)));
       const matchesAff =
-        selectedAffiliation === 'all' || h.affiliation.includes(selectedAffiliation);
+        selectedAffiliation === 'all' || (h.affiliation && h.affiliation.includes(selectedAffiliation));
       const matchesStatus =
         selectedStatus === 'all' || h.status === selectedStatus;
       return matchesSearch && matchesAff && matchesStatus;
     });
-  }, [search, selectedAffiliation, selectedStatus]);
+  }, [heroes, search, selectedAffiliation, selectedStatus]);
 
   const chromaItems = useMemo(() => getChromaItems(filteredHeroes), [filteredHeroes]);
 
