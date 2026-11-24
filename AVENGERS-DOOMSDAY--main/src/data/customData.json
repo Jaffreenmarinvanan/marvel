@@ -739,6 +739,57 @@
           "character": "Doctor Strange"
         }
       ]
+    },
+    {
+      "id": "c12",
+      "slug": "falcon",
+      "name": "Falcon / Captain America",
+      "realName": "Samuel Thomas \"Sam\" Wilson",
+      "type": "hero",
+      "status": "alive",
+      "species": "Human",
+      "homeworld": "Earth",
+      "actor": "Anthony Mackie",
+      "imageUrl": "https://i.pinimg.com/736x/89/3e/26/893e26cf8d80c65ef49a0b925b6823ca.jpg",
+      "posterUrl": "https://i.pinimg.com/736x/89/3e/26/893e26cf8d80c65ef49a0b925b6823ca.jpg",
+      "image": "https://i.pinimg.com/736x/89/3e/26/893e26cf8d80c65ef49a0b925b6823ca.jpg",
+      "portraitColor": "#c41e3a",
+      "accentColor": "#c41e3a",
+      "accent": "#c41e3a"
+    },
+    {
+      "id": "c13",
+      "slug": "winter-soldier",
+      "name": "Winter Soldier",
+      "realName": "James Buchanan \"Bucky\" Barnes",
+      "type": "hero",
+      "status": "alive",
+      "species": "Human (Enhanced)",
+      "homeworld": "Earth",
+      "actor": "Sebastian Stan",
+      "imageUrl": "https://i.pinimg.com/736x/48/4f/2e/484f2e9680388d745508a8b0ca937aa1.jpg",
+      "posterUrl": "https://i.pinimg.com/736x/48/4f/2e/484f2e9680388d745508a8b0ca937aa1.jpg",
+      "image": "https://i.pinimg.com/736x/48/4f/2e/484f2e9680388d745508a8b0ca937aa1.jpg",
+      "portraitColor": "#64748b",
+      "accentColor": "#64748b",
+      "accent": "#64748b"
+    },
+    {
+      "id": "c21",
+      "slug": "nick-fury",
+      "name": "Nick Fury",
+      "realName": "Nicholas Joseph Fury",
+      "type": "hero",
+      "status": "alive",
+      "species": "Human",
+      "homeworld": "Earth",
+      "actor": "Samuel L. Jackson",
+      "imageUrl": "https://i.pinimg.com/736x/21/2e/ae/212eae17e923e4d9ebca473130bb63aa.jpg",
+      "posterUrl": "https://i.pinimg.com/736x/21/2e/ae/212eae17e923e4d9ebca473130bb63aa.jpg",
+      "image": "https://i.pinimg.com/736x/21/2e/ae/212eae17e923e4d9ebca473130bb63aa.jpg",
+      "portraitColor": "#475569",
+      "accentColor": "#475569",
+      "accent": "#475569"
     }
   ],
   "villains": [
@@ -787,6 +838,23 @@
           "character": "Thanos"
         }
       ]
+    },
+    {
+      "id": "c22",
+      "slug": "kang",
+      "name": "Kang the Conqueror",
+      "realName": "Nathaniel Richards",
+      "type": "villain",
+      "status": "deceased",
+      "species": "Human (31st Century)",
+      "homeworld": "Earth-6311 (Other-Earth)",
+      "actor": "Jonathan Majors",
+      "imageUrl": "https://i.pinimg.com/736x/4e/be/49/4ebe4996aa5008be26c59b20e0ffb052.jpg",
+      "posterUrl": "https://i.pinimg.com/736x/4e/be/49/4ebe4996aa5008be26c59b20e0ffb052.jpg",
+      "image": "https://i.pinimg.com/736x/4e/be/49/4ebe4996aa5008be26c59b20e0ffb052.jpg",
+      "portraitColor": "#10b981",
+      "accentColor": "#10b981",
+      "accent": "#10b981"
     }
   ],
   "movies": [],

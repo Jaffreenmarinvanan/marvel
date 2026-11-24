@@ -32,15 +32,15 @@ export const MOVIE_MEDIA: Record<string, MovieMediaItem> = {
     "accent": "#ea580c"
   },
   "captain-marvel": {
-    "image": "https://image.tmdb.org/t/p/w500/AtsgWhDnHTq68L0lLsUrCnM7TLy.jpg",
+    "image": "/mcu/logos/captain-marvel.jpg",
     "accent": "#eab308"
   },
   "iron-man": {
-    "image": "https://image.tmdb.org/t/p/w500/78lPtwv72eTNqFW9COBM5kPDeVS.jpg",
+    "image": "/mcu/logos/iron-man.jpg",
     "accent": "#c41e3a"
   },
   "incredible-hulk": {
-    "image": "https://image.tmdb.org/t/p/w500/gKzYx79y0AQTL4UAk1cBQJ3nvrm.jpg",
+    "image": "/mcu/logos/incredible-hulk.jpg",
     "accent": "#16a34a"
   },
   "iron-man-2": {
@@ -48,15 +48,15 @@ export const MOVIE_MEDIA: Record<string, MovieMediaItem> = {
     "accent": "#c41e3a"
   },
   "thor": {
-    "image": "https://image.tmdb.org/t/p/w500/prSfAi1xGrhLQNxVSUFh2xAiGSB.jpg",
+    "image": "/mcu/logos/thor.jpg",
     "accent": "#2563eb"
   },
   "the-avengers": {
-    "image": "https://image.tmdb.org/t/p/w500/RYMX2wcKCBAr24UyPD7KE3Ouoq.jpg",
+    "image": "/mcu/logos/the-avengers.jpg",
     "accent": "#3b82f6"
   },
   "thor-dark-world": {
-    "image": "https://image.tmdb.org/t/p/w500/bnX5PxvMpMaAzMB2M8m0AWoTtqP.jpg",
+    "image": "/mcu/logos/thor-dark-world.jpg",
     "accent": "#1a1a2e"
   },
   "iron-man-3": {
@@ -88,7 +88,7 @@ export const MOVIE_MEDIA: Record<string, MovieMediaItem> = {
     "accent": "#7e22ce"
   },
   "avengers-age-of-ultron": {
-    "image": "https://image.tmdb.org/t/p/w500/4ssDuvEDkSArWEdyBl2X5EHvYKU.jpg",
+    "image": "/mcu/logos/avengers-age-of-ultron.jpg",
     "accent": "#c41e3a"
   },
   "ant-man": {
@@ -112,7 +112,7 @@ export const MOVIE_MEDIA: Record<string, MovieMediaItem> = {
     "accent": "#dc2626"
   },
   "spider-man-homecoming": {
-    "image": "https://image.tmdb.org/t/p/w500/c24sv2weTHPsmDa7jEMN0m2P3RT.jpg",
+    "image": "/mcu/logos/spider-man.jpg",
     "accent": "#e11d48"
   },
   "punisher-s1": {
@@ -152,11 +152,11 @@ export const MOVIE_MEDIA: Record<string, MovieMediaItem> = {
     "accent": "#7f1d1d"
   },
   "ant-man-and-the-wasp": {
-    "image": "https://image.tmdb.org/t/p/w500/fdMEhi7ha0cF9YScn2MXY4i5a4.jpg",
+    "image": "/mcu/logos/ant-man-and-the-wasp.jpg",
     "accent": "#eab308"
   },
   "avengers-infinity-war": {
-    "image": "https://image.tmdb.org/t/p/w500/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg",
+    "image": "/mcu/logos/avengers-infinity-war.jpg",
     "accent": "#7e22ce"
   },
   "punisher-s2": {
@@ -172,7 +172,7 @@ export const MOVIE_MEDIA: Record<string, MovieMediaItem> = {
     "accent": "#c41e3a"
   },
   "wandavision": {
-    "image": "https://6af46f5d969c6488eb240dd5.imgix.net/sandbox/1038150151626692710.jpg",
+    "image": "/mcu/movie logo/1038150151626692710.jpg",
     "accent": "#9333ea"
   },
   "falcon-and-winter-soldier": {
@@ -180,7 +180,7 @@ export const MOVIE_MEDIA: Record<string, MovieMediaItem> = {
     "accent": "#2563eb"
   },
   "loki": {
-    "image": "https://image.tmdb.org/t/p/w500/kEl2t3OhXc3Zb9FBh1AuYzRTgZp.jpg",
+    "image": "/mcu/logos/loki-poster.jpg",
     "accent": "#16a34a"
   },
   "what-if-s1": {
