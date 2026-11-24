@@ -10,13 +10,7 @@
       "status": "alive",
       "species": "Asgardian",
       "homeworld": "Asgard",
-      "phase": 5,
-      "year": 2026,
-      "director": "Various",
       "actor": "Chris Hemsworth",
-      "runtime": 120,
-      "releaseOrder": 80,
-      "chronologicalOrder": 80,
       "portraitColor": "#2563eb",
       "posterColor": "#2563eb",
       "accentColor": "#2563eb",
@@ -42,14 +36,9 @@
         "Asgard",
         "Guardians of the Galaxy"
       ],
-      "category": "weapon",
       "origin": "Asgard — son of Odin and Frigga, Prince of Asgard",
-      "date": "2026",
       "characters": [
         "thor"
-      ],
-      "writers": [
-        "Marvel Studios"
       ],
       "cast": [
         {
@@ -68,13 +57,7 @@
       "status": "deceased",
       "species": "Human",
       "homeworld": "Earth",
-      "phase": 5,
-      "year": 2026,
-      "director": "Various",
       "actor": "Robert Downey Jr.",
-      "runtime": 120,
-      "releaseOrder": 80,
-      "chronologicalOrder": 80,
       "portraitColor": "#c41e3a",
       "posterColor": "#c41e3a",
       "accentColor": "#c41e3a",
@@ -96,14 +79,9 @@
         "Stark Industries",
         "S.H.I.E.L.D. (Consultant)"
       ],
-      "category": "weapon",
       "origin": "Afghanistan — built Mark I armor to escape captivity by the Ten Rings",
-      "date": "2026",
       "characters": [
         "iron-man"
-      ],
-      "writers": [
-        "Marvel Studios"
       ],
       "cast": [
         {
@@ -122,13 +100,7 @@
       "status": "deceased",
       "species": "Human (Heart-Shaped Herb enhanced)",
       "homeworld": "Earth",
-      "phase": 5,
-      "year": 2026,
-      "director": "Various",
       "actor": "Chadwick Boseman",
-      "runtime": 120,
-      "releaseOrder": 80,
-      "chronologicalOrder": 80,
       "portraitColor": "#7e22ce",
       "posterColor": "#7e22ce",
       "accentColor": "#7e22ce",
@@ -151,14 +123,9 @@
         "Avengers",
         "Wakanda"
       ],
-      "category": "weapon",
       "origin": "Wakanda — royal line, Heart-Shaped Herb ritual",
-      "date": "2026",
       "characters": [
         "black-panther"
-      ],
-      "writers": [
-        "Marvel Studios"
       ],
       "cast": [
         {
@@ -177,13 +144,7 @@
       "status": "alive",
       "species": "Human (gamma-irradiated)",
       "homeworld": "Earth",
-      "phase": 5,
-      "year": 2026,
-      "director": "Various",
       "actor": "Mark Ruffalo",
-      "runtime": 120,
-      "releaseOrder": 80,
-      "chronologicalOrder": 80,
       "portraitColor": "#16a34a",
       "posterColor": "#16a34a",
       "accentColor": "#16a34a",
@@ -206,14 +167,9 @@
         "Avengers",
         "S.H.I.E.L.D."
       ],
-      "category": "weapon",
       "origin": "Culver University — gamma radiation experiment",
-      "date": "2026",
       "characters": [
         "hulk"
-      ],
-      "writers": [
-        "Marvel Studios"
       ],
       "cast": [
         {
@@ -232,13 +188,7 @@
       "status": "alive",
       "species": "Zehoberei",
       "homeworld": "Zen-Whoberi",
-      "phase": 5,
-      "year": 2026,
-      "director": "Various",
       "actor": "Zoe Saldana",
-      "runtime": 120,
-      "releaseOrder": 80,
-      "chronologicalOrder": 80,
       "portraitColor": "#16a34a",
       "posterColor": "#16a34a",
       "accentColor": "#16a34a",
@@ -258,14 +208,9 @@
         "Guardians of the Galaxy",
         "Thanos (formerly)"
       ],
-      "category": "weapon",
       "origin": "Zen-Whoberi — adopted by Thanos, trained as his assassin",
-      "date": "2026",
       "characters": [
         "gamora"
-      ],
-      "writers": [
-        "Marvel Studios"
       ],
       "cast": [
         {
@@ -284,13 +229,7 @@
       "status": "unknown",
       "species": "Human (Chaos Magic)",
       "homeworld": "Earth",
-      "phase": 5,
-      "year": 2026,
-      "director": "Various",
       "actor": "Elizabeth Olsen",
-      "runtime": 120,
-      "releaseOrder": 80,
-      "chronologicalOrder": 80,
       "portraitColor": "#dc2626",
       "posterColor": "#dc2626",
       "accentColor": "#dc2626",
@@ -316,14 +255,9 @@
         "HYDRA (formerly)",
         "Chaos Magic"
       ],
-      "category": "weapon",
       "origin": "Sokovia — HYDRA experiments with the Mind Stone",
-      "date": "2026",
       "characters": [
         "scarlet-witch"
-      ],
-      "writers": [
-        "Marvel Studios"
       ],
       "cast": [
         {
@@ -342,13 +276,7 @@
       "status": "alive",
       "species": "Human",
       "homeworld": "Earth",
-      "phase": 5,
-      "year": 2026,
-      "director": "Various",
       "actor": "Don Cheadle",
-      "runtime": 120,
-      "releaseOrder": 80,
-      "chronologicalOrder": 80,
       "portraitColor": "#6b7280",
       "posterColor": "#6b7280",
       "accentColor": "#6b7280",
@@ -366,14 +294,9 @@
         "U.S. Air Force",
         "Stark Industries"
       ],
-      "category": "weapon",
       "origin": "Earth — U.S. Air Force, became War Machine using Stark's armor",
-      "date": "2026",
       "characters": [
         "war-machine"
-      ],
-      "writers": [
-        "Marvel Studios"
       ],
       "cast": [
         {
@@ -392,13 +315,7 @@
       "status": "alive",
       "species": "Human (spider-enhanced)",
       "homeworld": "Earth",
-      "phase": 5,
-      "year": 2026,
-      "director": "Various",
       "actor": "Tom Holland",
-      "runtime": 120,
-      "releaseOrder": 80,
-      "chronologicalOrder": 80,
       "portraitColor": "#c41e3a",
       "posterColor": "#c41e3a",
       "accentColor": "#c41e3a",
@@ -422,14 +339,9 @@
         "Avengers",
         "Stark Industries (intern)"
       ],
-      "category": "weapon",
       "origin": "Queens, New York — bitten by a radioactive spider at Oscorp",
-      "date": "2026",
       "characters": [
         "spider-man"
-      ],
-      "writers": [
-        "Marvel Studios"
       ],
       "cast": [
         {
@@ -448,13 +360,7 @@
       "status": "deceased",
       "species": "Human (enhanced)",
       "homeworld": "Earth",
-      "phase": 5,
-      "year": 2026,
-      "director": "Various",
       "actor": "Scarlett Johansson",
-      "runtime": 120,
-      "releaseOrder": 80,
-      "chronologicalOrder": 80,
       "portraitColor": "#1a1a2e",
       "posterColor": "#1a1a2e",
       "accentColor": "#1a1a2e",
@@ -475,14 +381,9 @@
         "S.H.I.E.L.D.",
         "Red Room (formerly)"
       ],
-      "category": "weapon",
       "origin": "Soviet Union — Red Room Black Widow program",
-      "date": "2026",
       "characters": [
         "black-widow"
-      ],
-      "writers": [
-        "Marvel Studios"
       ],
       "cast": [
         {
@@ -501,13 +402,7 @@
       "status": "alive",
       "species": "Human",
       "homeworld": "Earth",
-      "phase": 5,
-      "year": 2026,
-      "director": "Various",
       "actor": "Paul Rudd",
-      "runtime": 120,
-      "releaseOrder": 80,
-      "chronologicalOrder": 80,
       "portraitColor": "#dc2626",
       "posterColor": "#dc2626",
       "accentColor": "#dc2626",
@@ -527,14 +422,9 @@
       "affiliation": [
         "Avengers"
       ],
-      "category": "weapon",
       "origin": "San Francisco — recruited by Hank Pym, former thief",
-      "date": "2026",
       "characters": [
         "ant-man"
-      ],
-      "writers": [
-        "Marvel Studios"
       ],
       "cast": [
         {
@@ -553,13 +443,7 @@
       "status": "alive",
       "species": "Human (Kree-empowered)",
       "homeworld": "Earth",
-      "phase": 5,
-      "year": 2026,
-      "director": "Various",
       "actor": "Brie Larson",
-      "runtime": 120,
-      "releaseOrder": 80,
-      "chronologicalOrder": 80,
       "portraitColor": "#f59e0b",
       "posterColor": "#f59e0b",
       "accentColor": "#f59e0b",
@@ -584,14 +468,9 @@
         "Kree (formerly)",
         "Starforce (formerly)"
       ],
-      "category": "weapon",
       "origin": "Louisiana, Earth — crash with light-speed engine, Kree blood transfusion",
-      "date": "2026",
       "characters": [
         "captain-marvel"
-      ],
-      "writers": [
-        "Marvel Studios"
       ],
       "cast": [
         {
@@ -610,13 +489,7 @@
       "status": "deceased",
       "species": "Synthezoid (A.I.)",
       "homeworld": "Earth",
-      "phase": 5,
-      "year": 2026,
-      "director": "Various",
       "actor": "Paul Bettany",
-      "runtime": 120,
-      "releaseOrder": 80,
-      "chronologicalOrder": 80,
       "portraitColor": "#dc2626",
       "posterColor": "#dc2626",
       "accentColor": "#dc2626",
@@ -639,14 +512,9 @@
       "affiliation": [
         "Avengers"
       ],
-      "category": "weapon",
       "origin": "Created by Ultron with vibranium body, Mind Stone, and J.A.R.V.I.S.",
-      "date": "2026",
       "characters": [
         "vision"
-      ],
-      "writers": [
-        "Marvel Studios"
       ],
       "cast": [
         {
@@ -665,13 +533,7 @@
       "status": "alive",
       "species": "Human / Celestial",
       "homeworld": "Earth (born) / Space",
-      "phase": 5,
-      "year": 2026,
-      "director": "Various",
       "actor": "Chris Pratt",
-      "runtime": 120,
-      "releaseOrder": 80,
-      "chronologicalOrder": 80,
       "portraitColor": "#ea580c",
       "posterColor": "#ea580c",
       "accentColor": "#ea580c",
@@ -690,14 +552,9 @@
       "affiliation": [
         "Guardians of the Galaxy"
       ],
-      "category": "weapon",
       "origin": "Earth — abducted by Ravagers, half-Celestial son of Ego",
-      "date": "2026",
       "characters": [
         "star-lord"
-      ],
-      "writers": [
-        "Marvel Studios"
       ],
       "cast": [
         {
@@ -716,13 +573,7 @@
       "status": "alive",
       "species": "Human",
       "homeworld": "Earth",
-      "phase": 5,
-      "year": 2026,
-      "director": "Various",
       "actor": "Jeremy Renner",
-      "runtime": 120,
-      "releaseOrder": 80,
-      "chronologicalOrder": 80,
       "portraitColor": "#7c3aed",
       "posterColor": "#7c3aed",
       "accentColor": "#7c3aed",
@@ -739,14 +590,9 @@
         "Avengers",
         "S.H.I.E.L.D."
       ],
-      "category": "weapon",
       "origin": "Missouri — circus performer, then S.H.I.E.L.D. recruit",
-      "date": "2026",
       "characters": [
         "hawkeye"
-      ],
-      "writers": [
-        "Marvel Studios"
       ],
       "cast": [
         {
@@ -765,13 +611,7 @@
       "status": "alive",
       "species": "Human (Super-Soldier)",
       "homeworld": "Earth",
-      "phase": 5,
-      "year": 2026,
-      "director": "Various",
       "actor": "Chris Evans",
-      "runtime": 120,
-      "releaseOrder": 80,
-      "chronologicalOrder": 80,
       "portraitColor": "#1d4ed8",
       "posterColor": "#1d4ed8",
       "accentColor": "#1d4ed8",
@@ -798,14 +638,9 @@
         "S.H.I.E.L.D.",
         "Nomad"
       ],
-      "category": "weapon",
       "origin": "Brooklyn, New York — Super-Soldier program during WWII",
-      "date": "2026",
       "characters": [
         "captain-america"
-      ],
-      "writers": [
-        "Marvel Studios"
       ],
       "cast": [
         {
@@ -824,13 +659,7 @@
       "status": "alive",
       "species": "Frost Giant / Asgardian (adopted)",
       "homeworld": "Jotunheim (born) / Asgard (raised)",
-      "phase": 5,
-      "year": 2026,
-      "director": "Various",
       "actor": "Tom Hiddleston",
-      "runtime": 120,
-      "releaseOrder": 80,
-      "chronologicalOrder": 80,
       "portraitColor": "#16a34a",
       "posterColor": "#16a34a",
       "accentColor": "#16a34a",
@@ -854,14 +683,9 @@
         "TVA (reformed)",
         "Thanos (briefly)"
       ],
-      "category": "weapon",
       "origin": "Jotunheim — adopted by Odin after the Asgardian-Frost Giant War",
-      "date": "2026",
       "characters": [
         "loki"
-      ],
-      "writers": [
-        "Marvel Studios"
       ],
       "cast": [
         {
@@ -880,13 +704,7 @@
       "status": "alive",
       "species": "Human (magical)",
       "homeworld": "Earth",
-      "phase": 5,
-      "year": 2026,
-      "director": "Various",
       "actor": "Benedict Cumberbatch",
-      "runtime": 120,
-      "releaseOrder": 80,
-      "chronologicalOrder": 80,
       "portraitColor": "#f59e0b",
       "posterColor": "#f59e0b",
       "accentColor": "#f59e0b",
@@ -911,14 +729,9 @@
         "Masters of the Mystic Arts",
         "Illuminati (alternate)"
       ],
-      "category": "weapon",
       "origin": "New York City — Master of the Mystic Arts, trained at Kamar-Taj",
-      "date": "2026",
       "characters": [
         "doctor-strange"
-      ],
-      "writers": [
-        "Marvel Studios"
       ],
       "cast": [
         {
@@ -939,13 +752,7 @@
       "status": "deceased",
       "species": "Eternal Deviant",
       "homeworld": "Titan",
-      "phase": 5,
-      "year": 2026,
-      "director": "Various",
       "actor": "Josh Brolin",
-      "runtime": 120,
-      "releaseOrder": 80,
-      "chronologicalOrder": 80,
       "portraitColor": "#7e22ce",
       "posterColor": "#7e22ce",
       "accentColor": "#7e22ce",
@@ -970,14 +777,9 @@
         "Black Order",
         "Infinity Gauntlet"
       ],
-      "category": "weapon",
       "origin": "Titan — Eternal Deviant driven by nihilistic philosophy of universal balance",
-      "date": "2026",
       "characters": [
         "thanos"
-      ],
-      "writers": [
-        "Marvel Studios"
       ],
       "cast": [
         {

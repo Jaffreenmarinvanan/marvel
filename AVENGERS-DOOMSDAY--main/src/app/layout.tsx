@@ -8,14 +8,14 @@ import PageTransition from "@/components/PageTransition";
 export const metadata: Metadata = {
   title: {
     default: "Marvel Archives — Every Story. Every Hero. Every Detail.",
-    template: "%s | Marvel Archives",
+    template: "%s | Marvel",
   },
   description:
     "A comprehensive interactive encyclopedia of the Marvel Cinematic Universe — heroes, villains, Infinity Stones, weapons, technology, events, and more.",
   keywords: ["Marvel", "MCU", "Avengers", "Iron Man", "Infinity Stones", "Marvel Cinematic Universe"],
   authors: [{ name: "Marvel Archives" }],
   openGraph: {
-    title: "Marvel Archives",
+    title: "Marvel ",
     description: "Every Story. Every Hero. Every Detail.",
     type: "website",
     locale: "en_US",

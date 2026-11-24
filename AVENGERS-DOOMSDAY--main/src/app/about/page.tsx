@@ -12,7 +12,7 @@ export default function AboutPage() {
           <div className="breadcrumbs">
             <Link href="/" className="crumb-link">Home</Link>
             <span className="crumb-sep">/</span>
-            <span className="crumb-active">About Marvel Archives</span>
+            <span className="crumb-active">About Marvel </span>
           </div>
 
           <div className="header-badge-row">

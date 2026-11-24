@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 /* ─────────────────────────── DATA ── */
 const STONES = [
-  { id: 'space-stone',   name: 'SPACE',   img: '/images/stones/space.png',   color: '#3b82f6', glow: '#1d4ed8', textColor: '#60a5fa' },
+  { id: 'space-stone',   name: 'SPACE',   img: '/images/stones/space.png',   color: '#3b82f6', glow: '#3b5cb7ff', textColor: '#60a5fa' },
   { id: 'mind-stone',    name: 'MIND',    img: '/images/stones/mind.png',    color: '#eab308', glow: '#78350f', textColor: '#fbbf24' },
   { id: 'reality-stone', name: 'REALITY', img: '/images/stones/reality.png', color: '#e31b23', glow: '#7a0a0e', textColor: '#f87171' },
   { id: 'power-stone',   name: 'POWER',   img: '/images/stones/power.png',   color: '#a855f7', glow: '#581c87', textColor: '#c084fc' },
