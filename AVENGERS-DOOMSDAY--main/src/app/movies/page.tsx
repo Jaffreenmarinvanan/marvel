@@ -28,9 +28,9 @@ const PHASE_COLORS: Record<number, string> = {
 };
 
 function getPosterData(movie: Movie, mediaMap?: Record<string, any>) {
-  if (movie.posterUrl) return { image: movie.posterUrl, accent: movie.posterColor ?? '#c9a84c' };
   const entry = mediaMap?.[movie.slug];
-  if (entry) return { image: entry.image, accent: entry.accent || movie.posterColor || '#c9a84c' };
+  if (entry?.image) return { image: entry.image, accent: entry.accent || movie.posterColor || '#c9a84c' };
+  if (movie.posterUrl) return { image: movie.posterUrl, accent: movie.posterColor ?? '#c9a84c' };
   return { image: '', accent: movie.posterColor ?? '#c9a84c' };
 }
 

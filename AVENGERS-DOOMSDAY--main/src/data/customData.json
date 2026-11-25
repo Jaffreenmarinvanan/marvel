@@ -750,12 +750,45 @@
       "species": "Human",
       "homeworld": "Earth",
       "actor": "Anthony Mackie",
-      "imageUrl": "https://i.pinimg.com/736x/89/3e/26/893e26cf8d80c65ef49a0b925b6823ca.jpg",
-      "posterUrl": "https://i.pinimg.com/736x/89/3e/26/893e26cf8d80c65ef49a0b925b6823ca.jpg",
-      "image": "https://i.pinimg.com/736x/89/3e/26/893e26cf8d80c65ef49a0b925b6823ca.jpg",
+      "imageUrl": "https://i.pinimg.com/736x/89/1d/96/891d966c2ce00e122024f67c362801d6.jpg",
+      "posterUrl": "https://i.pinimg.com/736x/89/1d/96/891d966c2ce00e122024f67c362801d6.jpg",
+      "image": "https://i.pinimg.com/736x/89/1d/96/891d966c2ce00e122024f67c362801d6.jpg",
       "portraitColor": "#c41e3a",
       "accentColor": "#c41e3a",
-      "accent": "#c41e3a"
+      "accent": "#c41e3a",
+      "title": "Falcon / Captain America",
+      "phase": 5,
+      "year": 2026,
+      "director": "Various",
+      "runtime": 120,
+      "releaseOrder": 80,
+      "chronologicalOrder": 80,
+      "posterColor": "#c41e3a",
+      "model3dType": "glb",
+      "biography": "Sam Wilson is a former U.S. Air Force paratrooper who used experimental EXO-7 Falcon wings in combat. He became Steve Rogers' closest ally after the Snap. After the Time Heist, an elderly Steve Rogers passed his shield to Sam, designating him as the new Captain America.",
+      "description": "Sam Wilson is a former U.S. Air Force paratrooper who used experimental EXO-7 Falcon wings in combat. He became Steve Rogers' closest ally after the Snap. After the Time Heist, an elderly Steve Rogers passed his shield to Sam, designating him as the new Captain America.",
+      "synopsis": "Sam Wilson is a former U.S. Air Force paratrooper who used experimental EXO-7 Falcon wings in combat. He became Steve Rogers' closest ally after the Snap. After the Time Heist, an elderly Steve Rogers passed his shield to Sam, designating him as the new Captain America.",
+      "powers": [],
+      "affiliation": [
+        "Avengers",
+        "U.S. Air Force",
+        "S.H.I.E.L.D."
+      ],
+      "category": "weapon",
+      "origin": "Harlem, New York — U.S. Air Force EXO-7 Falcon program",
+      "date": "2026",
+      "characters": [
+        "falcon"
+      ],
+      "writers": [
+        "Marvel Studios"
+      ],
+      "cast": [
+        {
+          "actor": "Anthony Mackie",
+          "character": "Falcon / Captain America"
+        }
+      ]
     },
     {
       "id": "c13",
@@ -767,12 +800,50 @@
       "species": "Human (Enhanced)",
       "homeworld": "Earth",
       "actor": "Sebastian Stan",
-      "imageUrl": "https://i.pinimg.com/736x/48/4f/2e/484f2e9680388d745508a8b0ca937aa1.jpg",
-      "posterUrl": "https://i.pinimg.com/736x/48/4f/2e/484f2e9680388d745508a8b0ca937aa1.jpg",
-      "image": "https://i.pinimg.com/736x/48/4f/2e/484f2e9680388d745508a8b0ca937aa1.jpg",
+      "imageUrl": "https://i.pinimg.com/736x/8d/df/54/8ddf548d6b0650d755edad54f1e4aea6.jpg",
+      "posterUrl": "https://i.pinimg.com/736x/8d/df/54/8ddf548d6b0650d755edad54f1e4aea6.jpg",
+      "image": "https://i.pinimg.com/736x/8d/df/54/8ddf548d6b0650d755edad54f1e4aea6.jpg",
       "portraitColor": "#64748b",
       "accentColor": "#64748b",
-      "accent": "#64748b"
+      "accent": "#64748b",
+      "title": "Winter Soldier",
+      "phase": 5,
+      "year": 2026,
+      "director": "Various",
+      "runtime": 120,
+      "releaseOrder": 80,
+      "chronologicalOrder": 80,
+      "posterColor": "#64748b",
+      "model3dType": "glb",
+      "biography": "Bucky Barnes was Steve Rogers' childhood friend who served alongside him in WWII before falling from a moving train during a mission. Believed dead, he was recovered by HYDRA, given a super-soldier serum and a cybernetic arm, and brainwashed into becoming the Winter Soldier — a Soviet assassin. After decades of programming, he remembered his past after Steve Rogers refused to fight him. He spent time in Wakanda recovering and being deprogrammed, ultimately becoming an Avenger.",
+      "description": "Bucky Barnes was Steve Rogers' childhood friend who served alongside him in WWII before falling from a moving train during a mission. Believed dead, he was recovered by HYDRA, given a super-soldier serum and a cybernetic arm, and brainwashed into becoming the Winter Soldier — a Soviet assassin. After decades of programming, he remembered his past after Steve Rogers refused to fight him. He spent time in Wakanda recovering and being deprogrammed, ultimately becoming an Avenger.",
+      "synopsis": "Bucky Barnes was Steve Rogers' childhood friend who served alongside him in WWII before falling from a moving train during a mission. Believed dead, he was recovered by HYDRA, given a super-soldier serum and a cybernetic arm, and brainwashed into becoming the Winter Soldier — a Soviet assassin. After decades of programming, he remembered his past after Steve Rogers refused to fight him. He spent time in Wakanda recovering and being deprogrammed, ultimately becoming an Avenger.",
+      "powers": [
+        "Super-soldier serum",
+        "Cybernetic left arm",
+        "Enhanced strength and reflexes"
+      ],
+      "affiliation": [
+        "Avengers",
+        "U.S. Army (WWII)",
+        "HYDRA (brainwashed)",
+        "Wakanda"
+      ],
+      "category": "weapon",
+      "origin": "Brooklyn, New York — WWII soldier transformed into HYDRA's Winter Soldier",
+      "date": "2026",
+      "characters": [
+        "winter-soldier"
+      ],
+      "writers": [
+        "Marvel Studios"
+      ],
+      "cast": [
+        {
+          "actor": "Sebastian Stan",
+          "character": "Winter Soldier"
+        }
+      ]
     },
     {
       "id": "c21",
@@ -784,12 +855,41 @@
       "species": "Human",
       "homeworld": "Earth",
       "actor": "Samuel L. Jackson",
-      "imageUrl": "https://i.pinimg.com/736x/21/2e/ae/212eae17e923e4d9ebca473130bb63aa.jpg",
-      "posterUrl": "https://i.pinimg.com/736x/21/2e/ae/212eae17e923e4d9ebca473130bb63aa.jpg",
-      "image": "https://i.pinimg.com/736x/21/2e/ae/212eae17e923e4d9ebca473130bb63aa.jpg",
+      "imageUrl": "https://i.pinimg.com/1200x/f6/fc/db/f6fcdb27a71a2c63f8ecefe76e0d1f5d.jpg",
+      "posterUrl": "https://i.pinimg.com/1200x/f6/fc/db/f6fcdb27a71a2c63f8ecefe76e0d1f5d.jpg",
+      "image": "https://i.pinimg.com/1200x/f6/fc/db/f6fcdb27a71a2c63f8ecefe76e0d1f5d.jpg",
       "portraitColor": "#475569",
       "accentColor": "#475569",
-      "accent": "#475569"
+      "accent": "#475569",
+      "title": "Nick Fury",
+      "phase": 5,
+      "year": 2026,
+      "director": "Various",
+      "runtime": 120,
+      "releaseOrder": 80,
+      "chronologicalOrder": 80,
+      "posterColor": "#475569",
+      "model3dType": "glb",
+      "biography": "S.H.I.E.L.D.",
+      "description": "S.H.I.E.L.D.",
+      "synopsis": "S.H.I.E.L.D.",
+      "powers": [],
+      "affiliation": [],
+      "category": "weapon",
+      "origin": "Earth",
+      "date": "2026",
+      "characters": [
+        "nick-fury"
+      ],
+      "writers": [
+        "Marvel Studios"
+      ],
+      "cast": [
+        {
+          "actor": "Samuel L. Jackson",
+          "character": "Nick Fury"
+        }
+      ]
     }
   ],
   "villains": [
@@ -849,9 +949,9 @@
       "species": "Human (31st Century)",
       "homeworld": "Earth-6311 (Other-Earth)",
       "actor": "Jonathan Majors",
-      "imageUrl": "https://i.pinimg.com/736x/4e/be/49/4ebe4996aa5008be26c59b20e0ffb052.jpg",
-      "posterUrl": "https://i.pinimg.com/736x/4e/be/49/4ebe4996aa5008be26c59b20e0ffb052.jpg",
-      "image": "https://i.pinimg.com/736x/4e/be/49/4ebe4996aa5008be26c59b20e0ffb052.jpg",
+      "imageUrl": "https://i.pinimg.com/736x/0b/21/6e/0b216ec268be2bd8c046f1f426f0ee06.jpg",
+      "posterUrl": "https://i.pinimg.com/736x/0b/21/6e/0b216ec268be2bd8c046f1f426f0ee06.jpg",
+      "image": "https://i.pinimg.com/736x/0b/21/6e/0b216ec268be2bd8c046f1f426f0ee06.jpg",
       "portraitColor": "#10b981",
       "accentColor": "#10b981",
       "accent": "#10b981"

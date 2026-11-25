@@ -30,7 +30,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "A half-vampire, half-mortal man becomes a protector of the mortal race while slaying evil vampires.",
     "posterColor": "#b91c1c",
-    "posterUrl": "https://upload.wikimedia.org/wikipedia/en/1/13/Blade_movie.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/19/d9/9d/19d99d0522c4457e627f103a26e2433e.jpg",
     "budget": "$45 million",
     "boxOffice": "$131.2 million",
     "mainCharacters": [
@@ -116,7 +116,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "The landmark film introducing Wolverine, Professor X, and Magneto — establishing the Fox Mutant reality anchored in Secret Wars.",
     "posterColor": "#3b82f6",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/k7hRgw3skIZj31t66bbg4t2AIlV.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/e5/cd/52/e5cd5212bae919919d6b8491aca632a6.jpg",
     "budget": "Undisclosed",
     "boxOffice": "TBD",
     "mainCharacters": [
@@ -185,7 +185,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Blade forms an uneasy alliance with the vampire council to combat the Reapers, a mutant strain of vampires.",
     "posterColor": "#991b1b",
-    "posterUrl": "https://upload.wikimedia.org/wikipedia/en/0/07/Blade2.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/84/ce/2d/84ce2d8ce87ce84dc8d9f4d51ead2d28.jpg",
     "budget": "$54 million",
     "boxOffice": "$155 million",
     "mainCharacters": [
@@ -255,7 +255,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "After being bitten by a genetically-modified spider, high schooler Peter Parker gains spider-like abilities and must balance crime-fighting with personal tragedy.",
     "posterColor": "#dc2626",
-    "posterUrl": "https://upload.wikimedia.org/wikipedia/en/f/f3/Spider-Man2002Poster.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/48/4b/8f/484b8f1cf95ff2ee83b5e10e80ec8875.jpg",
     "budget": "$139 million",
     "boxOffice": "$825 million",
     "mainCharacters": [
@@ -328,7 +328,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "A man blinded by toxic waste which also enhanced his remaining senses fights crime as an acrobatic martial arts superhero.",
     "posterColor": "#b91c1c",
-    "posterUrl": "https://upload.wikimedia.org/wikipedia/en/e/eb/Daredevil_poster.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/ef/25/f3/ef25f302b5747740390bf275b0f502cd.jpg",
     "budget": "$78 million",
     "boxOffice": "$179.2 million",
     "mainCharacters": [
@@ -413,7 +413,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "The acclaimed mutant sequel deepening Charles Xavier's school, Weapon X origins, and the mutant-human cold war.",
     "posterColor": "#0284c7",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/s49f8263K5D2jA06DCEeD2CnbxZ.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/96/31/b7/9631b70c06676c5f6243244a9ba47dc5.jpg",
     "budget": "Undisclosed",
     "boxOffice": "TBD",
     "mainCharacters": [
@@ -487,7 +487,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Scientist Bruce Banner is exposed to gamma radiation and transforms into a rampaging green behemoth when angered, while his estranged father plots to absorb his power.",
     "posterColor": "#16a34a",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/bNzTxCzaqQFIaEssBDcPMOXjHkA.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/c7/1d/6e/c71d6e3fe10a9826a7f42ffe21634820.jpg",
     "budget": "$137 million",
     "boxOffice": "$245.4 million",
     "mainCharacters": [
@@ -550,7 +550,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "An undercover FBI agent becomes a vengeful vigilante and sets out to unleash his wrath upon the corrupt businessman who slaughtered his entire family.",
     "posterColor": "#171717",
-    "posterUrl": "https://upload.wikimedia.org/wikipedia/en/f/f6/The_Punisher_%282004_film%29_poster.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/12/d6/6c/12d66cafe80ad9b48869a748296f0869.jpg",
     "budget": "$33 million",
     "boxOffice": "$54.7 million",
     "mainCharacters": [
@@ -618,7 +618,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Peter Parker struggles in his personal life while facing brilliant scientist Dr. Otto Octavius, whose mechanical tentacles drive him toward catastrophic fusion reactor experiments.",
     "posterColor": "#b91c1c",
-    "posterUrl": "https://upload.wikimedia.org/wikipedia/en/0/02/Spider-Man_2_Poster.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/af/a5/4f/afa54fb7fe826d849b6d532d46fb3346.jpg",
     "budget": "$200 million",
     "boxOffice": "$789 million",
     "mainCharacters": [
@@ -688,7 +688,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Blade joins forces with the Nightstalkers, a human clan of vampire hunters, to defeat the progenitor of all vampires, Drake.",
     "posterColor": "#7f1d1d",
-    "posterUrl": "https://upload.wikimedia.org/wikipedia/en/9/91/Blade_Trinity.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/17/78/77/177877f06d6ec6d39379b9b35b4ca01c.jpg",
     "budget": "$65 million",
     "boxOffice": "$132 million",
     "mainCharacters": [
@@ -757,7 +757,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "The warrior assassin Elektra is hired to assassinate a man and his daughter, but instead decides to protect them from The Hand.",
     "posterColor": "#991b1b",
-    "posterUrl": "https://upload.wikimedia.org/wikipedia/en/d/d7/Elektra_poster.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/31/ac/df/31acdf52f08220d68e9b862a212626f5.jpg",
     "budget": "$43 million",
     "boxOffice": "$57 million",
     "mainCharacters": [
@@ -828,7 +828,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Four astronauts gain superpowers after being exposed to cosmic radiation in space and must band together as the Fantastic Four to stop the villainous Doctor Doom.",
     "posterColor": "#0ea5e9",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/f0baBh9hhMcfKEKbFiSjn5PiuMR.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/4f/3e/f6/4f3ef6b8ed9201d7c5fcfb15a50268dd.jpg",
     "budget": "$100 million",
     "boxOffice": "$330.6 million",
     "mainCharacters": [
@@ -912,7 +912,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "A mutant cure sparks a war between Professor X's X-Men and Magneto's Brotherhood, while Jean Grey returns as the unstoppable Phoenix threatening all mutant-kind.",
     "posterColor": "#dc2626",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/9W0R92M6MzGdM0HWM4F4p6GQBqS.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/44/bf/1d/44bf1db9bb0f21cd8e8261621584ee6e.jpg",
     "budget": "$210 million",
     "boxOffice": "$459.4 million",
     "mainCharacters": [
@@ -984,7 +984,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Stunt motorcyclist Johnny Blaze strikes a deal with the devil Mephistopheles, transforming into the supernatural Ghost Rider to battle the demon Blackheart.",
     "posterColor": "#ea580c",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/5qdMJi8YNLF2mXOWFPX6cOPGqGS.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/08/5e/b8/085eb8e327e90140b2222c2644a91f9a.jpg",
     "budget": "$110 million",
     "boxOffice": "$228.7 million",
     "mainCharacters": [
@@ -1058,7 +1058,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "A strange black entity bonds with Peter Parker, altering his personality, while he confronts Sandman and a vengeful Eddie Brock turned Venom.",
     "posterColor": "#1e1b4b",
-    "posterUrl": "https://upload.wikimedia.org/wikipedia/en/7/7a/Spider-Man_3%2C_International_Poster.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/63/4e/11/634e111422d053cf2c7c9a56f9a6d03f.jpg",
     "budget": "$258 million",
     "boxOffice": "$895 million",
     "mainCharacters": [
@@ -1141,7 +1141,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "The Fantastic Four face the Silver Surfer, a cosmic herald of the planet-devouring entity Galactus, whose arrival threatens to consume Earth.",
     "posterColor": "#64748b",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/4uN1oEmpkPHlxaCWPJTfBuUwLst.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/6f/7c/4c/6f7c4cf8df5ea684d5e7854092d61ab8.jpg",
     "budget": "$130 million",
     "boxOffice": "$289 million",
     "mainCharacters": [
@@ -1277,7 +1277,7 @@ export const movies: Movie[] = [
     "type": "movie",
     "status": "released",
     "tmdbId": 1726,
-    "posterUrl": "https://image.tmdb.org/t/p/w500/78lPtwv72eTNqFW9COBM5kPDeVS.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/14/85/b5/1485b5a78274180bcce4a0fce0ef3c4a.jpg",
     "streamingOn": "Disney+"
   },
   {
@@ -1356,7 +1356,7 @@ export const movies: Movie[] = [
     "type": "movie",
     "status": "released",
     "tmdbId": 1724,
-    "posterUrl": "https://image.tmdb.org/t/p/w500/gKzYx79y0AQTL4UAk1cBQJ3nvrm.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/02/5b/1b/025b1bf3ffec96d6479b597ea552bd96.jpg",
     "streamingOn": "Disney+"
   },
   {
@@ -1395,7 +1395,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Vigilante Frank Castle returns as the Punisher, hunting the disfigured crime lord Jigsaw through the streets of New York.",
     "posterColor": "#1e293b",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/0UDHYo7FGFzqZOhM2tJmZqOhM2tJ.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/f6/d6/94/f6d694fd4f9927ad1b620ad1f5d13679.jpg",
     "budget": "$35 million",
     "boxOffice": "$10.1 million",
     "mainCharacters": [
@@ -1459,7 +1459,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "The turbulent early history of Logan and his brother Victor Creed, culminating in the fateful Weapon X adamantium bonding experiment.",
     "posterColor": "#b45309",
-    "posterUrl": "https://upload.wikimedia.org/wikipedia/en/6/6a/X-Men_Origins_Wolverine_theatrical_poster.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/4b/46/af/4b46affd0a4612dd6831329e20288a41.jpg",
     "budget": "$150 million",
     "boxOffice": "$373 million",
     "mainCharacters": [
@@ -1604,7 +1604,7 @@ export const movies: Movie[] = [
     "type": "movie",
     "status": "released",
     "tmdbId": 10138,
-    "posterUrl": "https://image.tmdb.org/t/p/w500/6WBeq4fCfn7AN33GmEPmCtu81KA.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/ca/38/84/ca3884c70e5d3058befb49a9f6030406.jpg",
     "streamingOn": "Disney+"
   },
   {
@@ -1693,7 +1693,7 @@ export const movies: Movie[] = [
     "type": "movie",
     "status": "released",
     "tmdbId": 10195,
-    "posterUrl": "https://image.tmdb.org/t/p/w500/prSfAi1xGrhLQNxVSUFh2xAiGSB.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/40/2c/2e/402c2eab887f68bb3151385cac0571be.jpg",
     "streamingOn": "Disney+"
   },
   {
@@ -1747,7 +1747,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "The origin story of Charles Xavier and Erik Lehnsherr — before they became Professor X and Magneto — set during the Cuban Missile Crisis, as the first X-Men team forms to prevent nuclear war.",
     "posterColor": "#fbbf24",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/7MBQJRjmJ6b9SgMibflYblvJLBH.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/e9/d7/a0/e9d7a0f5bb4a4bd0bfa8d431da998f88.jpg",
     "budget": "$160 million",
     "boxOffice": "$353.6 million",
     "mainCharacters": [
@@ -1880,7 +1880,7 @@ export const movies: Movie[] = [
     "type": "movie",
     "status": "released",
     "tmdbId": 1771,
-    "posterUrl": "https://image.tmdb.org/t/p/w500/vSNxAJJMilt84Clqys4Vm7s8X4Y.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/c3/a4/1b/c3a41bf5f2e30e8bbe4b0f8a896613bb.jpg",
     "streamingOn": "Disney+"
   },
   {
@@ -1918,7 +1918,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Johnny Blaze hides in Eastern Europe when he is recruited to save a young boy targeted by the Devil for an unholy bodily possession.",
     "posterColor": "#ea580c",
-    "posterUrl": "https://upload.wikimedia.org/wikipedia/en/9/91/Ghost_Rider_Spirit_of_Vengeance_Poster.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/ae/7d/d6/ae7dd6c5803fd5f5553ac39890695a7d.jpg",
     "budget": "$57 million",
     "boxOffice": "$132.6 million",
     "mainCharacters": [
@@ -2010,7 +2010,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Earth's mightiest heroes assemble for the first time to stop Loki and his Chitauri army from conquering the world.",
     "posterColor": "#3b82f6",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/RYMX2wcKCBAr24UyPD7KE3Ouoq.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/3c/b4/28/3cb428f7b5e7246ee9c2727862e423e4.jpg",
     "budget": "Undisclosed",
     "boxOffice": "TBD",
     "mainCharacters": [
@@ -2098,7 +2098,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "High school student Peter Parker discovers his father's secret research, gains spider-like superpowers, and becomes the Amazing Spider-Man to battle the villainous Lizard.",
     "posterColor": "#dc2626",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/zqkFkFOo9c5FHIpHWGqjlCHiVAv.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/b1/33/f1/b133f1337b70258e1596ac9a88a8855a.jpg",
     "budget": "$230 million",
     "boxOffice": "$757.9 million",
     "mainCharacters": [
@@ -2225,7 +2225,7 @@ export const movies: Movie[] = [
     "type": "movie",
     "status": "released",
     "tmdbId": 68721,
-    "posterUrl": "https://image.tmdb.org/t/p/w500/qhPtAc1TKbMPqNvcdXSOn9Bn7hZ.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/43/12/2f/43122f1057f55bd715fbb509c0b466c9.jpg",
     "streamingOn": "Disney+"
   },
   {
@@ -2268,7 +2268,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Logan travels to Japan to pay his respects to a dying acquaintance, but finds himself caught between warring Japanese clans and a plot to steal his immortality.",
     "posterColor": "#d97706",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/vYwMCCwJGnBaBcYF6C79R1EIYRf.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/09/47/85/094785b4cbfbfccf7b56b0a6ad752ef0.jpg",
     "budget": "$120 million",
     "boxOffice": "$414.8 million",
     "mainCharacters": [
@@ -2349,7 +2349,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Agent Phil Coulson leads a mobile specialized team of S.H.I.E.L.D. agents investigating strange cases across the globe, from Inhuman emergence to time travel.",
     "posterColor": "#1e3a8a",
-    "posterUrl": "https://upload.wikimedia.org/wikipedia/en/1/1a/Agents_of_S.H.I.E.L.D._season_1_poster.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/a7/ca/3f/a7ca3faa3b63dd1e653d0efde04adb6b.jpg",
     "budget": "N/A",
     "boxOffice": "N/A",
     "mainCharacters": [
@@ -2491,7 +2491,7 @@ export const movies: Movie[] = [
     "type": "movie",
     "status": "released",
     "tmdbId": 76338,
-    "posterUrl": "https://image.tmdb.org/t/p/w500/bnX5PxvMpMaAzMB2M8m0AWoTtqP.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/b1/ee/3c/b1ee3c2cec6beb74ce55d799885dd630.jpg",
     "streamingOn": "Disney+"
   },
   {
@@ -2595,7 +2595,7 @@ export const movies: Movie[] = [
     "type": "movie",
     "status": "released",
     "tmdbId": 100402,
-    "posterUrl": "https://image.tmdb.org/t/p/w500/5TQ6YDmymBpnF005OyoB7ohZps9.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/77/1e/81/771e818d4d3788983f6ec2b438fd7add.jpg",
     "streamingOn": "Disney+"
   },
   {
@@ -2640,7 +2640,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Peter Parker battles the electric-powered Electro and his best friend Harry Osborn who transforms into the Green Goblin, while uncovering the truth about his parents and facing devastating loss.",
     "posterColor": "#1d4ed8",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/oZuwBvHSPjLV7MCNkGsR1Ys0qp0.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/5b/af/4e/5baf4ec151c96c71e71d06f9c36bc064.jpg",
     "budget": "$200 million",
     "boxOffice": "$709 million",
     "mainCharacters": [
@@ -2723,7 +2723,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Wolverine's consciousness is sent back to 1973 to prevent an assassination that leads to a catastrophic future where mutants are hunted by Sentinel robots, while both past and future X-Men must work together across time.",
     "posterColor": "#6d28d9",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/uuMPBYMEKuRGvMx5JDRN3jZZ3l8.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/ea/0a/0a/ea0a0ae5dca2ecaa823aa377e8faa572.jpg",
     "budget": "$200 million",
     "boxOffice": "$746.1 million",
     "mainCharacters": [
@@ -2866,7 +2866,7 @@ export const movies: Movie[] = [
     "type": "movie",
     "status": "released",
     "tmdbId": 118340,
-    "posterUrl": "https://image.tmdb.org/t/p/w500/r7vmZjiyZw9rpJMQJdXpjgiCOk9.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/38/1f/fe/381ffea487dd456a6a7094d77429aade.jpg",
     "streamingOn": "Disney+"
   },
   {
@@ -2913,7 +2913,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Peggy Carter fights Soviet threats and sexism while working to clear Howard Stark's name in postwar New York.",
     "posterColor": "#c41e3a",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/4Qfl8uLGJuiKFtS7bLWU5sBNRp3.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/95/94/fd/9594fd5b83c67a99528098955638f344.jpg",
     "budget": "Undisclosed",
     "boxOffice": "N/A",
     "mainCharacters": [
@@ -2994,7 +2994,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Blind lawyer Matt Murdock fights crime as Daredevil on Hell's Kitchen's streets against the criminal Kingpin.",
     "posterColor": "#dc2626",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/QWbPaDxiB6LW4MqBwWGMBsV1NpK.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/05/77/26/057726b52cb5f11b984858b63a021b71.jpg",
     "budget": "Undisclosed",
     "boxOffice": "N/A",
     "mainCharacters": [
@@ -3153,7 +3153,7 @@ export const movies: Movie[] = [
     "type": "movie",
     "status": "released",
     "tmdbId": 99861,
-    "posterUrl": "https://image.tmdb.org/t/p/w500/4ssDuvEDkSArWEdyBl2X5EHvYKU.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/7b/08/c4/7b08c49accdc728b16797a4bd39b7f27.jpg",
     "streamingOn": "Disney+"
   },
   {
@@ -3250,7 +3250,7 @@ export const movies: Movie[] = [
     "type": "movie",
     "status": "released",
     "tmdbId": 102899,
-    "posterUrl": "https://image.tmdb.org/t/p/w500/MgUJhSOYVOVV5GOxGP7AVmKTJY.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/b5/13/97/b51397ef3d7b6ae817f4b7ae857ea570.jpg",
     "streamingOn": "Disney+"
   },
   {
@@ -3297,7 +3297,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "A hard-drinking private investigator with super-strength hunts the mind-controlling psychopath Kilgrave.",
     "posterColor": "#7e22ce",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/bvhXBSCGQJCIGSKTSmBZOXpgpBK.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/d6/16/8b/d6168b522798cd26e90224bb2d1d6ad3.jpg",
     "budget": "Undisclosed",
     "boxOffice": "N/A",
     "mainCharacters": [
@@ -3375,7 +3375,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Peggy investigates a mysterious substance and a secret organization in 1940s Hollywood.",
     "posterColor": "#ea580c",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/4Qfl8uLGJuiKFtS7bLWU5sBNRp3.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/84/fc/7e/84fc7e7333e428f2c1c60f72725894e5.jpg",
     "budget": "Undisclosed",
     "boxOffice": "N/A",
     "mainCharacters": [
@@ -3458,7 +3458,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Former mercenary Wade Wilson undergoes a sadistic experiment that grants him accelerated healing and disfigures him. He dons the Deadpool costume to hunt down the man who ruined his life — all with his signature fourth-wall-breaking humor.",
     "posterColor": "#dc2626",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/en971MEXui9diirXlogOrPKmsEn.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/87/a4/6b/87a46bc1264f942f2a9976d4f5b6129c.jpg",
     "budget": "$58 million",
     "boxOffice": "$783.1 million",
     "mainCharacters": [
@@ -3538,7 +3538,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Daredevil clashes with the brutal Punisher and reunites with the deadly Elektra amid a ninja conspiracy.",
     "posterColor": "#991b1b",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/QWbPaDxiB6LW4MqBwWGMBsV1NpK.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/f8/c8/bd/f8c8bd6e371e7d9b4f2c204d9cc81c77.jpg",
     "budget": "Undisclosed",
     "boxOffice": "N/A",
     "mainCharacters": [
@@ -3710,7 +3710,7 @@ export const movies: Movie[] = [
     "type": "movie",
     "status": "released",
     "tmdbId": 271110,
-    "posterUrl": "https://image.tmdb.org/t/p/w500/rAGiXaUfPzY7CDEyNPZoo1Bxsnp.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/45/1c/97/451c97801dacffe00eb7314e843ec5e3.jpg",
     "streamingOn": "Disney+"
   },
   {
@@ -3773,7 +3773,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "After thousands of years dormant, the world's first mutant Apocalypse awakens in 1983 and recruits Four Horsemen to cleanse the Earth. The young X-Men must unite to stop him before he destroys civilization.",
     "posterColor": "#7c3aed",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/9GpMXFmBLjyAEHGqQe6nASA4jl5.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/6e/0b/1f/6e0b1fa3008386299d9c73a2d89113e3.jpg",
     "budget": "$178 million",
     "boxOffice": "$543.9 million",
     "mainCharacters": [
@@ -3864,7 +3864,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "A bulletproof street hero protects Harlem from corrupt politics and a powerful crime lord.",
     "posterColor": "#d97706",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/5z95RHAoE1BSfm9hpEUqvFZK1p7.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/49/d9/00/49d900d86f30cd8a9577e647e8fd4873.jpg",
     "budget": "Undisclosed",
     "boxOffice": "N/A",
     "mainCharacters": [
@@ -3995,7 +3995,7 @@ export const movies: Movie[] = [
     "type": "movie",
     "status": "released",
     "tmdbId": 284052,
-    "posterUrl": "https://image.tmdb.org/t/p/w500/uGBVAWjjkScRx3HHA0P7Lgt3qnT.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/e3/37/64/e33764da14fe6b2440b466a5e4ab0385.jpg",
     "streamingOn": "Disney+"
   },
   {
@@ -4030,7 +4030,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "David Haller, a diagnosed schizophrenic with god-like mutant powers, discovers that the voices and visions he experiences might be real and linked to a parasitic mutant entity.",
     "posterColor": "#9333ea",
-    "posterUrl": "https://upload.wikimedia.org/wikipedia/en/1/18/Legion_TV_Series.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/ab/19/4e/ab194eefce9688ff828840ea5b0d6997.jpg",
     "budget": "N/A",
     "boxOffice": "N/A",
     "mainCharacters": [
@@ -4116,7 +4116,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "In 2029, a weary and ailing Wolverine cares for a deteriorating Professor X. When a young mutant clone named Laura appears, Logan must protect her from the dark forces of Alkali-Transigen — in his final, most human story.",
     "posterColor": "#1e293b",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/45Y1G5FEgttPKe2KqL3kBCOiHF0.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/a9/2a/96/a92a96911bc6e1ffb92a98c67271fb24.jpg",
     "budget": "$97 million",
     "boxOffice": "$619.2 million",
     "mainCharacters": [
@@ -4190,7 +4190,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Danny Rand returns from K'un-Lun to reclaim his family's company and fight the Hand's influence.",
     "posterColor": "#15803d",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/AmR3JG1VQVxU8TScJ9BvpERPZl.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/f5/1a/4c/f51a4cc02ab2f8311fb1438dbb6abb17.jpg",
     "budget": "Undisclosed",
     "boxOffice": "N/A",
     "mainCharacters": [
@@ -4287,7 +4287,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "The Guardians explore Peter Quill's parentage and face a god-like villain with devastating intentions.",
     "posterColor": "#a855f7",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/y4MBh0EjBlMuOzv9axM4qJlmhzz.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/c9/79/58/c97958d3cc1f0e8d312f069a34578998.jpg",
     "budget": "Undisclosed",
     "boxOffice": "TBD",
     "mainCharacters": [
@@ -4379,7 +4379,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Teenage Peter Parker balances high school life and his Spider-Man identity while facing the Vulture.",
     "posterColor": "#e11d48",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/c24sv2weTHPsmDa7jEMN0m2P3RT.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/3e/21/0f/3e210fc25cc1c0de448c02ac77c8bbf1.jpg",
     "budget": "Undisclosed",
     "boxOffice": "TBD",
     "mainCharacters": [
@@ -4465,7 +4465,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Daredevil, Jessica Jones, Luke Cage, and Iron Fist join forces against the Hand's secret endgame.",
     "posterColor": "#2563eb",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/sDpPWF0jaSqMSCvtI3FfGy8rlPi.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/a2/82/6f/a2826fd6381c2c7152f2835bd6175775.jpg",
     "budget": "Undisclosed",
     "boxOffice": "N/A",
     "mainCharacters": [
@@ -4535,7 +4535,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "After a military coup, the Inhuman Royal Family escapes from their lunar city of Attilan to Hawaii, where they must save themselves and the world.",
     "posterColor": "#1e293b",
-    "posterUrl": "https://upload.wikimedia.org/wikipedia/en/9/9f/Inhumans_poster.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/10/e1/91/10e1910cf470c6402a728f90b28303e1.jpg",
     "budget": "N/A",
     "boxOffice": "$3.5 million (IMAX)",
     "mainCharacters": [
@@ -4612,7 +4612,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "In a world where the X-Men have vanished, a suburban couple's ordinary lives are rocked by the discovery that their children possess mutant powers, forcing them to join an underground network.",
     "posterColor": "#059669",
-    "posterUrl": "https://upload.wikimedia.org/wikipedia/en/3/36/The_Gifted_poster.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/4d/a8/9a/4da89a13028e09ca3abaf7f7f8a34f6e.jpg",
     "budget": "N/A",
     "boxOffice": "N/A",
     "mainCharacters": [
@@ -4760,7 +4760,7 @@ export const movies: Movie[] = [
     "type": "movie",
     "status": "released",
     "tmdbId": 284053,
-    "posterUrl": "https://image.tmdb.org/t/p/w500/rzRwTcFvttcN1ZpX2xv4j3tSdJu.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/1a/46/33/1a46337640ae16ba9d58f61a73fcf050.jpg",
     "streamingOn": "Disney+"
   },
   {
@@ -4806,7 +4806,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Frank Castle wages a brutal war on those responsible for his family's murder in a conspiracy thriller.",
     "posterColor": "#475569",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/oSuCaJTM4lyGwzg09c14goyWjgI.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/5f/e6/9d/5fe69dbf96cf86436ee122755ebca3bb.jpg",
     "budget": "Undisclosed",
     "boxOffice": "N/A",
     "mainCharacters": [
@@ -4884,7 +4884,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Six Los Angeles teenagers discover that their parents are secretly members of a villainous cabal known as PRIDE, and unite to stop them.",
     "posterColor": "#ec4899",
-    "posterUrl": "https://upload.wikimedia.org/wikipedia/en/8/86/Marvel%27s_Runaways_season_1_poster.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/d8/3e/af/d83eaf1a07c976ec6002f68a568c77e6.jpg",
     "budget": "N/A",
     "boxOffice": "N/A",
     "mainCharacters": [
@@ -5016,7 +5016,7 @@ export const movies: Movie[] = [
     "type": "movie",
     "status": "released",
     "tmdbId": 284054,
-    "posterUrl": "https://image.tmdb.org/t/p/w500/uxzzxijgPIY7slzFvMotPv8wjKA.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/94/ea/8e/94ea8e36ed6403d1979f7e3890d9d8fa.jpg",
     "streamingOn": "Disney+"
   },
   {
@@ -5058,7 +5058,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Jessica investigates IGH, the organization responsible for her powers, as she spirals into her darkest chapter.",
     "posterColor": "#9333ea",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/bvhXBSCGQJCIGSKTSmBZOXpgpBK.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/5e/67/8d/5e678dfea8e5fc30344433932a7ddda1.jpg",
     "budget": "Undisclosed",
     "boxOffice": "N/A",
     "mainCharacters": [
@@ -5208,7 +5208,7 @@ export const movies: Movie[] = [
     "type": "movie",
     "status": "released",
     "tmdbId": 299536,
-    "posterUrl": "https://image.tmdb.org/t/p/w500/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/d6/9b/b7/d69bb7bb25627168812ba2015cd26312.jpg",
     "streamingOn": "Disney+"
   },
   {
@@ -5260,7 +5260,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Deadpool assembles the X-Force to protect a troubled young mutant from the time-traveling soldier Cable, while grappling with the death of Vanessa and what it means to be a hero.",
     "posterColor": "#b91c1c",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/to0spRl1CMDvyUbOnbb4fTk3VAd.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/1a/78/12/1a7812645acabefa923197054c270a87.jpg",
     "budget": "$110 million",
     "boxOffice": "$785 million",
     "mainCharacters": [
@@ -5329,7 +5329,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Two teenagers from very different backgrounds find themselves burdened and awakened to newly acquired superpowers which are mysteriously linked to one another.",
     "posterColor": "#4f46e5",
-    "posterUrl": "https://upload.wikimedia.org/wikipedia/en/d/dc/Cloak_%26_Dagger_season_1_poster.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/ed/be/e9/edbee93cf28c9669eba9683d14618339.jpg",
     "budget": "N/A",
     "boxOffice": "N/A",
     "mainCharacters": [
@@ -5408,7 +5408,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Luke Cage protects Harlem from a Jamaican crime lord while grappling with becoming a true hero.",
     "posterColor": "#b45309",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/5z95RHAoE1BSfm9hpEUqvFZK1p7.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/25/a8/c2/25a8c2fb68c41d46f07915759e99d2b7.jpg",
     "budget": "Undisclosed",
     "boxOffice": "N/A",
     "mainCharacters": [
@@ -5493,7 +5493,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Scott Lang partners with Hope van Dyne to rescue her mother Janet from the quantum realm.",
     "posterColor": "#eab308",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/fdMEhi7ha0cF9YScn2MXY4i5a4.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/38/c5/b2/38c5b249ada153c84851714ba3a9c9b8.jpg",
     "budget": "Undisclosed",
     "boxOffice": "TBD",
     "mainCharacters": [
@@ -5568,7 +5568,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Danny Rand faces a war over Chinatown's streets while Colleen Wing discovers her true destiny.",
     "posterColor": "#166534",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/AmR3JG1VQVxU8TScJ9BvpERPZl.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/42/68/25/42682544fa9d6aa10eaaf9a4a43474e4.jpg",
     "budget": "Undisclosed",
     "boxOffice": "N/A",
     "mainCharacters": [
@@ -5641,7 +5641,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Investigative journalist Eddie Brock becomes bonded to an alien symbiote called Venom, which grants him terrifying powers — and they must work together to stop a conspiracy at the Life Foundation.",
     "posterColor": "#0f172a",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/2uNW4WbgBXL25BAbXGLnLqX71Sw.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/d1/47/83/d147834c40992ebe3185ddb1227b9785.jpg",
     "budget": "$100 million",
     "boxOffice": "$856.1 million",
     "mainCharacters": [
@@ -5725,7 +5725,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Matt Murdock returns to Hell's Kitchen as Daredevil while Fisk controls New York from inside prison.",
     "posterColor": "#7f1d1d",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/QWbPaDxiB6LW4MqBwWGMBsV1NpK.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/b8/61/ba/b861ba8dc008061bae557802c68d80cf.jpg",
     "budget": "Undisclosed",
     "boxOffice": "N/A",
     "mainCharacters": [
@@ -5805,7 +5805,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Teenager Miles Morales becomes the new Spider-Man of Earth-1610 and must unite with five spider-powered individuals from other dimensions to stop Kingpin's collider.",
     "posterColor": "#0284c7",
-    "posterUrl": "https://upload.wikimedia.org/wikipedia/en/f/fa/Spider-Man_Into_the_Spider-Verse_poster.png",
+    "posterUrl": "https://i.pinimg.com/736x/7a/dc/4f/7adc4fb12c2b64ea4066d04e3d0769cc.jpg",
     "budget": "$90 million",
     "boxOffice": "$384.3 million",
     "mainCharacters": [
@@ -5893,7 +5893,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Frank Castle protects a young girl from a mysterious assassin while Jigsaw returns for revenge.",
     "posterColor": "#334155",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/oSuCaJTM4lyGwzg09c14goyWjgI.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/81/1f/a2/811fa2e00944f1caff420aaa36c290d7.jpg",
     "budget": "Undisclosed",
     "boxOffice": "N/A",
     "mainCharacters": [
@@ -5975,7 +5975,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Carol Danvers discovers her alien heritage and becomes Earth's most powerful hero amid an intergalactic war.",
     "posterColor": "#eab308",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/AtsgWhDnHTq68L0lLsUrCnM7TLy.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/cc/ac/2d/ccac2df9d1e38fc97fe47b54a9ff1875.jpg",
     "budget": "Undisclosed",
     "boxOffice": "TBD",
     "mainCharacters": [
@@ -6125,7 +6125,7 @@ export const movies: Movie[] = [
     "type": "movie",
     "status": "released",
     "tmdbId": 299534,
-    "posterUrl": "https://image.tmdb.org/t/p/w500/or06FN3Dka5tukK1e9sl16pB3iy.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/ae/75/23/ae7523829d0e94a4afe6a045ad3031fe.jpg",
     "streamingOn": "Disney+"
   },
   {
@@ -6176,7 +6176,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "During a rescue mission in space, Jean Grey absorbs a cosmic force that makes her infinitely powerful and dangerously unstable. As the Phoenix rises, the X-Men must confront Jean — their own teammate — before she destroys everything.",
     "posterColor": "#ef4444",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/m35GseEkMjM7KMvEzrXNqEBCy9C.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/9b/99/1b/9b991b1e1248b1c7b22e44b857340d5e.jpg",
     "budget": "$200 million",
     "boxOffice": "$252.4 million",
     "mainCharacters": [
@@ -6249,7 +6249,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Jessica Jones faces a manipulative serial killer while Trish Walker's vigilante obsession spirals dangerously.",
     "posterColor": "#6b21a8",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/bvhXBSCGQJCIGSKTSmBZOXpgpBK.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/36/ed/80/36ed804f18f2d34b9c3dfa283e065764.jpg",
     "budget": "Undisclosed",
     "boxOffice": "N/A",
     "mainCharacters": [
@@ -6328,7 +6328,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Peter Parker's European trip becomes a battle against Mysterio and dangerous illusions threatening the world.",
     "posterColor": "#dc2626",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/4q2hz2m8hubgvijz8Ez0T2Os2Yv.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/cd/2e/10/cd2e10795c9ce6221e2cc4a3122115cc.jpg",
     "budget": "Undisclosed",
     "boxOffice": "TBD",
     "mainCharacters": [
@@ -6407,7 +6407,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Five teenage mutants are detained in a secret facility under the guise of treatment, but must confront their own fears and powers when a terrifying demonic force from their pasts comes for them.",
     "posterColor": "#1e3a5f",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/xZNw9xxtwbEf25NYoz52JzHlpXE.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/85/55/b2/8555b2747768edee6ac1180fa17bfc3d.jpg",
     "budget": "$67 million",
     "boxOffice": "$23.3 million",
     "mainCharacters": [
@@ -6468,7 +6468,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Daimon and Ana Helstrom, the children of a mysterious and powerful serial killer, track down the worst of humanity and demonic forces.",
     "posterColor": "#0f172a",
-    "posterUrl": "https://upload.wikimedia.org/wikipedia/en/e/e9/Helstrom_poster.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/c3/80/b3/c380b367f40b2904408d972259944494.jpg",
     "budget": "N/A",
     "boxOffice": "N/A",
     "mainCharacters": [
@@ -6537,7 +6537,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Wanda Maximoff and Vision live in an idyllic suburban life, but something seems off — they're living through different decades of sitcom reality. The truth: Wanda has created an enormous hex over the town of Westview in her grief over Vision's death.",
     "posterColor": "#9333ea",
-    "posterUrl": "https://6af46f5d969c6488eb240dd5.imgix.net/sandbox/1038150151626692710.jpg",
+    "posterUrl": "/mcu/movie logo/1038150151626692710.jpg",
     "episodes": 9,
     "seasons": 1,
     "streamingOn": "Disney+",
@@ -6635,7 +6635,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Sam Wilson and Bucky Barnes team up to stop Flag Smashers while grappling with the Captain America legacy.",
     "posterColor": "#2563eb",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/6kbAMLteGO8yyewYau6bJ683sw7.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/d9/7c/ad/d97cada172a1ed72ab768e87208aefcd.jpg",
     "budget": "Undisclosed",
     "boxOffice": "N/A",
     "mainCharacters": [
@@ -6744,7 +6744,7 @@ export const movies: Movie[] = [
     "type": "series",
     "status": "released",
     "tmdbId": 84958,
-    "posterUrl": "https://image.tmdb.org/t/p/w500/kEl2t3OhXc3Zb9FBh1AuYzRTgZp.jpg"
+    "posterUrl": "/mcu/logos/loki-poster.jpg"
   },
   {
     "id": "m_black_widow",
@@ -6790,7 +6790,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Natasha Romanoff confronts her past and dismantles the Red Room's Widow program with her found family.",
     "posterColor": "#dc2626",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/qAZ0pzat24kLdO3o8ejmbLxyOac.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/14/3e/63/143e63496959ee4b31a740fa7f7fa530.jpg",
     "budget": "Undisclosed",
     "boxOffice": "TBD",
     "mainCharacters": [
@@ -6864,7 +6864,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "The Watcher explores alternate Marvel realities where pivotal moments went entirely differently.",
     "posterColor": "#8b5cf6",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/lztz5X3WDZA9ba5QE8v4jEqvgL2.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/7b/29/63/7b2963c297c1b9694336c19836a97ad6.jpg",
     "budget": "Undisclosed",
     "boxOffice": "N/A",
     "mainCharacters": [
@@ -6956,7 +6956,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "A skilled martial artist is forced to confront his criminal father and a destiny tied to a mythic realm.",
     "posterColor": "#dc2626",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/1BIoJGKbXjdFDAqUEiA2VHqkK1Z.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/9e/05/6c/9e056cc64177e772823123847d04967a.jpg",
     "budget": "Undisclosed",
     "boxOffice": "TBD",
     "mainCharacters": [
@@ -7026,7 +7026,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Eddie Brock and Venom fight serial killer Cletus Kasady who has bonded with a new symbiote — the terrifying red Carnage — in a battle that rips through San Francisco.",
     "posterColor": "#b91c1c",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/rjkmN1dniUHVYAtwuV3Tji7FsDO.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/75/f2/a4/75f2a498d4e799252a76111be54ed116.jpg",
     "budget": "$200 million",
     "boxOffice": "$502.9 million",
     "mainCharacters": [
@@ -7122,7 +7122,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "A group of immortal beings who secretly shaped human civilization must reunite to stop a world-ending emergence.",
     "posterColor": "#d97706",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/6AdXwFxSf4J4S5EEdXjrmzjAUDe.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/c7/ef/32/c7ef32dd2fc8a28ae9bef742cfefffae.jpg",
     "budget": "Undisclosed",
     "boxOffice": "TBD",
     "mainCharacters": [
@@ -7194,7 +7194,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "A Japanese snow monkey, aided by the ghost of an American assassin, goes on a revenge-fueled quest through Tokyo's criminal underworld.",
     "posterColor": "#dc2626",
-    "posterUrl": "https://upload.wikimedia.org/wikipedia/en/5/52/Hit-Monkey_poster.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/04/b3/4c/04b34c6a301ab813bfdf09ee19246f64.jpg",
     "budget": "N/A",
     "boxOffice": "N/A",
     "mainCharacters": [
@@ -7282,7 +7282,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Clint Barton teams with young archer Kate Bishop to deal with his dark Ronin past before Christmas.",
     "posterColor": "#7c3aed",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/pqzjCxPVc9TkVgGRWeAoMmyqkZh.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/8e/59/c5/8e59c5b44f818a32f17fe246e1f9fdb0.jpg",
     "budget": "Undisclosed",
     "boxOffice": "N/A",
     "mainCharacters": [
@@ -7413,7 +7413,7 @@ export const movies: Movie[] = [
     "type": "movie",
     "status": "released",
     "tmdbId": 634649,
-    "posterUrl": "https://image.tmdb.org/t/p/w500/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/27/a6/2c/27a62ca525e7b2db52c9524dfaa8b965.jpg",
     "streamingOn": "Disney+"
   },
   {
@@ -7455,7 +7455,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "A mercenary with dissociative identity disorder becomes the avatar of an Egyptian moon god on a wild journey.",
     "posterColor": "#e2e8f0",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/x6FsYvt33846IQnDt7HOBNKBl36.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/05/23/9c/05239c46d7417441d5d2f777929c2ce8.jpg",
     "budget": "Undisclosed",
     "boxOffice": "N/A",
     "mainCharacters": [
@@ -7534,7 +7534,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Biochemist Dr. Michael Morbius attempts to cure himself of a rare blood disorder but accidentally infects himself with a form of vampirism, gaining superhuman abilities at a terrible cost.",
     "posterColor": "#6d28d9",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/6JjfSchsU6daXk2AKX8EEBjO3Fm.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/34/f5/5e/34f55e25c29693da13bd72e79e05df06.jpg",
     "budget": "$75 million",
     "boxOffice": "$167.1 million",
     "mainCharacters": [
@@ -7591,7 +7591,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Strange ventures into the multiverse to protect America Chavez from the increasingly dangerous Scarlet Witch.",
     "posterColor": "#c9a84c",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/9Gtg2DzBhmYamXBS1hKAhiwbBKS.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/eb/60/36/eb60364a303242d844c33174b28ba843.jpg",
     "budget": "Undisclosed",
     "boxOffice": "TBD",
     "mainCharacters": [],
@@ -7654,7 +7654,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Kamala Khan, a Pakistani-American teen and Marvel superfan, discovers she has cosmic crystalline powers.",
     "posterColor": "#0284c7",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/pvXHNMhHkBPCVGQLgItxSzBm5o9.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/1b/02/a2/1b02a2c9beed708e4d0bc127e146814b.jpg",
     "budget": "Undisclosed",
     "boxOffice": "N/A",
     "mainCharacters": [
@@ -7736,7 +7736,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Thor faces Gorr the God Butcher while his ex Jane Foster wields Mjolnir as the Mighty Thor.",
     "posterColor": "#38bdf8",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/pIkRyD18kl4FhoCNQuWxWu5cBLM.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/62/ea/f9/62eaf9ab61fe06441dca84b862a00d80.jpg",
     "budget": "Undisclosed",
     "boxOffice": "TBD",
     "mainCharacters": [
@@ -7796,7 +7796,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "A collection of five animated short films following Baby Groot's misadventures among the stars — making new friends, causing chaos, and getting into trouble in his earliest years before the events of Guardians of the Galaxy Vol. 2.",
     "posterColor": "#a16207",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/xbRWmQMBPJGJLKFLLcgHKpOK1n8.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/ed/33/a2/ed33a2f970a4b416ecffdbad05d301a2.jpg",
     "budget": "Undisclosed",
     "boxOffice": "Streaming",
     "mainCharacters": [
@@ -7871,7 +7871,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Lawyer Jennifer Walters navigates life as a seven-foot green Hulk while breaking the fourth wall constantly.",
     "posterColor": "#16a34a",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/3Kbck1FzPo5mJvkQ7WBrVer2I0I.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/90/30/22/9030229d8bbcd409a1e9ad7e0efe7d1f.jpg",
     "budget": "Undisclosed",
     "boxOffice": "N/A",
     "mainCharacters": [
@@ -7945,7 +7945,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "A black-and-white monster hunter special featuring Jack Russell and the creature Man-Thing in gothic style.",
     "posterColor": "#dc2626",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/8nCRLiXVpF4uNmENaXdCr1VKHKR.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/93/b7/b0/93b7b01e752d6d4b930fbfd947bad8d1.jpg",
     "budget": "Undisclosed",
     "boxOffice": "TBD",
     "mainCharacters": [
@@ -8028,7 +8028,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Wakanda mourns T'Challa and faces war with the powerful underwater kingdom of Talokan.",
     "posterColor": "#9333ea",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/sv1xJUazXoQuIDTqnKhkR1RmgMi.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/bc/1c/7d/bc1c7da4560fbf208a89ba1b519719ad.jpg",
     "budget": "Undisclosed",
     "boxOffice": "TBD",
     "mainCharacters": [
@@ -8116,7 +8116,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Drax and Mantis kidnap Kevin Bacon as a Christmas gift for Star-Lord in this festive seasonal special.",
     "posterColor": "#16a34a",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/b7p9lFl66GMMObgBExAi2TYp6Ct.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/bb/75/f2/bb75f29e17cfd5a6c185574f04e19bf4.jpg",
     "budget": "Undisclosed",
     "boxOffice": "TBD",
     "mainCharacters": [
@@ -8195,7 +8195,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Scott Lang and his family are pulled into the Quantum Realm where they face the time-traveling Kang the Conqueror.",
     "posterColor": "#38bdf8",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/ngl2FKBlU4fhbdsrtdom9LVLBXw.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/89/c3/28/89c3280e16ae54b7653e4889f04d5bc0.jpg",
     "budget": "Undisclosed",
     "boxOffice": "TBD",
     "mainCharacters": [
@@ -8339,7 +8339,7 @@ export const movies: Movie[] = [
     "type": "movie",
     "status": "released",
     "tmdbId": 447365,
-    "posterUrl": "https://image.tmdb.org/t/p/w500/r2J02Z6Bq0TdBhOFXONVCBkxMm2.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/c7/29/eb/c729eb40c63933916e7a30bd80e7081a.jpg",
     "streamingOn": "Disney+"
   },
   {
@@ -8386,7 +8386,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Miles Morales catapults across the Multiverse, where he encounters a team of Spider-People charged with protecting its very existence, but clashes on how to handle an impending tragedy.",
     "posterColor": "#ec4899",
-    "posterUrl": "https://upload.wikimedia.org/wikipedia/en/b/b4/Spider-Man-_Across_the_Spider-Verse_poster.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/2c/15/a7/2c15a75189ec5e8f421b1b605a1f4c1f.jpg",
     "budget": "$100 million",
     "boxOffice": "$690.9 million",
     "mainCharacters": [
@@ -8478,7 +8478,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Nick Fury discovers shape-shifting Skrulls have secretly infiltrated Earth's governments in a global conspiracy.",
     "posterColor": "#15803d",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/b7WLn2EKYzH3gDrFCnyrWkHDOcC.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/af/5e/a8/af5ea8656359c83d68d23d10122ef02d.jpg",
     "budget": "Undisclosed",
     "boxOffice": "N/A",
     "mainCharacters": [
@@ -8541,7 +8541,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Five more animated short films following an older baby Groot on more cosmic misadventures, now featuring Rocket and other Guardians in cameo form.",
     "posterColor": "#166534",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/xbRWmQMBPJGJLKFLLcgHKpOK1n8.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/bb/e2/9d/bbe29d1d213309a2f09fc79e14835b2f.jpg",
     "budget": "Undisclosed",
     "boxOffice": "Streaming",
     "mainCharacters": [
@@ -8610,7 +8610,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Loki faces time-slipping chaos as the TVA is threatened and he must confront destiny itself to save everything.",
     "posterColor": "#10b981",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/kEl2t3OhXc3Zb9FBh1AuYzRTgZp.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/eb/7b/d8/eb7bd8a1cb4c7d4f74cf167a56e694b5.jpg",
     "budget": "Undisclosed",
     "boxOffice": "N/A",
     "mainCharacters": [
@@ -8697,7 +8697,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Captain Marvel, Ms. Marvel, and Monica Rambeau swap places every time they use their powers — and must work as one.",
     "posterColor": "#f59e0b",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/Ag3D9qXjhJ2FUkrlJ0Cv1pgxqYy.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/99/dd/eb/99ddeb40a9e52d0b201f61456133fb96.jpg",
     "budget": "Undisclosed",
     "boxOffice": "TBD",
     "mainCharacters": [
@@ -8772,7 +8772,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "The Watcher returns for more alternate universe tales, including a special Happy Hogan holiday episode.",
     "posterColor": "#9333ea",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/lztz5X3WDZA9ba5QE8v4jEqvgL2.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/21/69/7b/21697b3dc889e30d205b4fa99010f787.jpg",
     "budget": "Undisclosed",
     "boxOffice": "N/A",
     "mainCharacters": [
@@ -8855,7 +8855,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Maya Lopez returns home to Oklahoma, reconnects with her Indigenous heritage, and confronts Wilson Fisk's reach.",
     "posterColor": "#b91c1c",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/wRi8FqCISHGFgcnS0zS2BVME6z8.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/36/a0/f5/36a0f5189894720011bc02832cb1e091.jpg",
     "budget": "Undisclosed",
     "boxOffice": "N/A",
     "mainCharacters": [
@@ -8929,7 +8929,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Cassie Webb, a New York paramedic who begins to display signs of clairvoyance, must protect three young women from an adversarial figure who wants them dead.",
     "posterColor": "#be123c",
-    "posterUrl": "https://upload.wikimedia.org/wikipedia/en/5/5e/Madame_Web_%28film%29_poster.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/94/a8/44/94a844f24fd47ff4ec957686fe24ff05.jpg",
     "budget": "$80 million",
     "boxOffice": "$100.5 million",
     "mainCharacters": [
@@ -8987,7 +8987,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Wade Wilson is recruited by the TVA and drags an unwilling Wolverine into a multiverse-spanning adventure.",
     "posterColor": "#c9a84c",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/af/60/51/af60514a37807cdece3de6ce7809451d.jpg",
     "budget": "Undisclosed",
     "boxOffice": "TBD",
     "mainCharacters": [],
@@ -9029,7 +9029,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "An animated anthology series following Wakandan warriors through history as they recover stolen Vibranium from around the world, spanning multiple centuries and eras.",
     "posterColor": "#7c2d12",
-    "posterUrl": "https://upload.wikimedia.org/wikipedia/en/8/80/Eyes_of_Wakanda_logo.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/0a/e4/3d/0ae43dec3db88e066276dd49300c256a.jpg",
     "budget": "Undisclosed",
     "boxOffice": "Streaming",
     "mainCharacters": [
@@ -9098,7 +9098,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Agatha Harkness escapes a mind-wipe and assembles a coven to travel the Witches' Road for her powers back.",
     "posterColor": "#7c3aed",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/6TPZSJ06OEXehlHQPOzdCKhMLzl.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/31/20/c4/3120c4e32ce0008ddaaa939ab6ebb702.jpg",
     "budget": "Undisclosed",
     "boxOffice": "N/A",
     "mainCharacters": [
@@ -9176,7 +9176,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Eddie Brock and Venom are on the run, hunted by both the government and terrifying Xenophage creatures who want to devour the symbiote. In a final adventure, they face the ultimate sacrifice in what may be their last dance together.",
     "posterColor": "#1e293b",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/k42Owka8v9k9wekrSKQHRwFmYV3.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/62/04/c6/6204c67260fa0299fe889e0f6d70c919.jpg",
     "budget": "$120 million",
     "boxOffice": "$474.6 million",
     "mainCharacters": [
@@ -9246,7 +9246,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "The final season of alternate universe storytelling as the Watcher faces his greatest challenges yet.",
     "posterColor": "#4f46e5",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/lztz5X3WDZA9ba5QE8v4jEqvgL2.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/28/cc/e9/28cce930f4c153997820686f7cd0ddc1.jpg",
     "budget": "Undisclosed",
     "boxOffice": "N/A",
     "mainCharacters": [
@@ -9317,7 +9317,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Russian immigrant Sergei Kravinoff embarks on a mission to prove that he is the greatest hunter in the world after acquiring apex-predator abilities.",
     "posterColor": "#78350f",
-    "posterUrl": "https://upload.wikimedia.org/wikipedia/en/c/c5/Kraven_the_Hunter_%28film%29_poster.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/54/c4/09/54c4096aab01a03d49ef11f516b1673e.jpg",
     "budget": "$130 million",
     "boxOffice": "$60 million",
     "mainCharacters": [
@@ -9393,7 +9393,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Simon Williams, an actor and Avengers' PR specialist, grapples with superhero life in Hollywood.",
     "posterColor": "#a855f7",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/wqUgOaOcVb0b5giCWYKCNaYCDmZ.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/28/63/ce/2863cea3ac49f0dbf8627630d5726523.jpg",
     "budget": "Undisclosed",
     "boxOffice": "N/A",
     "mainCharacters": [
@@ -9457,7 +9457,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "An alternate universe animated origin story of Peter Parker's early high school days as Spider-Man, mentored by Norman Osborn instead of Tony Stark.",
     "posterColor": "#b91c1c",
-    "posterUrl": "https://upload.wikimedia.org/wikipedia/en/a/a9/Your_Friendly_Neighborhood_Spider-Man_poster.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/e0/04/75/e00475168a20ea8fe0ee7a9880724031.jpg",
     "budget": "N/A",
     "boxOffice": "N/A",
     "mainCharacters": [
@@ -9545,7 +9545,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Sam Wilson's Captain America is drawn into an international conspiracy involving a newly emerging Red Hulk.",
     "posterColor": "#2563eb",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/pzIddUEMWhWzfvLI3TwxUG2wGoi.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/28/b6/33/28b633409736b38713784b3f512ec40d.jpg",
     "budget": "Undisclosed",
     "boxOffice": "TBD",
     "mainCharacters": [
@@ -9630,7 +9630,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Matt Murdock returns to Hell's Kitchen while Wilson Fisk rises to become Mayor of New York City.",
     "posterColor": "#b91c1c",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/AtKeLPJPWb0YU8Ws3cDiflLpSMr.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/2a/15/c1/2a15c1380acd36cabee36ecbf9cd5a0f.jpg",
     "budget": "Undisclosed",
     "boxOffice": "N/A",
     "mainCharacters": [
@@ -9722,7 +9722,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "A team of morally grey antiheroes is assembled by Valentina de Fontaine and becomes the New Avengers.",
     "posterColor": "#dc2626",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/A5sxdAVwOdJML3aSFBhW1MJrCAK.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/f2/da/db/f2dadb0f89b9a88a7fe32b06f16575e1.jpg",
     "budget": "Undisclosed",
     "boxOffice": "TBD",
     "mainCharacters": [
@@ -9796,7 +9796,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Riri Williams builds her own Iron Man suit and faces supernatural forces tied to a dark deal in Chicago.",
     "posterColor": "#ea580c",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/suwQA2eEJLHDRaJCt0iGF3l6ToI.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/50/71/83/5071833f100f9395bd5f03f16008014d.jpg",
     "budget": "Undisclosed",
     "boxOffice": "N/A",
     "mainCharacters": [
@@ -9881,7 +9881,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Marvel's First Family faces the Silver Surfer and the world-devouring Galactus in a retro-futuristic 1964.",
     "posterColor": "#0284c7",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/9Dc0Q4BQPJ29GmJe26MvAIHDaRa.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/83/11/a9/8311a9f3aa775f78374188a3f8b12dd7.jpg",
     "budget": "Undisclosed",
     "boxOffice": "TBD",
     "mainCharacters": [
@@ -9945,7 +9945,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "An animated anthology tracing elite Wakandan warriors across history protecting the nation's vibranium.",
     "posterColor": "#059669",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/jKuDyqx7jrjiUaM95eLWPLIkMQa.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/da/45/89/da4589a117e277e2b5062d96ebeca74b.jpg",
     "budget": "Undisclosed",
     "boxOffice": "N/A",
     "mainCharacters": [
@@ -10011,7 +10011,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "A new generation of heroes battles against an ever-spreading zombie plague that has consumed Earth's mightiest champions across the multiverse.",
     "posterColor": "#15803d",
-    "posterUrl": "https://upload.wikimedia.org/wikipedia/en/e/eb/Marvel_Zombies_series_poster.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/db/07/f0/db07f01346a5c504d8160c4c1d4415c7.jpg",
     "budget": "N/A",
     "boxOffice": "N/A",
     "mainCharacters": [
@@ -10127,7 +10127,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Earth's heroes face Doctor Doom in a cataclysmic showdown that threatens the entire Marvel multiverse.",
     "posterColor": "#15803d",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/05/07/bc/0507bca589673f9052fb1e20c5592914.jpg",
     "budget": "Undisclosed",
     "boxOffice": "TBD",
     "mainCharacters": [
@@ -10201,7 +10201,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "Peter Parker starts a new chapter four years after the world forgot him — with new threats rising.",
     "posterColor": "#dc2626",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/1BIoJGKbXjdFDAqUEiA2VHqkK1Z.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/87/3e/d7/873ed7a35be330c04b352486bfd97e47.jpg",
     "budget": "Undisclosed",
     "boxOffice": "TBD",
     "mainCharacters": [
@@ -10266,7 +10266,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "White Vision embarks on a journey to reclaim his humanity and memories, reconnecting with Tommy Maximoff while evading a resurrected Ultron.",
     "posterColor": "#0284c7",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/WGyAyBPncfuu8MZhLY9RtfZPM0.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/f6/c4/36/f6c43696503f798aa31e6e9743bc7135.jpg",
     "budget": "Undisclosed",
     "boxOffice": "N/A",
     "mainCharacters": [
@@ -10333,7 +10333,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "The Man Without Fear faces even greater threats as his war with Fisk reaches a devastating new chapter.",
     "posterColor": "#991b1b",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/AtKeLPJPWb0YU8Ws3cDiflLpSMr.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/53/2d/7c/532d7c2c8b6ef991f6a364224bfe5323.jpg",
     "budget": "Undisclosed",
     "boxOffice": "N/A",
     "mainCharacters": [
@@ -10429,7 +10429,7 @@ export const movies: Movie[] = [
     ],
     "synopsis": "The ultimate battle across the multiverse — the culmination of the entire Multiverse Saga.",
     "posterColor": "#c9a84c",
-    "posterUrl": "https://image.tmdb.org/t/p/w500/or06FN3Dka5tukK1e9sl16pB3iy.jpg",
+    "posterUrl": "https://i.pinimg.com/736x/5e/6c/11/5e6c11f6ab3df315a873ebf5b1b0cf01.jpg",
     "budget": "Undisclosed",
     "boxOffice": "TBD",
     "mainCharacters": [
